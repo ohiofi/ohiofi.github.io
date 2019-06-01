@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/styles.css">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{page.meta}}">
+    <title>{% if page.title %}{{page.title}} · {% endif %}OhioFi.com</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+<body class="bg-dark text-bababa">
+  {% include nav.html navclass="navtop" %}
+  <div class="container">
+    {{content}}
+  </div>
+  {% include nav.html navclass="navbottom" %}
+</body>
+</html>

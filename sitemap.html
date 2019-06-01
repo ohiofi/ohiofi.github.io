@@ -1,0 +1,25 @@
+---
+layout: default
+title: Sitemap
+---
+Sitemap
+<ul>
+  {% for page in site.pages %}
+    <li>
+      {% if page.url == '/' %}
+        <a href="{{site.baseurl}}/index.html">/index.html</a>
+      {% else %}
+        <a href="{{site.baseurl}}{{page.url}}">{{page.url}}</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+  {% for post in site.posts %}
+    <li>
+      {% if post.url == '/' %}
+        <a href="{{site.baseurl}}/index.html">/index.html</a>
+      {% else %}
+        <a href="{{site.baseurl}}{{post.url}}">{{page.url}}</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
