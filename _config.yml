@@ -1,2 +1,4 @@
 exclude: ['README.md']
 permalink: pretty
+
+theme: jekyll-theme-dinky
