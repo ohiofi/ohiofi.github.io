@@ -1,9 +1,9 @@
 a,small,p,h1,h2,h3,.btn{
   font-weight: 100!important;
 }
-a.post-title{
-  font-weight:900!important;
-  color: #8731b9;
+a{
+  font-weight:100!important;
+  color: #8731b9!important;
 }
 .darkbg{
   background-color:#413677!important;
@@ -52,7 +52,7 @@ img.navtop{
   width:40px;
 }
 li{
-  list-style-type: none!important;
+  /* list-style-type: none!important; */
 }
 pre{
   /* background-color:#888;
