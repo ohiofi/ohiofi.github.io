@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/styles.css">
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{page.meta}}">
+    <!-- <meta name="description" content="{{page.meta}}"> -->
     <title>{% if page.title %}{{page.title}} · {% endif %}OhioFi.com</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -17,7 +17,17 @@
 <body class="text-bababa">
   {% include nav.html navclass="navtop" %}
   <div class="container">
-    {{content}}
+    <div class="row">
+      <div class="col-12 col-lg-11">
+        {{content}}
+      </div>
+      <div class="col-12 col-lg-1">
+        <ul>
+          <li>sidebar</li>
+          <li>sidebar</li>
+          <li>sidebar</li>
+        </ul>
+      </div>
   </div>
   {% include nav.html navclass="navbottom" %}
 </body>

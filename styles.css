@@ -23,6 +23,7 @@ button.navtop{
 }
 .card-body{
   background-color:#111!important;
+  overflow:hidden;
 }
 .col-6,.col-lg-4{
   margin-top:5px!important;
