@@ -28,10 +28,17 @@
             <div class="card-header">
             </div>
             <div class="card-body">
+              Follow @20hz20khz on Twitter
+              <br>
+              YouTube.com/20hz20khz
+              <br>
+              Recent Posts
               <ul>
-                <li>sidebar</li>
-                <li>sidebar</li>
-                <li>sidebar</li>
+                {% for p in site.posts limit:50 %}
+                  <li>
+                    <a href="{{site.baseurl}}{{p.url}}"><small>{{p.url}}</small></a>
+                  </li>
+                {% endfor %}
               </ul>
             </div>
             <div class="card-footer">
