@@ -52,7 +52,12 @@ img.navtop{
   width:40px;
 }
 li{
-  /* list-style-type: none!important; */
+  margin-top:10px;
+  margin-bottom:10px;
+  margin:10px 0px 10px 0px;
+  padding:0px;
+  list-style-type: none!important;
+  line-height: 1px;
 }
 pre{
   /* background-color:#888;
@@ -71,6 +76,9 @@ pre{
 }
 .text-bababa{
   color:#bababa;
+}
+ul{
+  padding-inline-start: 0px;
 }
 ul.navtop{
   margin-left:auto!important;
