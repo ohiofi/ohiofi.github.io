@@ -40,23 +40,27 @@ h1{
 }
 img{
   border-radius:.4em;
-  margin:10px 10px 10px 0px;
+  margin:5px 15px 10px 0px;
+  float:left;
 }
 img.navbottom{
   display:none;
 }
 img.navtop{
   display:block;
+  width:40px;
 }
 pre{
-  background-color:#888;
+  /* background-color:#888;
   background-color:#343a40;
-  background-color:#848a90;
+  background-color:#848a90; */
+  background-color:#bababa;
   border:1px solid #000;
   border-radius:.4em;
   margin:10px 10px 10px 0px;
-  padding:15px;
-
+  padding:15px 25px 15px 25px;
+  display:inline-flex!important;
+  /* width:100%; */
 }
 .roundedimg{
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);

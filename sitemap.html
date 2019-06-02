@@ -4,21 +4,21 @@ title: Sitemap
 ---
 Sitemap
 <ul>
-  {% for page in site.pages %}
+  {% for p in site.pages %}
     <li>
-      {% if page.url == '/' %}
+      {% if p.url == '/' %}
         <a href="{{site.baseurl}}/index.html">/index.html</a>
       {% else %}
-        <a href="{{site.baseurl}}{{page.url}}">{{page.url}}</a>
+        <a href="{{site.baseurl}}{{p.url}}">{{p.url}}</a>
       {% endif %}
     </li>
   {% endfor %}
-  {% for post in site.posts %}
+  {% for p in site.posts %}
     <li>
-      {% if post.url == '/' %}
+      {% if p.url == '/' %}
         <a href="{{site.baseurl}}/index.html">/index.html</a>
       {% else %}
-        <a href="{{site.baseurl}}{{post.url}}">{{page.url}}</a>
+        <a href="{{site.baseurl}}{{p.url}}">{{p.url}}</a>
       {% endif %}
     </li>
   {% endfor %}
