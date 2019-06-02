@@ -51,6 +51,9 @@ img.navtop{
   display:block;
   width:40px;
 }
+li{
+  list-style-type: none;
+}
 pre{
   /* background-color:#888;
   background-color:#343a40;

@@ -37,7 +37,7 @@
               <ul>
                 {% for p in site.posts limit:50 %}
                   <li>
-                    <a href="{{site.baseurl}}{{p.url}}"><small>{{p.url}}</small></a>
+                    <a href="{{site.baseurl}}{{p.url}}"><small>{{p.title}}</small></a>
                   </li>
                 {% endfor %}
               </ul>
