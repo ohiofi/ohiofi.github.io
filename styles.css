@@ -57,7 +57,7 @@ li{
   margin:10px 0px 10px 0px;
   padding:0px;
   list-style-type: none!important;
-  line-height: 1px;
+  line-height: 1em;
 }
 pre{
   /* background-color:#888;
