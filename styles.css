@@ -3,7 +3,7 @@ a,small,p,h1,h2,h3,.btn{
 }
 a{
   font-weight:100!important;
-  color: #8731b9!important;
+  /* color: #8731b9!important; */
 }
 .darkbg{
   background-color:#413677!important;
