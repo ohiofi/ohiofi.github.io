@@ -18,15 +18,26 @@
   {% include nav.html navclass="navtop" %}
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-11">
+      <div class="col-12 col-lg-10">
         {{content}}
       </div>
-      <div class="col-12 col-lg-1">
-        <ul>
-          <li>sidebar</li>
-          <li>sidebar</li>
-          <li>sidebar</li>
-        </ul>
+      <div class="col-12 col-lg-2">
+        <!-- sidebar -->
+        <div class="container">
+          <div class="card darkbg">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>sidebar</li>
+                <li>sidebar</li>
+                <li>sidebar</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+            </div>
+          </div>
+        </div>
       </div>
   </div>
   {% include nav.html navclass="navbottom" %}
