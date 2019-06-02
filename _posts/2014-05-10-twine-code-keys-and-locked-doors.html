@@ -1,0 +1,107 @@
+---
+layout: post
+title: Twine code, keys, and locked doors
+date: 2014-05-10 10:33:24.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- education
+- games
+- how to
+tags:
+- code
+- computer
+- David
+- dollar
+- door
+- example
+- floor
+- guide
+- holding
+- Keys
+- level
+- link
+- LOCKED
+- message
+- mistake
+- player
+- print
+- thing
+- Twine
+- TWO
+
+
+
+
+
+author:
+  login: OhioFi
+  email: 20hz20khz@gmail.com
+  display_name: OhioFi
+  first_name: ''
+  last_name: ''
+
+---
+<p><span style="font-size: 1.5em; line-height: 1.5em;">CODE</span></p>
+<p><img class="alignright size-full wp-image-3914" alt="dollarsign2" src="{{ site.baseurl }}/assets/dollarsign2.gif" width="200" height="194" />Wouldn't it be great if your Twine game could remember if the player picked up an item? Code will let you do this and much more. Code is special directions for the computer that will not be seen by the player. In Twine, code is written inside of parenthesis:</p>
+<blockquote style="font-family: monospace; font-style: normal;"><p>(write code inside parentheses, like this)</p></blockquote>
+<p>The first thing that you need is a variable. A variable stores something so that the computer remembers it later. You can store either words or numbers in a variable. A variable MUST start with a dollar sign. The variable&nbsp;$name&nbsp;might contain the player's name, “David”, and the variable&nbsp;$keys&nbsp;might contain the number of keys David has in his pocket, 1.<br />
+<img class="alignnone size-full wp-image-3913" alt="batman-mario-2-key" src="{{ site.baseurl }}/assets/batman-mario-2-key.gif" width="240" height="192" /></p>
+<h2>KEYS</h2>
+<p>You can keep track of the number of keys that the player is holding. At the beginning of the game, in the starting passage, use this&nbsp;<strong>set</strong>&nbsp;code:<br />
+<code>
+<pre>You have one key in your pocket.&nbsp;(set: $keys to 1)</pre>
+<p></code><br />
+Later if the player finds a key, you can change the stored number with another&nbsp;<strong>set</strong>&nbsp;code. The code below says to the computer, “Take the number of keys, add two, and set this as the number of keys.”<br />
+<code>
+<pre>You found two keys on the floor.&nbsp;(set: $keys to $keys + 2)</pre>
+<p></code><br />
+<img class="alignnone size-full wp-image-3915" alt="finalfantasy" src="{{ site.baseurl }}/assets/finalfantasy.gif" width="256" height="223" /></p>
+<h2>Lose A Key</h2>
+<p>If you lose a key, you will subtract one key from the total number of keys. The code below says to the computer, “Take the number of keys, subtract one, and set this as the number of keys.”<br />
+<code>
+<pre>You lost a key.&nbsp;(set: $keys to $keys – 1)</pre>
+<p></code><br />
+You can also attach this type of code to a link so that the code only runs when the player clicks on the link. This type of link is called a setter-link. It's a little more complex than a typical link. The code below says, “When the link is clicked, take the number of keys, subtract one, and set this as the number of keys, then continue to the room.”<br />
+<code>
+<pre>(link:"Give a key to the old man")[
+&nbsp;&nbsp;(set: $keys to $keys – 1)
+&nbsp;&nbsp;(goto:"Old Man says Thank You")
+]</pre>
+<p></code><br />
+After "link:" you will type what the link will say and after "goto:" you will type where the player will go next.<br />
+You can show the player the number of keys like this:<br />
+<code>
+<pre>In your pocket you have&nbsp;$keys&nbsp;keys.</pre>
+<p></code><br />
+The player will not see the code, $keys. The player will see:<br />
+<code>
+<pre>In your pocket you have 2 keys.</pre>
+<p></code><br />
+If you make a mistake with&nbsp;code, a highlighted error message will show up. For example, if you forget to put the dollar sign in front of the keys variable you will see:</p>
+<blockquote style="font-family: monospace; font-style: normal;"><p><img class="alignnone size-full wp-image-3910" alt="twine6" src="{{ site.baseurl }}/assets/twine6.jpg" width="215" height="21" /></p></blockquote>
+<h2>LOCKED DOORS</h2>
+<p>The best process for creating a locked door will only show the link to unlock the door if a player has keys. When they click the link, it will automatically subtract one key and take them to the next room.<br />
+<code>
+<pre>The blue door is locked.
+
+(if: $keys > 0)[
+&nbsp;&nbsp;(link:"Unlock the blue door")[
+&nbsp;&nbsp;&nbsp;&nbsp;(set: $keys to $keys – 1)
+&nbsp;&nbsp;&nbsp;&nbsp;(goto:"Blue Room")
+&nbsp;&nbsp;]
+]</pre>
+<p></code><br />
+<img class="alignright size-full wp-image-3916" alt="knock" src="{{ site.baseurl }}/assets/knock.gif" width="300" height="216" />Now let's look at how that works. Variables can determine what the player sees. For more information about variables, you should check out the next post, <a href="http://www.ohiofi.com/blog/twine-variables/">Twine variables</a>. The player should only be able to unlock a door if they have more than zero keys. You can use the code&nbsp;<strong>if</strong>&nbsp;to do this. Anything you type between the left square bracket "(if: $keys > 0)["&nbsp;and the right square bracket &nbsp;"]"&nbsp;is ONLY displayed if the number of keys is greater than zero.<br />
+<code>
+<pre>The blue door is locked.
+
+(if: $keys > 0)[
+&nbsp;&nbsp;This text is only displayed if you have keys.
+]</pre>
+<p></code></p>
+<p><img class="alignnone size-full wp-image-3899" alt="mario" src="{{ site.baseurl }}/assets/mario.gif" width="300" height="224" /></p>
+<p><a href="http://www.ohiofi.com/blog/twine-variables/">CONTINUE TO THE NEXT POST: Twine variables</a></p>

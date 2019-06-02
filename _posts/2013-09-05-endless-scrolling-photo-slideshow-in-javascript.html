@@ -1,0 +1,66 @@
+---
+layout: post
+title: Endless scrolling photo slideshow in Javascript
+date: 2013-09-05 16:42:37.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- CDATA
+- currentSlide
+- document.getElementById
+- end
+- function
+- hidden
+- Javascript
+- px
+- style
+- tape
+- var
+- width
+
+
+
+
+author:
+  login: OhioFi
+  email: 20hz20khz@gmail.com
+  display_name: OhioFi
+  first_name: ''
+  last_name: ''
+
+---
+<p>EDITED 8-10-15: <a href="https://github.com/20hz20khz/Endless-scrolling-photo-slideshow">Click here</a> for an updated version of the Endless scrolling photo slideshow in Javascript</p>
+<p><code><script type="text/javascript">// <![CDATA[<br />
+// <![<span class="hiddenSpellError" pre="">CDATA</span>[<br />
+// ]]></script><br />
+var total = 11;/* Total number of slides */<br />
+var currentSlide = 1;<br />
+function goto(slideID) {<br />
+if (slideID==total+2){/*If we are at the end of the slideshow tape, instantly rewind to the beginning of the tape*/<br />
+document.getElementById("slideshowTape_1").className = "slideshowTape speedZero/*set up the transition speed via a css class*/";<br />
+document.getElementById("slideshowTape_1").style.left = "0px";<br />
+currentSlide = 2;<br />
+setTimeout("goto(2)", 5);<br />
+}<br />
+else{<br />
+document.getElementById("slideshowTape_1").className = "slideshowTape speedSix/*set up the transition speed via a css class*/";<br />
+document.getElementById("slideshowTape_1").style.left = ((slideID - 1) * -400/*width of one slide*/) + "px";<br />
+var count;<br />
+for(count=1; count&lt;=total; count++) {<br />
+document.getElementById("slideTab"+count).className = "slideTab hidden";<br />
+}<br />
+document.getElementById("slideTab"+slideID).className = "slideTab";<br />
+currentSlide = slideID;<br />
+}<br />
+}<br />
+function ran() {<br />
+randomNumber=currentSlide+1;<br />
+goto(randomNumber);<br />
+setTimeout("ran()", 6000/*change slides every 6 seconds*/);<br />
+}<br />
+setTimeout("ran()", 5);<br />
+// ]]&gt;&lt;/script&gt;</code></p>

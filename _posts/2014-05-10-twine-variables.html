@@ -1,0 +1,78 @@
+---
+layout: post
+title: Twine variables
+date: 2014-05-10 16:53:37.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- education
+- games
+- how to
+tags:
+- code
+- COINS
+- gif
+- health
+- href
+- ice
+- img
+- ITEMS
+- level
+- money
+- pizza toppings
+- player
+- power
+- print
+- store
+- talking
+- thing
+- UPS
+- WEAPONS
+- Weird
+
+
+
+
+
+author:
+  login: OhioFi
+  email: 20hz20khz@gmail.com
+  display_name: OhioFi
+  first_name: ''
+  last_name: ''
+
+---
+<h2 dir="ltr">POWER-UPS, COINS, AND OTHER ITEMS</h2>
+<p dir="ltr"><img class="alignright size-full wp-image-3926" alt="ocarina1" src="{{ site.baseurl }}/assets/ocarina1.gif" width="300" height="157" />Lots of things can be stored as variables. A variable can be something that is typically found in a video game (points, lives, power-ups, coins, items, weapons, health, etc.) or a variable can be something weird (ninjas, cellphone, fire breath, pizza toppings, random treasure, etc.). You can use $icespell to keep track of if the player has learned the ice spell. The number of coins can be remembered with either $coins or $money or $rupees or something like that.</p>
+<h2 dir="ltr">WEAPONS, HEALTH, AND WEIRD THINGS</h2>
+<p dir="ltr">You can use $lives to store the player’s extra lives and $pizzatoppings to store the number of toppings they have collected. The player’s $health might start at 100, but can change during the game. The player might start without a $weapon, but then find one later. The first thing you need to do is set these things to zero (or to 100 or to whatever number they should start at) in the starting passage.</p>
+<p><code>
+<pre>(set: $money to 0)
+(set: $keys to 0)
+(set: $sword to 0)
+(set: $health to 100)</pre>
+<p></code></p>
+<p dir="ltr"><img class="alignright size-full wp-image-3922" alt="mariocoins" src="{{ site.baseurl }}/assets/mariocoins.gif" width="150" height="230" />Just like with the number of keys (which I mentioned in my <a href="http://www.ohiofi.com/blog/twine-code-keys-and-locked-doors/">last post</a>), use <strong>set</strong> to change things later in the game. The code below says to the computer, “Take the player’s health, subtract ten, and set this as the player’s health.”</p>
+<p><code>
+<pre>You fell down the stairs.
+(set: $health to $health – 10)</pre>
+<p></code></p>
+<p dir="ltr">The code below says, “Take the player’s money, add 25, and set this as the player’s money.”</p>
+<p><code>
+<pre>You found $25.
+(set: $money to $money + 25)</pre>
+<p></code></p>
+<h2 dir="ltr">WHAT IS YOUR NAME?</h2>
+<p dir="ltr"><img class="alignright size-full wp-image-3928" alt="fightclub1" src="{{ site.baseurl }}/assets/fightclub1.gif" width="300" height="208" />You can store either words or numbers in a variable, but so far we’ve only been talking about storing numbers. One common word variable is the player’s name. We can use the code <strong>prompt</strong> to create a popup box in which the player can type their name. The following code shows the player a popup box that says, “What is your name?” and stores what they type as $name.</p>
+<p><code>
+<pre>(set: $name to (prompt:"What is your name?",""))</pre>
+<p></code></p>
+<p dir="ltr">Once the player’s name is stored, you can use $name to show their name .</p>
+<p><code>
+<pre>Hello $name, how are you today?</pre>
+<p></code><br />
+<img class="alignnone size-full wp-image-3899" alt="mario" src="{{ site.baseurl }}/assets/mario.gif" width="300" height="224" /></p>
+<p><a href="http://www.ohiofi.com/blog/twine-logic/">CONTINUE TO THE NEXT POST: Twine logic</a></p>

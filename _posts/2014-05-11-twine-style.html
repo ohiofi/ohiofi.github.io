@@ -1,0 +1,131 @@
+---
+layout: post
+title: Twine style
+date: 2014-05-11 23:02:27.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- education
+- games
+- how to
+tags:
+- animated
+- background
+- code
+- dollar
+- family
+- Game
+- Games
+- gif
+- Helvetica
+- img
+- Math
+- Math.ceil
+- Math.random
+- money
+- New
+- passage
+- player
+- random numbers
+- roll
+- sans-serif
+- section
+- src
+- style
+- Twine
+- width
+
+
+
+
+
+author:
+  login: OhioFi
+  email: 20hz20khz@gmail.com
+  display_name: OhioFi
+  first_name: ''
+  last_name: ''
+
+---
+<h2 dir="ltr">RANDOM NUMBERS</h2>
+<p dir="ltr"><img class="alignright size-full wp-image-4001" alt="tumblr_maikmkhJud1qzl9pho1_75sq" src="{{ site.baseurl }}/assets/tumblr_maikmkhJud1qzl9pho1_75sq.gif" width="75" height="75" />Games are more interesting if they are different each time you play. In board games, rolled dice and shuffled cards are typical. In video games, random numbers are used. You can use the code <strong>random</strong> to "roll dice" and get a number between 1 and 6. The code below says to the computer, “Generate a number between 1 and 6. If you roll a 1, the player has found a dollar.”</p>
+<p><code>
+<pre>
+(set: $diceroll to (random: 1, 6))
+(if: $diceroll is 1)[
+&nbsp;&nbsp;You found a dollar! (set: $money to $money + 1)
+]
+</pre>
+<p></code></p>
+<p dir="ltr">The code below say to the computer, “Generate a number of coins (between 1 and 100) to be found in a treasure chest and tell the player how many coins they found.”</p>
+<p><code>
+<pre>
+(set: $randomtreasure to (random: 1, 100))
+You found $randomtreasure coins in the treasure chest!
+(set: $coins to $coins + $randomtreasure)
+</pre>
+<p></code><br />
+<img src="{{ site.baseurl }}/assets/treasure.gif" alt="treasure" width="300" height="300" class="alignnone size-medium wp-image-4009" /></p>
+<h2 dir="ltr">PICTURES AND ANIMATED GIFS</h2>
+<p dir="ltr">You can use <strong>&lt;img src=" "&gt;</strong> to add pictures and animated gif files to your game. Make sure that you only use one angle bracket on each side, not two. The web address of the file needs to go in between the "quotation marks," like this:</p>
+<p><code>
+<pre>&lt;img src="http://www.ohiofi.com/img/catdance1.gif"&gt;</pre>
+<p></code></p>
+<h2 dir="ltr">STYLE</h2>
+<p><img src="{{ site.baseurl }}/assets/nyan.gif" alt="nyan" width="250" height="188" class="alignright size-full wp-image-4013" />
+<p dir="ltr">To customize the way your game looks, click the menu in the bottom-left, then Edit Story Stylesheet. In the stylesheet, you can write CSS code that will allow you to change the background color, the text color, the maximum size for pictures, and much more.</p>
+<p dir="ltr">If you put the code <strong>background:lightblue;</strong> in the section after <strong>body { </strong>, it changes the background to light blue. Putting the code <strong>color:purple;</strong> in the section after <strong>body {</strong> changes the text color to purple. The code <strong>img { max-width:600px; }</strong> says to the computer, "All images (pictures, animated gifs, etc.) should be 600 pixels wide or less."</p>
+<p><img src="{{ site.baseurl }}/assets/Screenshot-2015-10-28-12.43.21-600x375.png" alt="Screenshot 2015-10-28 12.43.21" width="600" height="375" class="alignnone size-large wp-image-5981" /><br />
+Here is some basic CSS that can be used with Harlowe, the default Twine 2 theme.<br />
+<code style="font-size:14px;">
+<pre><blockquote style="font-family: monospace; font-style: normal;">@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+.mars { <strong>/* A background named 'mars' */</strong>
+&nbsp;&nbsp;background-image: url("http://www.ohiofi.com/img/mars.jpg");
+&nbsp;&nbsp;background-size: cover;
+}
+
+tw-story {
+&nbsp;&nbsp;<strong>/* The following changes the text */</strong>
+&nbsp;&nbsp;color: darkgreen; <strong>/* Set text to green or other color */</strong>
+&nbsp;&nbsp;text-shadow: 1px 1px lightgreen; <strong>/* Green text shadow */</strong>
+&nbsp;&nbsp;font-size: 20px;
+&nbsp;&nbsp;font-family: "Press Start 2P","Helvetica","Arial",sans-serif;
+	
+&nbsp;&nbsp;<strong>/* The following changes the text box */</strong>
+&nbsp;&nbsp;border: 5px groove gray; <strong>/* Gray border around the box */</strong>
+&nbsp;&nbsp;border-radius: 25px; <strong>/* Rounded corners on the box */</strong>
+&nbsp;&nbsp;background: rgba(255,255,255,0.7); <strong>/* 30% transparent box */</strong>
+&nbsp;&nbsp;padding: 25px;
+}
+
+tw-link {
+&nbsp;&nbsp;color:darkblue; <strong>/* Set the link color to darkblue */</strong>
+&nbsp;&nbsp;transition: color .5s ease-in-out;
+}
+
+tw-link:hover { <strong>/* Mouse over a link & it turns orange */</strong>
+&nbsp;&nbsp;color: orange;
+}
+
+body { <strong>/* Set background to fade lightblue to blue */</strong>
+&nbsp;&nbsp;background: lightblue; <strong>/* For old browsers */ </strong>   
+&nbsp;&nbsp;background: -webkit-linear-gradient(lightblue, blue);
+&nbsp;&nbsp;background: -o-linear-gradient(lightblue, blue);
+&nbsp;&nbsp;background: -moz-linear-gradient(lightblue, blue);
+&nbsp;&nbsp;background: linear-gradient(lightblue, blue);
+}
+
+img { <strong>/* Images won't get larger than 600px */</strong>
+&nbsp;&nbsp;max-width: 600px;
+&nbsp;&nbsp;max-height: 600px;
+}
+
+tw-sidebar.redo {
+&nbsp;&nbsp;display:none; <strong>/* Hide the redo button */</strong>
+}</blockquote></pre>
+<p></code><br />
+<img class="alignnone size-full wp-image-3899" alt="mario" src="{{ site.baseurl }}/assets/mario.gif" width="300" height="224" /></p>

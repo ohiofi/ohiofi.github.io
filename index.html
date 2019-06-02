@@ -1,12 +1,27 @@
 ---
 layout: default
 ---
-<ul>
+<!-- <ul> -->
   {% for post in site.posts limit:5 %}
-    <li>
-      <a class="text-white" href=""><h3>{{post.title}}</h3></a>
+  <br>
+    <div class="card darkbg">
+      <div class="card-header">
+        <a class="text-white" href="{{post.url}}"><h3 class="card-title">{{post.title}}</h3></a>
+      </div>
+      <div class="card-body">
+
+        <!-- <h4 >Card title</h4> -->
+        <p class="card-text">{{post.content}}</p>
+        <!-- <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a> -->
+      </div>
+    </div>
+
+    <!-- <li>
+
       <!-- <p>{{post.meta}}</p> -->
-      <p>{{post.content}}</p>
-    </li>
+      <!-- <p>{{post.content}}</p>
+    </li> -->
   {% endfor %}
-</ul>
+  <br>
+<!-- </ul> -->

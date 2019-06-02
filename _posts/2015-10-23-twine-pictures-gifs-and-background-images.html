@@ -1,0 +1,74 @@
+---
+layout: post
+title: Twine Pictures, GIFs, and Background Images
+date: 2015-10-23 15:39:47.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- education
+- games
+- how to
+- interactive art
+tags:
+- background
+- Games
+- gif
+- harlowe
+- how to
+- image
+- Twine
+- twine 2
+- twine game
+- Video games
+
+
+
+
+
+author:
+  login: OhioFi
+  email: 20hz20khz@gmail.com
+  display_name: OhioFi
+  first_name: ''
+  last_name: ''
+
+---
+<h2 dir="ltr">PICTURES AND ANIMATED GIFS</h2>
+<p><img src="{{ site.baseurl }}/assets/nyan.gif" alt="nyan" width="250" height="188" class="alignleft size-full wp-image-4013" />
+<p dir="ltr">First of all, I do NOT recommend hotlinking (simply copying and pasting the URL from a stranger's site), because they could delete or change the image at any time. I recommend posting your images on your own site or an image host (like Imgur or Photobucket). You can use <strong>&lt;img src= &gt;</strong> to add pictures and animated GIF files to your project. When adding this code, make sure that you only use one angle bracket on each side, not two. The web address of the file needs to go after the equals sign, like this:</p>
+<p><code>
+<pre>&lt;img src=http://www.ohiofi.com/img/catdance1.gif&gt;</pre>
+<p></code></p>
+<h2>BACKGROUND IMAGES</h2>
+<p><em>Updated 8-31-2017</em></p>
+<h3>How to change the background <em>for the entire game</em></h3>
+<p><img src="{{ site.baseurl }}/assets/purplesky.gif" alt="purplesky" width="300" height="169" class="alignright size-full wp-image-5918" />Here is how to change the background image when using Twine 2's default Harlowe format. Click the menu in the bottom-left and then Edit Story Stylesheet. Copy and paste this CSS code to change the Background <strong>for your entire game</strong>. Replace the URL with the image/GIF that you would like to use.</p>
+<p><code>
+<pre>
+tw-story {
+	background-image:url("http://ohiofi.com/img/The%20Castle%202.png");
+  	background-size: cover;
+}
+</pre>
+<p></code></p>
+<h3>How to change the background <em>in the middle of your game</em></h3>
+<p>If you're like me... you'd like to have a farm background when you're at the farm, to have a castle background when you're at the castle, and to have a fire GIF in the background when you cast a fire spell. Here's how to do that. STEP ONE: click the menu in the bottom-left and then Edit Story Stylesheet. You will add the URLs of the background images that you would like to use and give each one a simple name, like "castle" or "harbor." You can even set an animated GIF as a background.</p>
+<p><code>
+<pre>
+tw-story[tags~="castle"] {
+ background-image:url("http://ohiofi.com/img/The%20Castle%202.png");
+ background-size:cover;
+}
+tw-story[tags~="harbor"] {
+ background-image:url("http://ohiofi.com/img/The%20Harbor%202.png");
+ background-size:cover;
+}
+</pre>
+<p></code></p>
+<p>STEP TWO: When you want the background image to change in a specific passage you will add a Tag. Make sure that the Tag is spelled EXACTLY the same as it is in your CSS. It will NOT work if you type "Castle" in one and "castle" in the other. All passages without a Tag will have NO background image.</p>
+<p><a href="http://www.ohiofi.com/blog/wp-content/uploads/2015/10/twineTag.jpg"><img src="{{ site.baseurl }}/assets/twineTag-300x170.jpg" alt="Example of adding a Tag in Twine" width="300" height="170" class="alignnone size-medium wp-image-6364" /></a></p>
+<p><img class="alignnone size-full wp-image-3899" alt="mario" src="{{ site.baseurl }}/assets/mario.gif" width="300" height="224" /></p>
+<p><a href="http://www.ohiofi.com/blog/twine-css/">CONTINUE TO THE NEXT POST: Twine CSS</a></p>

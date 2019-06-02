@@ -1,0 +1,79 @@
+---
+layout: post
+title: Twine scripts and macros
+date: 2014-05-13 16:40:10.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- education
+- games
+- how to
+tags:
+- background
+- background image
+- demo
+- drop
+- example
+- function
+- image
+- Leon Arnott
+- New
+- page
+- parser
+- passage
+- place
+- right
+- scripts
+- simple
+- space
+- style
+- Twine
+- URL
+
+
+
+
+
+author:
+  login: OhioFi
+  email: 20hz20khz@gmail.com
+  display_name: OhioFi
+  first_name: ''
+  last_name: ''
+
+---
+<p><img src="{{ site.baseurl }}/assets/catdance2.gif" alt="catdance2" width="168" height="200" class="alignright size-full wp-image-4031" /></p>
+<blockquote><p>NOTE: Material in this tutorial does NOT work with Twine 2's default format, Harlowe.</p></blockquote>
+<p>Scripts allow you to add new features to your Twine game. You can find these scripts posted on <a href="http://aliendovecote.com/resources/twine-snippets/">blogs</a> and in <a href="http://twinery.org/forum/index.php">Twine forums</a>. For example, <a href="http://www.glorioustrainwrecks.com/blog/584">Leon Arnott</a> has created many scripts and has posted them to his blog, <a href="http://www.glorioustrainwrecks.com/blog/584">Glorious Trainwrecks</a>.</p>
+<p>To add a script to your game, click the menu in the bottom-left, then click Edit Story JavaScript. Copy and paste the script from the blog into the Edit Story JavaScript passage. Here is a simple script that I created that will allow you to change the background image within passages:<br />
+<code>
+<pre>//changes the background image
+macros['setback'] = 
+{
+<blockquote style="font-family: monospace; font-style: normal;font-size:14px;">	handler: function (place, macroName, params, parser)
+	{
+<blockquote style="font-family: monospace; font-style: normal;font-size:14px;">document.body.style.backgroundImage = 'url('+params[0]+')';</blockquote>
+	}</blockquote>
+};</pre>
+<p></code><br />
+<a href="http://www.ohiofi.com/blog/wp-content/uploads/2014/05/Screenshot-2014-05-13-11.07.31.jpg"><img src="{{ site.baseurl }}/assets/Screenshot-2014-05-13-11.07.31-600x331.jpg" alt="Screenshot 2014-05-13 11.07.31" width="600" height="331" class="alignnone size-large wp-image-4021" /></a><br />
+<a href="http://www.ohiofi.com/blog/wp-content/uploads/2014/05/Screenshot-2014-05-13-15.21.17-e1400029199891.jpg"><img src="{{ site.baseurl }}/assets/Screenshot-2014-05-13-15.21.17-e1400029199891-300x257.jpg" alt="Screenshot 2014-05-13 15.21.17" width="300" height="257" class="alignright size-medium wp-image-4028" /></a>After adding that, you can use the macro [caption id="attachment_4035" align="alignnone" width="92"]<img src="{{ site.baseurl }}/assets/setback1.jpg" alt="&lt;&lt;setback&gt;&gt;" width="92" height="14" class="size-full wp-image-4035" />[/caption] on any page in which you would like to change the background image. Be sure to include the URL for the image. Like this:</p>
+<blockquote><p><img src="{{ site.baseurl }}/assets/setback2.jpg" alt="&lt;&lt;setback http://ohiofi.com/img/oh.png&gt;&gt;" width="324" height="15" class="alignnone size-full wp-image-4036" /></p></blockquote>
+<p><code>
+<pre>&lt;&lt;setback http://ohiofi.com/img/oh.png&gt;&gt;</pre>
+<p></code></p>
+<p>Finally, you might want to include some CSS like this:<br />
+<code>
+<pre>body {
+<blockquote style="font-family: monospace; font-style: normal;font-size:14px;">background-repeat:no-repeat;
+background-size:100%;</blockquote>
+}</pre>
+<p></code><br />
+<a href="http://www.ohiofi.com/setbackmacrotest.html">Here is a DEMO that uses my setback macro.</a><br />
+<a href="http://www.ohiofi.com/setbackmacrotest.html"><img src="{{ site.baseurl }}/assets/Screenshot-2014-05-13-16.10.03-600x293.jpg" alt="Screenshot 2014-05-13 16.10.03" width="600" height="293" class="alignnone size-large wp-image-4041" /></a><br />
+<img class="alignnone size-full wp-image-3899" alt="mario" src="{{ site.baseurl }}/assets/mario.gif" width="300" height="224" /><br />
+<strong>This is part of a larger "How To" guide, <a href="https://docs.google.com/document/d/13Mj0cl-4_QcjhSNrH5pJd3RahtB7XLmFK_KvPdV6nQc/pub">click here for my full How To Use Twine guide</a>.</strong></p>
+<p><a href="http://www.ohiofi.com/blog/how-to-use-google-drive-to-store-high-scores-for-twine-games/">CONTINUE TO THE NEXT POST: How to use Google Drive to store High Scores for Twine games</a></p>

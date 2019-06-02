@@ -1,0 +1,134 @@
+---
+layout: post
+title: How to fix the ShareThis plugin
+date: 2012-07-31 00:03:46.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- education
+- how to
+tags:
+- Appearance
+- automatic
+- border
+- bottom
+- box
+- button
+- Buttons
+- CDATA
+- code
+- content
+- CSS
+- custom
+- customize
+- Dan Leech
+- Dashboard
+- Disable
+- e-mail
+- Editor
+- email
+- facebook
+- fix
+- header
+- height
+- hover
+- icon
+- Icons
+- img
+- message
+- opacity
+- Photoshop
+- php
+- pinterest
+- plug
+- plug-in
+- plugin
+- pop-up
+- publisher
+- ShareThis
+- sharing
+- src
+- st_username
+- st_via
+- style
+- style.css
+- tab
+- title
+- Tumblr
+- Twitter
+- type
+- URL
+- URLs
+- username
+- var
+- Wordpress
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+author:
+  login: OhioFi
+  email: 20hz20khz@gmail.com
+  display_name: OhioFi
+  first_name: ''
+  last_name: ''
+
+---
+<p>First of all, don't worry about the ShareThis settings on your WordPress Dashboard. You can leave those settings blank. We are going to use the Editor (under the Appearance tab) to add some code.</p>
+<p>Now find some pretty icons. I like these Simple Icons by Dan Leech <a href="http://www.iconarchive.com/show/simple-icons-by-danleech.html">http://www.iconarchive.com/show/simple-icons-by-danleech.html</a> I used Photoshop to paint the icons the same color, uploaded them to my site, and then used the URL links to the icons in the code below. Here is my email icon <a href="http://ohiofi.com/img/iconemail.png">http://ohiofi.com/img/iconemail.png</a>. If you like purple, you can use my icons. If you want to use different icons, you will need to replace all the URLs in the code below.</p>
+<p>You will want to replace the code that says <font style="font-family:Courier,Courier New,serif;">st_via='20hz20khz' st_username='20hz20khz'</font>. Just change <font style="font-family:Courier,Courier New,serif;">20hz20khz</font> to your Twitter username (leave off the @). When someone shares my stuff on Twitter, the st_via adds a little tag at the end that says "via @20hz20khz". When they press the Tweet button to send that message, the st_username brings up a message that says "@20hz20khz recommends that you follow @ShareThis and @20hz20khz".</p>
+<p>We are now going to add this bunch of code to the following: content-gallery.php, content-image.php, content-link.php, content-page.php, content-quote.php, content-single.php, content-video.php<br />
+Add the code after the header, before the footer, or in both places</p>
+<p style="padding-left: 30px; font-family:Courier,Courier New,serif; font-size:0.75em;">
+&lt;span class='st_email_custom' st_title='&lt;?php the_title(); ?&gt;' st_url='&lt;?php the_permalink(); ?&gt;' &gt;&lt;img class='sharingIcon' src='http://ohiofi.com/img/iconemail.png'&gt;&lt;/span&gt;<br />
+&lt;span class='st_facebook_custom' st_title='&lt;?php the_title(); ?&gt;' st_url='&lt;?php the_permalink(); ?&gt;' &gt;&lt;img class='sharingIcon' src='http://ohiofi.com/img/iconfacebook.png'&gt;&lt;/span&gt;<br />
+&lt;span class='st_twitter_custom' st_via='20hz20khz' st_username='20hz20khz' st_title='&lt;?php the_title(); ?&gt;' st_url='&lt;?php the_permalink(); ?&gt;' &gt;&lt;img class='sharingIcon' src='http://ohiofi.com/img/icontwitter.png'&gt;&lt;/span&gt;<br />
+&lt;span class='st_pinterest_custom' st_title='&lt;?php the_title(); ?&gt;' st_url='&lt;?php the_permalink(); ?&gt;' &gt;&lt;img class='sharingIcon' src='http://ohiofi.com/img/iconpinterest.png'&gt;&lt;/span&gt;<br />
+&lt;span class='st_googleplus_custom' st_title='&lt;?php the_title(); ?&gt;' st_url='&lt;?php the_permalink(); ?&gt;' &gt;&lt;img class='sharingIcon' src='http://ohiofi.com/img/icongoogleplus.png'&gt;&lt;/span&gt;<br />
+&lt;span class='st_blogger_custom' st_title='&lt;?php the_title(); ?&gt;' st_url='&lt;?php the_permalink(); ?&gt;' &gt;&lt;img class='sharingIcon' src='http://ohiofi.com/img/iconblogger.png'&gt;&lt;/span&gt;<br />
+&lt;span class='st_tumblr_custom' st_title='&lt;?php the_title(); ?&gt;' st_url='&lt;?php the_permalink(); ?&gt;' &gt;&lt;img class='sharingIcon' src='http://ohiofi.com/img/icontumblr.png'&gt;&lt;/span&gt;<br />
+&lt;span class='st_linkedin_custom' st_title='&lt;?php the_title(); ?&gt;' st_url='&lt;?php the_permalink(); ?&gt;' &gt;&lt;img class='sharingIcon' src='http://ohiofi.com/img/iconlinkedin.png'&gt;&lt;/span&gt;<br />
+&lt;span class='st_wordpress_custom' st_title='&lt;?php the_title(); ?&gt;' st_url='&lt;?php the_permalink(); ?&gt;' &gt;&lt;img class='sharingIcon' src='http://ohiofi.com/img/iconwordpress.png'&gt;&lt;/span&gt;</p>
+<p>If you are not using my purple icons, you will want to cut out the line in the next bit of code that says <font style="font-family:Courier,Courier New,serif;">border:3px solid #643c8c;</font><br />
+Next, add this code at the bottom of style.css</p>
+<p style="padding-left: 30px; font-family:Courier,Courier New,serif; font-size:0.75em;">.sharingIcon {<br />
+width:24px;<br />
+height:24px;<br />
+-moz-border-radius: 15px;<br />
+border-radius: 15px;<br />
+-moz-box-shadow: 1px 1px 3px #999999;<br />
+-webkit-box-shadow: 1px 1px 3px #999999;<br />
+box-shadow: 1px 1px 3px #999999;<br />
+border:3px solid #643c8c;<br />
+opacity:0.7;<br />
+}<br />
+.sharingIcon:hover {<br />
+-moz-box-shadow: 2px 2px 7px #333333;<br />
+-webkit-box-shadow: 2px 2px 7px #333333;<br />
+box-shadow: 2px 2px 7px #333333;<br />
+opacity:1;<br />
+}</p>
+<p>Disable the automatic pop-up box when hovering over the email and WordPress buttons by adding this code at the bottom of header.php</p>
+<p style="padding-left: 30px; font-family:Courier,Courier New,serif; font-size:0.75em;">&lt;script charset="utf-8" type="text/javascript"&gt;// &lt;![CDATA[<br />
+var switchTo5x=true;<br />
+// ]]&gt;&lt;/script&gt;&lt;script charset="utf-8" type="text/javascript" src="http://w.sharethis.com/button/buttons.js"&gt;&lt;/script&gt;&lt;script type="text/javascript"&gt;// &lt;![CDATA[<br />
+stLight.options({publisher:'wp.49a4e5dc-919b-4435-9dba-0da827893c59',onhover: false});var st_type='wordpress3.4.1';<br />
+// ]]&gt;&lt;/script&gt;</p>
+<p>This will disable the automatic pop-up box for your entire blog because the header section is part of your blog's index, pages, and every individual post.<br />
+<a href="http://www.ohiofi.com/blog/?attachment_id=1935" rel="attachment wp-att-1935"><img src="{{ site.baseurl }}/assets/24192435-300x300.jpg" alt="" title="24192435" width="300" height="300" class="alignnone size-medium wp-image-1935" /></a></p>

@@ -1,0 +1,194 @@
+---
+layout: post
+title: Twine logic
+date: 2014-05-11 12:00:22.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- education
+- games
+- how to
+tags:
+- along
+- code
+- computer
+- Equal
+- FIRST
+- Game
+- GREATER
+- health
+- item
+- LESS
+- lt
+- make
+- money
+- passage
+- player
+- print
+- return
+- SALE
+- thing
+- Twine
+- visit
+
+
+
+
+
+author:
+  login: OhioFi
+  email: 20hz20khz@gmail.com
+  display_name: OhioFi
+  first_name: ''
+  last_name: ''
+
+---
+<h2 dir="ltr">IF THIS, THEN THAT</h2>
+<p><img class="alignright size-full wp-image-3985" alt="output_2O1ZTz" src="{{ site.baseurl }}/assets/output_2O1ZTz.gif" width="252" height="126" /></p>
+<p dir="ltr">You can use <strong>if</strong> with your <a href="http://www.ohiofi.com/blog/twine-variables/">Twine variables</a> in order to hide or show things to the player. The code below says to the computer, “If the player’s health is less than one, they died. If the player’s health is greater than zero, keep playing.”</p>
+<p><code>
+<pre>
+(if: $health < 1)[
+&nbsp;&nbsp;You died. GAME OVER! 
+]
+(if: $health > 0)[
+&nbsp;&nbsp;Ouch! That hurt! Now where do you want to go?
+&nbsp;&nbsp;[[Go outside]]
+&nbsp;&nbsp;[[Go upstairs]]
+]
+</pre>
+<p></code></p>
+<p>A simpler way to check for a dead player is to use <strong>if</strong> and <strong>goto</strong> together. The code below says to the computer, “If the player’s health is less than one, send them immediately to the passage titled Game Over.”</p>
+<p><code>
+<pre>
+(if: $health < 1)[
+&nbsp;&nbsp;(goto:"Game Over") 
+]
+</pre>
+<p></code><br />
+<img class="alignright size-full wp-image-3987" alt="IF-THEN-ELSE-END_flowchart" src="{{ site.baseurl }}/assets/IF-THEN-ELSE-END_flowchart.png" width="200" height="255" /></p>
+<p dir="ltr">You can also use <strong>else</strong> along with if. The code below says to the computer, “If the player’s health is less than zero, they died. Otherwise, keep playing.”</p>
+<p><code>
+<pre>(if: $health < 1)[
+&nbsp;&nbsp;You died. GAME OVER! 
+]
+(else:)
+&nbsp;&nbsp;Ouch! That hurt! Now where do you want to go?
+&nbsp;&nbsp;[[Go outside]]
+&nbsp;&nbsp;[[Go upstairs]]
+]
+</pre>
+<p></code></p>
+<h2 dir="ltr">EQUAL TO, GREATER THAN, LESS THAN</h2>
+<p dir="ltr">In the previous examples, we used <strong>></strong> greater than and <strong><</strong> less than to compare our variables. Here are some of the most common comparisons:</p>
+<div dir="ltr">
+<table style="border: 1px solid #e3e3e3;">
+<colgroup>
+<col width="100" />
+<col width="250" /></colgroup>
+<tbody>
+<tr>
+<td>
+<p dir="ltr"><strong>is</strong></p>
+</td>
+<td>
+<p dir="ltr">Equal To</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><strong>></strong></p>
+</td>
+<td>
+<p dir="ltr">Greater Than</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><strong>>=</strong></p>
+</td>
+<td>
+<p dir="ltr">Greater Than Or Equal To</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><strong><</strong></p>
+</td>
+<td>
+<p dir="ltr">Less Than</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><strong><=</strong></p>
+</td>
+<td>
+<p dir="ltr">Less Than Or Equal To</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><strong>is not</strong></p>
+</td>
+<td>
+<p dir="ltr">Is Not Equal To</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 dir="ltr">FOR SALE</h2>
+<p><img class="alignright size-medium wp-image-3982" alt="35719137079economy4gif6" src="{{ site.baseurl }}/assets/35719137079economy4gif6-300x177.jpg" width="300" height="177" /></p>
+<p dir="ltr">If you want to sell an item to the player, you can do this:</p>
+<p><code>
+<pre>
+(if: $money >= 500)[
+&nbsp;&nbsp;[[Buy a sword for 500]]
+]
+(else:)[
+&nbsp;&nbsp;Swords cost 500, but you only have $money.
+]
+</pre>
+<p></code></p>
+<h2 dir="ltr">ONLY ON THE FIRST VISIT</h2>
+<p dir="ltr">When a player picks up an item (a key, some money, etc.), how can we make sure that the player cannot pick up that same item again? Use the code below, which says, “If the player has already visited the Blue Room, the room is empty. Otherwise, they found a key.”</p>
+<p><code>
+<pre>
+(if: (history:) contains "Blue Room")[
+&nbsp;&nbsp;The room is empty.
+]
+(else:)[
+&nbsp;&nbsp;You found a key. (set: $keys to $keys + 1)
+]
+</pre>
+<p></code><br />
+<img class="alignnone size-medium wp-image-3981" alt="7w7wej" src="{{ site.baseurl }}/assets/7w7wej-300x300.jpg" width="300" height="300" /></p>
+<h2 dir="ltr">AND IF THIS</h2>
+<p dir="ltr">Sometimes you need to say if this is true and if this other thing is true. The code below says, “If the player has flour, eggs, and sugar, they can bake cookies.”</p>
+<p><code>
+<pre>
+(if: $flour > 0 and $eggs > 0 and $sugar > 0)[
+&nbsp;&nbsp;[[Bake cookies]]
+]
+</pre>
+<p></code></p>
+<p dir="ltr">The code below says to the computer, “If the player’s health is less than or equal to zero and they have one or more lives, lose a life but keep playing. &nbsp;If the player’s health is less than or equal to zero and they have no more lives, game over.”</p>
+<p><code>
+<pre>
+(if: $health <= 0 and $lives >= 1)[
+&nbsp;&nbsp;(set: $lives to $lives – 1)
+&nbsp;&nbsp;(set: $health to 100)
+&nbsp;&nbsp;You lost a life! You have $lives lives left.
+&nbsp;&nbsp;[[Continue]]
+]
+(if: $health <= 0 and $lives <= 0)[
+&nbsp;&nbsp;You died! You are out of lives. GAME OVER!
+]
+</pre>
+<p></code><br />
+<img class="alignnone size-full wp-image-3899" alt="mario" src="{{ site.baseurl }}/assets/mario.gif" width="300" height="224" /></p>
+<p><a href="http://www.ohiofi.com/blog/twine-random-numbers/">CONTINUE TO THE NEXT POST: Twine random numbers</a></p>

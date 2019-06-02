@@ -1,0 +1,84 @@
+---
+layout: post
+title: How to Automatically Republish a Google Forms Spreadsheet
+date: 2014-08-08 17:06:29.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- education
+- how to
+tags:
+- Auto
+- automatically
+- Awesome
+- close
+- code
+- create
+- doesn
+- fix
+- form
+- function
+- google
+- google apps
+- google forms
+- google sheets
+- make
+- place
+- pop
+- problem
+- Publish
+- range
+- republish
+- results
+- script
+- sheet
+- spreadsheet
+- survey
+- Tools
+- var
+
+
+
+
+
+author:
+  login: OhioFi
+  email: 20hz20khz@gmail.com
+  display_name: OhioFi
+  first_name: ''
+  last_name: ''
+
+---
+<p><img src="{{ site.baseurl }}/assets/repub01-300x180.jpg" alt="repub01" width="300" height="180" class="alignright size-medium wp-image-4163" />You've created a Google Form and you've embedded the Google Spreadsheet of responses into your blog, website, etc. Awesome. The only problem is... it won't automatically republish whenever someone fills out the Google Form. Google was kind enough to place a checkbox for this feature, but only manual updates to the Google Spreadsheet will automatically republish. Unfortunately it currently doesn't republish if your spreadsheet is being updated via Google Forms.</p>
+<p>How can we fix this? We are going to create a script that will automatically make a small manual update to the spreadsheet.</p>
+<p>First of all, click the <strong>File</strong> menu, then <strong>Publish to the web...</strong>, and make sure that you have a check next to <strong>Automatically republish when changes are made</strong>.</p>
+<p>Next, click the <strong>Tools</strong> menu and then <strong>Script editor...</strong></p>
+<p><img src="{{ site.baseurl }}/assets/Screen-Shot-2014-08-08-at-4.29.33-PM-300x242.png" alt="Screen Shot 2014-08-08 at 4.29.33 PM" width="300" height="242" class="alignnone size-medium wp-image-4164" /><br />
+You may get a pop-up wizard that says "Google Apps Script" and has links to tutorials. You can just close this.</p>
+<p>Add the following code:<br />
+<code>
+<pre>function ChangeIt() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet();
+  var t = new Date();
+  var x = 'upd: ' + t;
+  var range = sheet.getRange('f1');
+  range.setValue(x);
+}</pre>
+<p></code></p>
+<p>Where I have <strong>sheet.getRange('f1')</strong>, you may need to change <strong>f1</strong> to the name of some other empty cell.</p>
+<p>Save your script and name it something like <strong>autorepublish</strong> or <strong>republishme</strong>.</p>
+<p><img src="{{ site.baseurl }}/assets/Screen-Shot-2014-08-08-at-4.41.41-PM1.png" alt="Screen Shot 2014-08-08 at 4.41.41 PM" width="136" height="120" class="alignleft size-full wp-image-4176" /><br />
+Click on the little clock icon.</p>
+<p>You will get a pop-up that says "No triggers set up. Click here to add one now." Go ahead and click to set up a trigger.</p>
+<p>There are two possible ways to set up your trigger...</p>
+<ul>
+<li>Run ChangeIt, From spreadsheet, On form submit</li>
+<li>Run ChangeIt, Time-driven, Minutes time, Every minute</li>
+</ul>
+<p>If you'd like, you can even click <strong>Add a new trigger</strong> and use both of those triggers.<br />
+<img src="{{ site.baseurl }}/assets/Screen-Shot-2014-08-08-at-4.47.40-PM-600x373.png" alt="Screen Shot 2014-08-08 at 4.47.40 PM" width="600" height="373" class="alignnone size-large wp-image-4171" /></p>
+<p>Save your current project's triggers. You will next need to authorize the app. The pop-up will say, "This app would like to: View and manage your spreadsheets in Google Drive." Click Accept.</p>
+<p><img src="{{ site.baseurl }}/assets/Screen-Shot-2014-08-08-at-5.00.05-PM-300x202.png" alt="Screen Shot 2014-08-08 at 5.00.05 PM" width="300" height="202" class="alignright size-medium wp-image-4180" />Close your script and go back to your Google Spreadsheet. Click the <strong>Tools</strong> menu and then <strong>Script Manager...</strong> You should see ChangeIt listed here. Press the <strong>Run</strong> button to test it out.</p>

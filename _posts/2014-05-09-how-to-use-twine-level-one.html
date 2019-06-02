@@ -1,0 +1,107 @@
+---
+layout: post
+title: How To Use Twine, Level One
+date: 2014-05-09 22:23:22.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- education
+- games
+- how to
+tags:
+- answer
+- Blue
+- browser
+- case
+- choice
+- code
+- coffee
+- door
+- drop
+- education
+- error
+- example
+- Game
+- Games
+- link
+- message
+- New
+- page
+- passage
+- question
+- section
+- Start
+- title
+- Twine
+
+
+
+
+
+author:
+  login: OhioFi
+  email: 20hz20khz@gmail.com
+  display_name: OhioFi
+  first_name: ''
+  last_name: ''
+
+---
+<p>Each section of your Twine project is a box called a passage. To add a passage, you <em>could</em> click the green +Passage button in the bottom-right corner, but the easiest way is to simply create a link. Twine 2 will automatically create a New Passage for you every time you create a link. More about creating links in a moment.<br />
+To edit a passage, double-click it.</p>
+<h2 dir="ltr">PASSAGES</h2>
+<p>A passage has three main fields: the title of the passage, tags, and the body. You can name other passages anything you like, but do not use the same passage name twice. Tags are only used for special types of code, so you can ignore the tags section. Everything that you type in the body will be shown to the player.</p>
+<p dir="ltr"><a href="http://www.ohiofi.com/blog/wp-content/uploads/2014/05/twine2.jpg"><img class="alignnone size-full wp-image-3874" alt="twine2" src="{{ site.baseurl }}/assets/twine2.jpg" width="565" height="255" /></a></p>
+<h2 dir="ltr">LINKS</h2>
+<p dir="ltr"><img class="alignleft size-full wp-image-3891" alt="link" src="{{ site.baseurl }}/assets/link.gif" width="30" height="32" /><img class="alignleft size-full wp-image-3891" alt="link" src="{{ site.baseurl }}/assets/link.gif" width="30" height="32" /><img class="alignleft size-full wp-image-3891" alt="link" src="{{ site.baseurl }}/assets/link.gif" width="30" height="32" />Links between passages are shown as arrows between passages. Links are like doors to other passages. They are the same as being told to turn to another page in a Choose Your Own Adventure book. Links are marked in the text of a passage by two square brackets:</p>
+<p><code></p>
+<pre>[[This is a link]]</pre>
+<p></code></p>
+<p dir="ltr">The text between the brackets must match the title of the passage that it links to. Passage titles are case-sensitive, which means that “Blue door” and “BLUE DOOR” are NOT the same.</p>
+<p><img class="alignnone size-full wp-image-3905" alt="twine5" src="{{ site.baseurl }}/assets/twine51.jpg" width="500" height="255" /></p>
+<h2 dir="ltr">HIDING LINKS</h2>
+<p><img class="alignright size-full wp-image-3902" alt="hiding" src="{{ site.baseurl }}/assets/hiding.gif" width="250" height="131" /></p>
+<p dir="ltr">It is possible to change what text is shown to the player for a link. This can come in handy if you want to hide the title of the passage from the player. You can do that with an arrow, like this:</p>
+<p><code></p>
+<pre>[[The text you want to display->The REAL Passage Title]]</pre>
+<p></code></p>
+<p dir="ltr">For example: You may want to send the player to a passage called “Wrong” without letting them know that the link they are clicking is wrong. You can do this:</p>
+<p><code></p>
+<pre>[[New York City is the capital of New York->Wrong]]</pre>
+<p></code></p>
+<p dir="ltr">If your project has a broken link in it, it is shown in red, and clicking it shows an error message:</p>
+<blockquote>
+<p dir="ltr"><a href="http://www.ohiofi.com/blog/wp-content/uploads/2014/05/twine4.jpg"><img class="alignnone size-full wp-image-3883" alt="twine4" src="{{ site.baseurl }}/assets/twine4.jpg" width="243" height="22" /></a></p>
+</blockquote>
+<p dir="ltr">Here is an example of a passage body with links:</p>
+<p><code></p>
+<pre>You decide to go to the hotel dining room.
+You [[read the newspaper]] and order a coffee.
+You get the strange feeling that some is watching you.
+
+[[Look behind you]]
+[[Hide under the table]]
+[[Go back to your room->You lose]]</pre>
+<p></code><br />
+<img class="size-full wp-image-3897" alt="who-wants-to-be-a-millionaire1" src="{{ site.baseurl }}/assets/who-wants-to-be-a-millionaire1.gif" width="300" height="153" /></p>
+<h2 dir="ltr">MULTIPLE CHOICE QUIZ</h2>
+<p>Here is an example of a multiple choice question with links:<br />
+<code></p>
+<pre>
+<p dir="ltr">How many sides does an octagon have?</p>
+<p dir="ltr">[[7->Wrong]]
+[[8->Question 2]]
+[[9->Wrong]]</p></pre>
+<p></code></p>
+<p dir="ltr">The correct answer takes the player to a passage called “Question 2.” All of the incorrect answers take you to a passage called “Wrong” which could look like this:</p>
+<p><code></p>
+<pre>I’m sorry. That is incorrect.
+Click the back arrow and try again.</pre>
+<p></code></p>
+<h2 dir="ltr">VIEWING YOUR PROJECT</h2>
+<p dir="ltr">To view your project, click the Play button in the bottom-right. Twine will open your project in a new browser tab.</p>
+<p dir="ltr">To save your finished project, click the menu in the bottom-left with the name of your project and then Publish to File. The project will save as an HTML file (a webpage).</p>
+<p><img class="alignnone size-full wp-image-3899" alt="mario" src="{{ site.baseurl }}/assets/mario.gif" width="300" height="224" /></p>
+<p><a href="http://www.ohiofi.com/blog/twine-pictures-gifs-and-background-images/">CONTINUE TO THE NEXT POST: Twine Pictures, GIFs, and Background Images</a></p>

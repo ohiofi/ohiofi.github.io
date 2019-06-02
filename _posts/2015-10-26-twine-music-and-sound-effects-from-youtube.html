@@ -1,0 +1,131 @@
+---
+layout: post
+title: Twine Music and Sound Effects from YouTube
+date: 2015-10-26 12:07:22.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- education
+- games
+- how to
+tags:
+- audio
+- background
+- code
+- Embed
+- end
+- frameborder
+- height
+- hidden
+- iframe
+- music
+- passage
+- player
+- sfx
+- Sound
+- sound effects
+- src
+- Twine
+- twine 2
+- URL
+- video
+- width
+- YouTube
+- zelda
+
+
+
+
+
+author:
+  login: OhioFi
+  email: 20hz20khz@gmail.com
+  display_name: OhioFi
+  first_name: ''
+  last_name: ''
+
+---
+<p><img src="{{ site.baseurl }}/assets/ezgif.com-gif-maker.gif" alt="ezgif.com-gif-maker" width="300" height="109" class="alignright size-full wp-image-5933" /><br />
+<h3>SOUND EFFECTS</h3>
+<p>We will start by talking about an easy way to add Sound Effects which will stop playing whenever the player moves to a new passage. After you find your YouTube video, click Share and Embed. Copy the <strong>iframe</strong> code. If you want the video hidden, change the width and height to zero. If you want the video to autoplay, add <strong>?autoplay=1</strong> to the end of the video URL. Keep in mind that this method will NOT allow you to add background music that plays continuously throughout the game. We will discuss how to add background music below these examples.</p>
+<p><code style="font-size:11px">
+<pre>
+
+&lt;iframe width="0" height="0" src="https://www.youtube.com/embed/9NcPvmk4vfo<strong>?autoplay=1</strong>"&gt;&lt;/iframe&gt; 
+
+</pre>
+<p></code></p>
+<p><img src="{{ site.baseurl }}/assets/shareembed-600x401.jpg" alt="shareembed" width="600" height="401" class="alignnone size-large wp-image-5929" /></p>
+<p>Here are a few Legend of Zelda sound effects and their iframe embed code.<br />
+Item:<br />
+<code style="font-size:11px">
+<pre>
+
+&lt;iframe width="0" height="0" src="https://www.youtube.com/embed/ly5C2dAUF-o?autoplay=1"&gt;&lt;/iframe&gt; 
+
+</pre>
+<p></code><br />
+Secret:<br />
+<code style="font-size:11px">
+<pre>
+
+&lt;iframe width="0" height="0" src="https://www.youtube.com/embed/c8YNB9zVlHE?autoplay=1"&gt;&lt;/iframe&gt; 
+
+</pre>
+<p></code><br />
+Game Over:<br />
+<code style="font-size:11px">
+<pre>
+
+&lt;iframe width="0" height="0" src="https://www.youtube.com/embed/3ye2TjzeX70?autoplay=1"&gt;&lt;/iframe&gt; 
+
+</pre>
+<p></code></p>
+<h3>BACKGROUND MUSIC</h3>
+<p>To add background music that plays continuously throughout the game, first click on the menu in the bottom left and add the following code to the Story JavaScript.</p>
+<p><code style="font-size:11px">
+<pre>
+
+if(typeof YouTubeTunes == "undefined"){
+$('body').append('&lt;div id="youtubetunes"&gt;&lt;/div&gt;');
+var YouTubeTunes = {
+play: function(id){
+console.log('YouTubeTunes:' + id);
+if(this.current != id){
+this.current = id;
+var container = $('#youtubetunes');
+container.empty();
+container.append('&lt;iframe src="https://youtube.googleapis.com/v/' + id +
+'?autoplay=1&amp;amp;loop=1&amp;amp;playlist='+ id +
+'" style="visibility:hidden;width:500px;height:500px;position:absolute;top:-1000px;left:-1000px;">&lt;/iframe&gt;');
+} else {
+console.log('already playing');}},
+stop: function(){
+$('#youtubetunes').empty();
+this.current = "";
+console.log('stopped youtubetunes');}};
+window.YouTubeTunes = YouTubeTunes;}
+
+</pre>
+<p></code></p>
+<p>Next, add this code to the passage in which you want the music to start playing.<br />
+<code style="font-size:11px">
+<pre>
+
+&lt;div style="display:none;"&gt;&lt;img src=";P" onerror="YouTubeTunes.play('<strong>UyxR8RNoaIQ</strong>');"&gt;&lt;/div&gt;
+
+</pre>
+<p></code></p>
+<p>Using that last code you can play the audio from any YouTube video. For example, to play the audio from <a href="https://www.youtube.com/watch?v=5lF1XV9g29k">https://www.youtube.com/watch?v=</a><strong>5lF1XV9g29k</strong> you need to replace <strong>UyxR8RNoaIQ</strong> with <strong>5lF1XV9g29k</strong>. Like this...<br />
+<code style="font-size:11px">
+<pre>
+
+&lt;div style="display:none;"&gt;&lt;img src=";P" onerror="YouTubeTunes.play('<strong>5lF1XV9g29k</strong>');"&gt;&lt;/div&gt;
+
+</pre>
+<p></code></p>
+<p><img src="{{ site.baseurl }}/assets/ezgif.com-gif-maker-1.gif" alt="ezgif.com-gif-maker (1)" width="300" height="173" class="alignnone size-full wp-image-5935" /><br />
+<a href="http://www.ohiofi.com/blog/twine-battle/">CONTINUE TO THE NEXT POST: Twine Battle</a></p>
