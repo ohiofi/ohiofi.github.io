@@ -29,18 +29,20 @@
             <div class="card-header">
             </div>
             <div class="card-body">
-              Follow @20hz20khz on Twitter
+              <p><a href="https://www.twitter.com/20hz20khz"><small>Follow @20hz20khz on Twitter</small></a></p>
               <br>
-              YouTube.com/20hz20khz
+              <p><a href="https://www.youtube.com/20hz20khz"><small>YouTube.com/20hz20khz</small></a></p>
               <br>
-              Recent Posts
-              <ul>
-                {% for p in site.posts limit:50 %}
-                  <li>
-                    <a href="{{site.baseurl}}{{p.url}}"><small>{{p.title}}</small></a>
-                  </li>
-                {% endfor %}
-              </ul>
+              <p>
+                <small>Recent Posts</small>
+                <ul>
+                  {% for p in site.posts limit:50 %}
+                    <li>
+                      <a href="{{site.baseurl}}{{p.url}}"><small>{{p.title}}</small></a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </p>
             </div>
             <div class="card-footer">
             </div>
