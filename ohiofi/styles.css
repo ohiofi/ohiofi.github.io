@@ -62,7 +62,8 @@ li{
 .PageNavigation {
   font-size: 14px;
   display: block;
-  width: auto;
+  float:left;
+  width: 100%;
   overflow: hidden;
 }
 
