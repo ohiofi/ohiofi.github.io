@@ -18,36 +18,31 @@ layout: default
       <div class="card-footer">
       </div>
     </div>
-
-    <!-- <li>
-
-      <!-- <p>{{post.meta}}</p> -->
-      <!-- <p>{{post.content}}</p>
-    </li> -->
   {% endfor %}
   <br>
-<!-- prev next buttons -->
-<div class="container">
-<!-- Pagination links -->
-<div class="pagination">
-<center>
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">
-      Previous
-    </a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-	&nbsp;-&nbsp;
-  <span class="page_number ">
-    Page: {{ paginator.page }} of {{ paginator.total_pages }}
-  </span>
-	&nbsp;-&nbsp;
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
-  {% endif %}
-</center>
-</div>
-</div>
+  <hr>
+  <!-- prev next buttons -->
+  <div class="container">
+    <!-- Pagination links -->
+    <div class="pagination">
+      <center>
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path }}" class="previous">
+            Previous
+          </a>
+        {% else %}
+          <span class="previous">Previous</span>
+        {% endif %}
+      	&nbsp;-&nbsp;
+        <span class="page_number ">
+          Page: {{ paginator.page }} of {{ paginator.total_pages }}
+        </span>
+      	&nbsp;-&nbsp;
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+        {% else %}
+          <span class="next ">Next</span>
+        {% endif %}
+      </center>
+    </div>
+  </div>
