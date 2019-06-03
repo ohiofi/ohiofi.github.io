@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/styles.css">
     <meta name="viewport" content="width=device-width">
     <!-- <meta name="description" content=""> -->
-    <title>{% if post.title %}{{post.title}} · {% endif %}OhioFi.com</title>
+    <title>{% if page.title %}{{page.title}} · {% endif %}OhioFi.com</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -16,26 +16,53 @@
   </head>
 <body class="text-bababa">
   {% include nav.html navclass="navtop" %}
-  <br>
   <div class="container">
-    <div class="card darkbg">
-      <div class="card-header">
-        <a class="text-white" href="{{post.url}}"><h3 class="card-title">{{page.title}}</h3></a>
+    <div class="row">
+      <div class="col-12 col-lg-9">
+        {{content}}
+        <br>
+        <div class="PageNavigation">
+          {% if page.previous.url %}
+            <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+          {% endif %}
+          {% if page.next.url %}
+            <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+          {% endif %}
+        </div>
+        <br>
       </div>
-      <div class="card-body">
-
-        <!-- <h4 >Card title</h4> -->
-        <p class="card-text">{{page.content}}</p>
-        <!-- <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a> -->
+      <div class="col-12 col-lg-3">
+        <br>
+        <!-- sidebar -->
+        <div class="container">
+          <div class="card darkbg">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+              <p><a class="text-white" href="https://www.twitter.com/20hz20khz"><small>Follow @20hz20khz on Twitter</small></a></p>
+              <br>
+              <p><a class="text-white" href="https://www.youtube.com/20hz20khz"><small>YouTube.com/20hz20khz</small></a></p>
+              <br>
+              <p>
+                <small>Recent Posts</small>
+                <ul>
+                  {% for p in site.posts limit:50 %}
+                    <li>
+                      <a class="text-white" href="{{site.baseurl}}{{p.url}}"><small>{{p.title}}</small></a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </p>
+            </div>
+            <div class="card-footer">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card-footer">
-      </div>
-    </div>
   </div>
-  
   <br>
-  <hr width="10%">
+  &nbsp;
   <br>
+  {% include nav.html navclass="navbottom" %}
 </body>
 </html>
