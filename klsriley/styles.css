@@ -4,6 +4,10 @@ body{
 div.jumbotron.footer{
   margin-bottom: 0px;
 }
+.fine-print{
+  font-size:.4em!important;
+  font-weight:100!important;
+}
 h1{
   font: 71px/58px Impact,Helvetica,arial,sans-serif!important;
   text-transform: uppercase!important;
@@ -51,4 +55,22 @@ img.title{
   position:absolute;
   top:10px!important;
   right:10px!important;
+}
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  float:left;
+  width: 100%;
+  overflow: hidden;
+}
+
+.PageNavigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNavigation .next {
+  text-align: right;
 }
