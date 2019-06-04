@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="jumbotron bg-white">
+    <img class="title col-lg-12 d-none d-md-block" src="/assets/1-Sunset-1-30-20152.jpg" alt="Kelly Riley's Online Classroom">
+    <h1>KELLY RILEY'S ONLINE CLASSROOM</h1>
+    <small>Learner, teacher, reader, writer, gifted coordinator, ed tech geek, music ed evangelist</small>
+
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNav" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNav">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          {% if page.url == "/" %}
+            <li class="nav-item active">
+          {% else %}
+            <li class="nav-item">
+          {% endif %}
+            <a class="nav-link" href="{{site:baseurl}}/index.html">
+              <h3>BLOG HOME</h3>
+            </a>
+          </li>
+          {% if page.url == "/for-students/" %}
+            <li class="nav-item active">
+          {% else %}
+            <li class="nav-item">
+          {% endif %}
+            <a class="nav-link" href="/for-students/">
+              <h3>FOR STUDENTS</h3>
+            </a>
+          </li>
+          {% if page.url == "/for-students/online-music-games/" %}
+            <li class="nav-item active">
+          {% else %}
+            <li class="nav-item">
+          {% endif %}
+            <a class="nav-link" href="/for-students/online-music-games/">
+              <h3>MUSIC GAMES</h3>
+            </a>
+          </li>
+
+          {% if page.url == "/bio/" %}
+            <li class="nav-item active">
+          {% else %}
+            <li class="nav-item">
+          {% endif %}
+            <a class="nav-link" href="/bio/">
+              <h3>ABOUT MRS. RILEY</h3>
+            </a>
+          </li>
+          {% if page.url == "/contact/" %}
+            <li class="nav-item active">
+          {% else %}
+            <li class="nav-item">
+          {% endif %}
+            <a class="nav-link" href="/contact/">
+              <h3>CONTACT</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
