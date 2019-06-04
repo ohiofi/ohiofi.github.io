@@ -1,8 +1,20 @@
 body{
   font-size: 1.4rem!important;
+  background-image: url(/assets/bodytile.jpg);
+  background: #fff url(/assets/bodytile.jpg) repeat left top;
+}
+.card{
+  border: 5px solid rgba(0,0,0,.125)!important;
+  border-radius:10px!important;
+  overflow:hidden!important;
+}
+.card-header a{
+  /* border-bottom: 3px solid black!important;
+  text-decoration: underline!important; */
 }
 div.jumbotron.footer{
-  margin-bottom: 0px;
+  margin-bottom: 0px!important;
+  background-color: #9fcef1!important;
 }
 .fine-print{
   font-size:.4em!important;
@@ -11,6 +23,9 @@ div.jumbotron.footer{
 h1{
   font: 71px/58px Impact,Helvetica,arial,sans-serif!important;
   text-transform: uppercase!important;
+}
+h2{
+  font-size:4rem!important;
 }
 h2,h3,h4,h5{
     font-family: Impact, Helvetica, arial, sans-serif;important;
@@ -37,6 +52,9 @@ img.title{
   padding-left:0px!important;
   padding-right:0px!important;
 }
+.jumbotronTop{
+  background:none!important;
+}
 /* .navbar,.navbar-collapse{
   padding-right: 0px!important;
 } */
@@ -44,12 +62,21 @@ img.title{
   padding-left: 0px!important;
   padding-right: 10px!important;
 } */
+li.active{
+  border-bottom: 3px solid black!important;
+}
 .nav-link {
-  padding-left: 0px!important;
-  padding-right: 0px!important;
+  padding: 0px!important;
 }
 .nav-item{
   margin-left:30px;
+  margin-top:5px;
+}
+.navbar{
+  padding: .5rem 0 .5rem 1rem;
+}
+.navbar-collapse{
+  padding-right:0px;
 }
 .navbar-toggler{
   position:absolute;

@@ -27,9 +27,13 @@
 <body>
   {% include nav.html %}
   <div class="container">
-    <h1>{{page.title}}</h1>
-    <br>
-    {{content}}
+    <div class="card">
+      <div class="card-body">
+        <h2>{{page.title}}</h2>
+        <br>
+        {{content}}
+      </div>
+    </div>
     <br>
     <hr>
     <div class="PageNavigation float-left">
