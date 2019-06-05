@@ -40,18 +40,18 @@ tags:
 - Twine games
 - type
 - value
-
-
-
-
-
+meta:
+  _edit_last: '1'
+  _thumbnail_id: '4064'
+  _wpas_done_all: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1559630076;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:3921;}i:1;a:1:{s:2:"id";i:3908;}i:2;a:1:{s:2:"id";i:6047;}}}}
 author:
   login: OhioFi
   email: 20hz20khz@gmail.com
   display_name: OhioFi
   first_name: ''
   last_name: ''
-
+permalink: "/blog/how-to-use-google-drive-to-store-high-scores-for-twine-games/"
 ---
 <p><img class="alignright size-full wp-image-4064" src="{{ site.baseurl }}/assets/Screen-Shot-2014-05-31-at-6.18.51-PM.png" alt="Screen Shot 2014-05-31 at 6.18.51 PM" width="340" height="340" />The first thing that you will obviously need is a Twine game that stores the player’s points as a variable. To do this, write a bit of code like this in the Start passage: <strong>&lt;&lt;set $points = 100&gt;&gt;</strong>. Any time that you need to change the player’s points during the game, use some code like this: <strong>&lt;&lt;set $points = $points + 5&gt;&gt;</strong> or this: <strong>&lt;&lt;set $points = $points - 7&gt;&gt;</strong> <em>As a side note, it's possible to use shorthand like this <strong>&lt;&lt;set $points += 5&gt;&gt;</strong> to add or subtract points, but I prefer to teach the former code to my elementary and middle school students because I believe that <strong>&lt;&lt;set $points = $points + 5&gt;&gt;</strong> is easier to comprehend.</em></p>
 <p>Your Twine game will also need to store the player’s name. An easy way to ask the player their name is to use this code:<br />
@@ -63,7 +63,7 @@ author:
 <img class="alignnone size-full wp-image-4081" src="{{ site.baseurl }}/assets/Screen-Shot-2014-05-31-at-6.02.18-PMb.png" alt="Screen Shot 2014-05-31 at 6.02.18 PMb" width="453" height="40" /><br />
 to...<br />
 <img class="alignnone size-full wp-image-4054" src="{{ site.baseurl }}/assets/Screen-Shot-2014-05-31-at-6.02.18-PM.png" alt="Screen Shot 2014-05-31 at 6.02.18 PM" width="453" height="40" /><br />
-<a href="#"><img src="{{ site.baseurl }}/assets/Screen-Shot-2014-06-01-at-7.12.09-PMb-300x300.png" alt="Screen Shot 2014-06-01 at 7.12.09 PMb" width="300" height="300" class="alignnone size-medium wp-image-4086" /></a><br />
+<a href="http://www.ohiofi.com/blog/wp-content/uploads/2014/05/Screen-Shot-2014-06-01-at-7.12.09-PMb.png"><img src="{{ site.baseurl }}/assets/Screen-Shot-2014-06-01-at-7.12.09-PMb-300x300.png" alt="Screen Shot 2014-06-01 at 7.12.09 PMb" width="300" height="300" class="alignnone size-medium wp-image-4086" /></a><br />
 ...and paste all of this into the last passage of your Twine game.</p>
 <p>Type <strong>&lt;html&gt;</strong> before the HTML code that you just pasted and type <strong>&lt;/html&gt;</strong> after it.</p>
 <p>Create a new Script passage, then copy and paste the following code:</p>

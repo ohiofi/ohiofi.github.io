@@ -37,68 +37,70 @@ tags:
 - teacher
 - test
 - type
-
-
-
-
-
+meta:
+  _edit_last: '1'
+  _thumbnail_id: '6241'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1559679277;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:5871;}i:1;a:1:{s:2:"id";i:4192;}i:2;a:1:{s:2:"id";i:4049;}}}}
+  _wpas_done_all: '1'
 author:
   login: OhioFi
   email: 20hz20khz@gmail.com
   display_name: OhioFi
   first_name: ''
   last_name: ''
-
+permalink: "/blog/multiselect/"
 ---
-<p><a href="#"><img src="{{ site.baseurl }}/assets/multi06-300x222.jpg" alt="multi06" width="300" height="222" class="alignright size-medium wp-image-6229" /></a>A multi-select question (a.k.a. multiple select question) asks the student to mark ALL of the correct options. Students receive points for both marked correct options AND unmarked incorrect options. This type of question is slightly more difficult to grade because the teacher must give points for unmarked incorrect answers. Also, self-grading quizzes using Google Forms with either Flubaroo or the built-in Quiz feature will not correctly grade these questions (they're graded either 100% correct or wrong). In order to correctly grade these questions, we can use this Google Sheets formula:<br />
+<p><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi06.jpg"><img src="{{ site.baseurl }}/assets/multi06-300x222.jpg" alt="multi06" width="300" height="222" class="alignright size-medium wp-image-6229" /></a>A multi-select question (a.k.a. multiple select question) asks the student to mark ALL of the correct options. Students receive points for both marked correct options AND unmarked incorrect options. This type of question is slightly more difficult to grade because the teacher must give points for unmarked incorrect answers. Also, self-grading quizzes using Google Forms with either Flubaroo or the built-in Quiz feature will not correctly grade these questions (they're graded either 100% correct or wrong). In order to correctly grade these questions, we can use this Google Sheets formula:<br />
 <code>
 <pre>=countif(C2,"*correct*")+countif(C2,"*correct*")+countif(C2,"<>*notcorrect*")+countif(C2,"<>*notcorrect*")</pre>
 <p></code></p>
-
-<table><tr>
-<td><a href="#"><img src="{{ site.baseurl }}/assets/multi01-300x202.jpg" alt="multi01" width="300" height="202" class="alignleft size-medium wp-image-6224" /></a> <strong>Step 1:</strong> Create your Google Forms test/quiz as usual. <strong>DON'T FORGET</strong> to go to settings (the gear icon in the top right) and check Collect Email Address, Restrict To Local School District Users, and Limit To 1 Response.</td>
-</tr></table>
-<table><tr>
-<td><a href="#"><img src="{{ site.baseurl }}/assets/multi03-300x221.jpg" alt="multi03" width="300" height="221" class="alignleft size-medium wp-image-6232" /></a> <strong>Step 2:</strong> Choose <strong>Checkboxes</strong> from the drop-down box</td>
-</tr></table>
-<table><tr>
-<td><a href="#"><img src="{{ site.baseurl }}/assets/multi04-300x215.jpg" alt="multi04" width="300" height="215" class="alignleft size-medium wp-image-6231" /></a> <strong>Step 3:</strong> Shuffle the options</td>
-</tr></table>
-<table><tr>
-<td><a href="#"><img src="{{ site.baseurl }}/assets/multi06-300x222.jpg" alt="multi06" width="300" height="222" class="alignleft size-medium wp-image-6229" /></a> <strong>Step 4:</strong> Click the Eye icon and fill out the Answer Key. This can be done before OR after the students take the test/quiz.</td>
-</tr></table>
-<table><tr>
-<td><a href="#"><img src="{{ site.baseurl }}/assets/multi07-300x186.jpg" alt="multi07" width="300" height="186" class="alignleft size-medium wp-image-6227" /></a> <strong>Step 5:</strong> After students have taken the test/quiz, click Responses and then click the green Google Sheets button. This creates a spreadsheet that contains all of the student responses.</td>
-</tr></table>
-<table><tr>
-<td><a href="#"><img src="{{ site.baseurl }}/assets/multi09b-300x167.jpg" alt="multi09b" width="300" height="167" class="alignleft size-medium wp-image-6262" /></a> <strong>Step 6:</strong> Beneath all of the student responses, we are going to calculate their scores. You may want to create new headings for this section. For example... Username, Q1 Points, Q2 Points, and Total.</td>
-</tr></table>
-<table><tr>
-<td><a href="#"><img src="{{ site.baseurl }}/assets/multi10b-300x166.jpg" alt="multi10b" width="300" height="166" class="alignleft size-medium wp-image-6263" /></a> <strong>Step 7:</strong> Use the code <font style="font-family:Courier New, fixed-width";font-size:12px;><strong>=B2</strong> to replicate the first student's username.</td>
-</tr></table>
-<table><tr>
-<td><a href="#"><img src="{{ site.baseurl }}/assets/multi11-300x180.jpg" alt="multi11" width="300" height="180" class="alignleft size-medium wp-image-6234" /></a> <strong>Step 6b:</strong> Copy the first cell and paste it into the cells below it. One way to do this is by clicking the dot in the bottom-right of the cell then dragging down. This will automatically replicate all of the students' usernames.</td>
-</tr></table>
-<table><tr>
-<td style="bottom-border:none;"><a href="#"><img src="{{ site.baseurl }}/assets/multi13-300x151.jpg" alt="multi13" width="300" height="151" class="alignleft size-medium wp-image-6235" /></a> <strong>Step 7:</strong> Copy the Google Sheets formula from the top of the page and paste it in the cell below Q1 points. You will need to change all of the "*correct*" into your correct responses (for example, "*Jupiter*" and "*Mars*" and "*Neptune*" are all correct). You will need to change all of the "<>*incorrect*" into your incorrect responses (for example, "<>*Ares* is an incorrect response and "<>*Poseiden*" is another incorrect). Your finished code will look something like this...<br />
-</td>
-</tr></table>
+<table>
+<tr>
+<td><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi01.jpg"><img src="{{ site.baseurl }}/assets/multi01-300x202.jpg" alt="multi01" width="300" height="202" class="alignleft size-medium wp-image-6224" /></a> <strong>Step 1:</strong> Create your Google Forms test/quiz as usual. <strong>DON'T FORGET</strong> to go to settings (the gear icon in the top right) and check Collect Email Address, Restrict To Local School District Users, and Limit To 1 Response.</td>
+</tr>
+<tr>
+<td><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi03.jpg"><img src="{{ site.baseurl }}/assets/multi03-300x221.jpg" alt="multi03" width="300" height="221" class="alignleft size-medium wp-image-6232" /></a> <strong>Step 2:</strong> Choose <strong>Checkboxes</strong> from the drop-down box</td>
+</tr>
+<tr>
+<td><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi04.jpg"><img src="{{ site.baseurl }}/assets/multi04-300x215.jpg" alt="multi04" width="300" height="215" class="alignleft size-medium wp-image-6231" /></a> <strong>Step 3:</strong> Shuffle the options</td>
+</tr>
+<tr>
+<td><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi06.jpg"><img src="{{ site.baseurl }}/assets/multi06-300x222.jpg" alt="multi06" width="300" height="222" class="alignleft size-medium wp-image-6229" /></a> <strong>Step 4:</strong> Click the Eye icon and fill out the Answer Key. This can be done before OR after the students take the test/quiz.</td>
+</tr>
+<tr>
+<td><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi07.jpg"><img src="{{ site.baseurl }}/assets/multi07-300x186.jpg" alt="multi07" width="300" height="186" class="alignleft size-medium wp-image-6227" /></a> <strong>Step 5:</strong> After students have taken the test/quiz, click Responses and then click the green Google Sheets button. This creates a spreadsheet that contains all of the student responses.</td>
+</tr>
+<tr>
+<td><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi09b.jpg"><img src="{{ site.baseurl }}/assets/multi09b-300x167.jpg" alt="multi09b" width="300" height="167" class="alignleft size-medium wp-image-6262" /></a> <strong>Step 6:</strong> Beneath all of the student responses, we are going to calculate their scores. You may want to create new headings for this section. For example... Username, Q1 Points, Q2 Points, and Total.</td>
+</tr>
+<tr>
+<td><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi10b.jpg"><img src="{{ site.baseurl }}/assets/multi10b-300x166.jpg" alt="multi10b" width="300" height="166" class="alignleft size-medium wp-image-6263" /></a> <strong>Step 7:</strong> Use the code <font style="font-family:Courier New, fixed-width";font-size:12px;><strong>=B2</strong> to replicate the first student's username.</td>
+</tr>
+<tr>
+<td><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi11.jpg"><img src="{{ site.baseurl }}/assets/multi11-300x180.jpg" alt="multi11" width="300" height="180" class="alignleft size-medium wp-image-6234" /></a> <strong>Step 6b:</strong> Copy the first cell and paste it into the cells below it. One way to do this is by clicking the dot in the bottom-right of the cell then dragging down. This will automatically replicate all of the students' usernames.</td>
+</tr>
+<tr style="bottom-border:none;">
+<td style="bottom-border:none;"><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi13.jpg"><img src="{{ site.baseurl }}/assets/multi13-300x151.jpg" alt="multi13" width="300" height="151" class="alignleft size-medium wp-image-6235" /></a> <strong>Step 7:</strong> Copy the Google Sheets formula from the top of the page and paste it in the cell below Q1 points. You will need to change all of the "*correct*" into your correct responses (for example, "*Jupiter*" and "*Mars*" and "*Neptune*" are all correct). You will need to change all of the "<>*incorrect*" into your incorrect responses (for example, "<>*Ares* is an incorrect response and "<>*Poseiden*" is another incorrect). Your finished code will look something like this...<br />
+<code />
 <pre>=countif(C2,"*Jupiter*")+countif(C2,"*Mars*")+countif(C2,"*Neptune*")+countif(C2,"<>*Ares*")+countif(C2,"<>*Poseiden*")</pre>
-<table><tr>
-<td><a href="#"><img src="{{ site.baseurl }}/assets/multi14b-300x293.jpg" alt="multi14b" width="300" height="293" class="alignleft size-medium wp-image-6270" /></a> <strong>Step 7b:</strong> Copy the first Q1 Points cell and paste it into the cells below it. One way to do this is by clicking the dot in the bottom-right of the cell then dragging down. This will automatically calculate all of the students' scores for question 1. </td>
-</tr></table>
-<table><tr>
-<td><a href="#"><img src="{{ site.baseurl }}/assets/multi14-300x141.jpg" alt="multi14" width="300" height="141" class="alignleft size-medium wp-image-6237" /></a> <strong>Step 7c:</strong> Add the <span style="font-family:monospace,fixed-width;font-size:12px;"><strong>=countif</strong></span> code for other questions. For example, if the correct options were Athena, Aphrodite, and Hera and the incorrect options were Juno and Venus, then your code would look something like this...<br />
 </td>
-</tr></table>
+</tr>
+<tr>
+<td><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi14b.jpg"><img src="{{ site.baseurl }}/assets/multi14b-300x293.jpg" alt="multi14b" width="300" height="293" class="alignleft size-medium wp-image-6270" /></a> <strong>Step 7b:</strong> Copy the first Q1 Points cell and paste it into the cells below it. One way to do this is by clicking the dot in the bottom-right of the cell then dragging down. This will automatically calculate all of the students' scores for question 1. </td>
+</tr>
+<tr>
+<td><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi14.jpg"><img src="{{ site.baseurl }}/assets/multi14-300x141.jpg" alt="multi14" width="300" height="141" class="alignleft size-medium wp-image-6237" /></a> <strong>Step 7c:</strong> Add the <font style="font-family:Courier New, fixed-width";font-size:12px;><strong>=countif</strong> code for other questions. For example, if the correct options were Athena, Aphrodite, and Hera and the incorrect options were Juno and Venus, then your code would look something like this...<br />
+<code />
 <pre>=countif(D2,"*Athena*")+countif(D2,"*Aphrodite*")+countif(D2,"*Hera*")+countif(D2,"<>*Juno*")+countif(D2,"<>*Venus*")</pre>
-<table><tr>
-<td><a href="#"><img src="{{ site.baseurl }}/assets/multi17b-300x259.jpg" alt="multi17b" width="300" height="259" class="alignleft size-medium wp-image-6271" /></a> <strong>Step 7d:</strong> Copy the first Q2 Points cell and paste it into the cells below it. One way to do this is by clicking the dot in the bottom-right of the cell then dragging down. This will automatically calculate all of the students' scores for question 2. </td>
-</tr></table>
-<table><tr>
-<td><a href="#"><img src="{{ site.baseurl }}/assets/multi15b-300x183.jpg" alt="multi15b" width="300" height="183" class="alignleft size-medium wp-image-6273" /></a> <strong>Step 8:</strong> In the first Total cell, type the code <font style="font-family:Courier New, fixed-width";font-size:12px;><strong>=sum(</strong> and then click-and-drag to select all of the scores for the first student. This will calculate the first student's total score.</td>
-</tr></table>
-<table><tr>
-<td><a href="#"><img src="{{ site.baseurl }}/assets/multi18-300x180.jpg" alt="multi18" width="300" height="180" class="alignleft size-medium wp-image-6241" /></a> <strong>Step 8b:</strong> Copy the first Total cell and paste it into the cells below it. One way to do this is by clicking the dot in the bottom-right of the cell then dragging down. This will automatically calculate all of the students' total scores. </td>
+</td>
+</tr>
+<tr>
+<td><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi17b.jpg"><img src="{{ site.baseurl }}/assets/multi17b-300x259.jpg" alt="multi17b" width="300" height="259" class="alignleft size-medium wp-image-6271" /></a> <strong>Step 7d:</strong> Copy the first Q2 Points cell and paste it into the cells below it. One way to do this is by clicking the dot in the bottom-right of the cell then dragging down. This will automatically calculate all of the students' scores for question 2. </td>
+</tr>
+<tr>
+<td><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi15b.jpg"><img src="{{ site.baseurl }}/assets/multi15b-300x183.jpg" alt="multi15b" width="300" height="183" class="alignleft size-medium wp-image-6273" /></a> <strong>Step 8:</strong> In the first Total cell, type the code <font style="font-family:Courier New, fixed-width";font-size:12px;><strong>=sum(</strong> and then click-and-drag to select all of the scores for the first student. This will calculate the first student's total score.</td>
+</tr>
+<tr>
+<td><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi18.jpg"><img src="{{ site.baseurl }}/assets/multi18-300x180.jpg" alt="multi18" width="300" height="180" class="alignleft size-medium wp-image-6241" /></a> <strong>Step 8b:</strong> Copy the first Total cell and paste it into the cells below it. One way to do this is by clicking the dot in the bottom-right of the cell then dragging down. This will automatically calculate all of the students' total scores. </td>
 </tr>
 </table>
