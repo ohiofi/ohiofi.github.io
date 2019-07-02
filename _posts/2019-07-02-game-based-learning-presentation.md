@@ -14,7 +14,7 @@
   - Games4Change
   - game-based learning
 ---
-  
+
 This post is a 2016 presentation that I gave for a graduate class.
 
 ![game-based learning title slide](/assets/Screen Shot 2019-07-02 at 1.42.54 PM.png)
@@ -111,4 +111,4 @@ What experiences do you have with gaming in the classroom?
 Resources for creating badges…
 * [https://www.canva.com/features/badges/](https://www.canva.com/features/badges/)
 * [http://www.onlinebadgemaker.com/](http://www.onlinebadgemaker.com/)
-* Google Drawings
+* [Google Drawings](https://docs.google.com/drawings/)
