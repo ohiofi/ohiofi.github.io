@@ -46,7 +46,7 @@ h1{
 img{
   border-radius:.4em;
   margin:5px 15px 10px 0px;
-  float:left;
+  /* float:left; */
 }
 img.navbottom{
   display:none;
