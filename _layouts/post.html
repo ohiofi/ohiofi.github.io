@@ -20,8 +20,12 @@
     <div class="row">
       <div class="col-12 col-lg-12">
         <br>
-        <h2>{{page.title}}</h2>
-        <p>{{ page.date | date: "%B %d, %Y" }}</p>
+        <div class="card darkbg">
+          <div class="card-body">
+            <h2>{{page.title}}</h2>
+            <p>{{ page.date | date: "%B %d, %Y" }}</p>
+          </div>
+        </div>
         <p>
           {{content}}
         </p>
