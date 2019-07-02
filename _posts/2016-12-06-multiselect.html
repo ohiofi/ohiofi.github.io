@@ -74,7 +74,7 @@ permalink: "/blog/multiselect/"
 <div><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi09b.jpg"><img src="{{ site.baseurl }}/assets/multi09b-300x167.jpg" alt="multi09b" width="300" height="167" class=" size-medium wp-image-6262" /></a> <strong>Step 6:</strong> Beneath all of the student responses, we are going to calculate their scores. You may want to create new headings for this section. For example... Username, Q1 Points, Q2 Points, and Total.</div>
 
 
-<div><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi10b.jpg"><img src="{{ site.baseurl }}/assets/multi10b-300x166.jpg" alt="multi10b" width="300" height="166" class=" size-medium wp-image-6263" /></a> <strong>Step 7:</strong> Use the code <pre><strong>=B2</strong></pre> to replicate the first student's username.</div>
+<div><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi10b.jpg"><img src="{{ site.baseurl }}/assets/multi10b-300x166.jpg" alt="multi10b" width="300" height="166" class=" size-medium wp-image-6263" /></a> <strong>Step 7:</strong> Use the code <pre>=B2</pre> to replicate the first student's username.</div>
 
 
 <div><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi11.jpg"><img src="{{ site.baseurl }}/assets/multi11-300x180.jpg" alt="multi11" width="300" height="180" class=" size-medium wp-image-6234" /></a> <strong>Step 6b:</strong> Copy the first cell and paste it into the cells below it. One way to do this is by clicking the dot in the bottom-right of the cell then dragging down. This will automatically replicate all of the students' usernames.</div>
@@ -89,7 +89,7 @@ permalink: "/blog/multiselect/"
 <div><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi14b.jpg"><img src="{{ site.baseurl }}/assets/multi14b-300x293.jpg" alt="multi14b" width="300" height="293" class=" size-medium wp-image-6270" /></a> <strong>Step 7b:</strong> Copy the first Q1 Points cell and paste it into the cells below it. One way to do this is by clicking the dot in the bottom-right of the cell then dragging down. This will automatically calculate all of the students' scores for question 1. </div>
 
 
-<div><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi14.jpg"><img src="{{ site.baseurl }}/assets/multi14-300x141.jpg" alt="multi14" width="300" height="141" class=" size-medium wp-image-6237" /></a> <strong>Step 7c:</strong> Add the <font style="font-family:Courier New, fixed-width";font-size:12px;><strong>=countif</strong> code for other questions. For example, if the correct options were Athena, Aphrodite, and Hera and the incorrect options were Juno and Venus, then your code would look something like this...<br />
+<div><a href="http://www.ohiofi.com/blog/wp-content/uploads/2016/12/multi14.jpg"><img src="{{ site.baseurl }}/assets/multi14-300x141.jpg" alt="multi14" width="300" height="141" class=" size-medium wp-image-6237" /></a> <strong>Step 7c:</strong> Add the <pre>=countif</pre> code for other questions. For example, if the correct options were Athena, Aphrodite, and Hera and the incorrect options were Juno and Venus, then your code would look something like this...<br />
 
 <pre>=countif(D2,"*Athena*")+countif(D2,"*Aphrodite*")+countif(D2,"*Hera*")+countif(D2,"<>*Juno*")+countif(D2,"<>*Venus*")</pre>
 </div>
