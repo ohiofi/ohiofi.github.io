@@ -8,7 +8,7 @@ layout: default
       <div class="card-header">
         <a class="text-white" href="{{post.url}}"><h3 class="card-title">{{post.title}}</h3></a>
 			<small class="small">
-				{{ post.date | date_to_string }}
+				{{ post.date | date: "%B %d, %Y" }}
 			</small>
       </div>
       <div class="card-body">
