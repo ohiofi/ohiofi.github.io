@@ -72,7 +72,7 @@ You found $randomtreasure coins in the treasure chest!
 <h2 dir="ltr">PICTURES AND ANIMATED GIFS</h2>
 <p dir="ltr">You can use <strong>&lt;img src=" "&gt;</strong> to add pictures and animated gif files to your game. Make sure that you only use one angle bracket on each side, not two. The web address of the file needs to go in between the "quotation marks," like this:</p>
 <p><code>
-<pre>&lt;img src="http://www.ohiofi.com/img/catdance1.gif"&gt;</pre>
+<pre>&lt;img src="http://{{site.baseurl}}/img/catdance1.gif"&gt;</pre>
 <p></code></p>
 <h2 dir="ltr">STYLE</h2>
 <p><img src="{{ site.baseurl }}/assets/nyan.gif" alt="nyan" width="250" height="188" class="float-right size-full wp-image-4013" />
@@ -84,7 +84,7 @@ Here is some basic CSS that can be used with Harlowe, the default Twine 2 theme.
 <pre><blockquote style="font-family: monospace; font-style: normal;">@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 
 .mars { <strong>/* A background named 'mars' */</strong>
-&nbsp;&nbsp;background-image: url("http://www.ohiofi.com/img/mars.jpg");
+&nbsp;&nbsp;background-image: url("http://{{site.baseurl}}/img/mars.jpg");
 &nbsp;&nbsp;background-size: cover;
 }
 
