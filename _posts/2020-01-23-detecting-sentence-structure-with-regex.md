@@ -35,7 +35,7 @@ var myarray = result.match(/(["’"]?.*?(Mr|Ms|Mrs|Dr|Capt|Col)+\.\s.*?[\.!\?]+[
 
 Here is the final result using that regex...
 
-> <p style="text-indent:60px">
+<p style="text-indent:60px">
 Luke returns to Queens to await another visions, and he is saved from Vader's gunfire and doesn't like hats because Snape killed him" (referring to a kiss she gave him in return Strange studies under the influence the next movie. Luke and the Tesseract, an energy source of a Jedi. Later, Obi-Wan explains that Gotham with her own life at stake, Anna rushes in front of them, grieving as Ginny comforts him with his best friends and Asgard's forces.
 </p>
 <p style="text-indent:60px">
