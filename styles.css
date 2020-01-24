@@ -11,7 +11,7 @@ a{
 body{
   /* padding:10px; */
   background-color:#222222!important;
-  fontsize:1.1em!important;
+  font-size:1.1em!important;
 }
 button.navbottom{
   display:none;
@@ -87,7 +87,7 @@ pre{
   /* background-color:#888;
   background-color:#343a40;
   background-color:#848a90; */
-  background-color:#bababa;
+  background-color:#9a9a9a;
   border:1px solid #000;
   border-radius:.4em;
   margin:10px 10px 10px 0px;
