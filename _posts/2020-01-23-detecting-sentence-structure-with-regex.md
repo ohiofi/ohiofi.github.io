@@ -12,13 +12,13 @@
   - Markov chain
   
 ---
-This afternoon I was working on a Markov chain project that would build n-grams from texts (movie and tv show synopses) and then generate "crossover" texts that combine the movies/tv shows. Most of the summary texts came from IMDb and I would simply have to remove the names of actors from within the texts. For example...
+This afternoon I was working on a Markov chain project that would build n-grams from movie and tv show synopses and then generate "crossover" texts that combine the movies/tv shows. Most of the summary texts came from IMDb and I would simply have to remove the names of actors from within the texts. For example...
 
 > Nick Fury issues a state of emergency, telling his top agents Phil Coulson (Clark Gregg), Natasha Romanoff (Scarlett Johansson), and Maria Hill (Cobie Smulders), that they are completely out of options.
 
 Removing these actor name is the first bit of regex: `/\(.*?\)/`
 
-Include the white space before the first parenthesis like this: `/\s(.*?\)/`
+Include the white space before the first parenthesis like this: `/\s\(.*?\)/`
 
 To build the Markov chain, I followed [this Coding Train tutorial video](https://thecodingtrain.com/CodingChallenges/042.1-markov-chains.html). Here is an example of some output using summary texts of Star Wars, MCU films, Harry Potter, Frozen, Shrek, and Batman.  
 
