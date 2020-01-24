@@ -10,7 +10,8 @@ a{
 }
 body{
   /* padding:10px; */
-  background-color:#111!important;
+  background-color:#222222!important;
+  fontsize:1.1em!important;
 }
 button.navbottom{
   display:none;
@@ -22,7 +23,7 @@ button.navtop{
   border-radius:.4em!important;
 }
 .card-body{
-  background-color:#111!important;
+  background-color:#222222!important;
   overflow:hidden;
 }
 .col-6,.col-lg-4{
