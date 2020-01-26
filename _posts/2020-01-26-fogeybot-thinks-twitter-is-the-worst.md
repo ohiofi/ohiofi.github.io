@@ -3,15 +3,15 @@ layout: post
 title: FogeyBot Thinks Twitter is the Worst
 date: 2020-01-26
 categories:
-	-	coding
-
+-coding
 tags:
-	-	Twitter
-	-	programming
-	-	coding
-	-	bots
-	-	spam
-	-	jazz
+-Twitter
+-programming
+-coding
+-bots
+-spam
+-jazz
+
 ---
 
 A few years ago I had the idea of creating a Twitterbot that would make recommendations. If someone tweets "Recommend a movie" it would randomly reply with a classic movie. This idea was interesting, but wasn’t very funny. I eventually decided that a better idea would be to reply to any "Recommend me music" tweets with incredibly old big band leaders (Glenn Miller and Benny Goodman) and jazz crooners (Bing Crosby and Frank Sinatra). In July of 2015, I made FogeyBot:
@@ -30,24 +30,24 @@ I eventually expanded the oldies that it would recommend, but tried to limit it 
 
 I originally coded the bot to run on a hourly basis. Eventually a few people complained and the bot was in "Twitter jail" for sending spam. I rewrote the bot so that it replied to tweets directed at it. Send a tweet such as "@fogeybot what music do you like?" Or "@fogeybot what should I listen to?" You will get a random reply such as:
 
-	* Nothin' beats John Lee Hooker... except maybe Howlin' Wolf
-	* Hows about Tony Bennett?
-	* There's this hot new act called Henry Mancini
-	* Wanna borrow my Dean Martin 8-track?
+  * Nothin' beats John Lee Hooker... except maybe Howlin' Wolf
+  * Hows about Tony Bennett?
+  * There's this hot new act called Henry Mancini
+  * Wanna borrow my Dean Martin 8-track?
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I recommend Conway Twitty <a href="https://twitter.com/earwigtheband?ref_src=twsrc%5Etfw">@earwigtheband</a> "<a href="https://twitter.com/fogeybot?ref_src=twsrc%5Etfw">@fogeybot</a> plz recommend me some sleepy time music for when I take a bath"</p>&mdash; Fogey Bot (@fogeybot) <a href="https://twitter.com/fogeybot/status/626003683830960130?ref_src=twsrc%5Etfw">July 28, 2015</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 Next, I added some old fogey ramblings. This was a lot of fun to write. Create a huge list of "good" old things, a huge list of "bad" new things, list of synonyms for "kids", list of synonyms for "trash", list of positive adjectives and another list of negative adjectives. Once a week, fogeybot will tweet out a random rant:
 
-	- Back when I was a youngen, there was no filthy Myspace Top 8 and I turned out fine
-	- Parents these days should give their youngens Upton Sinclair's 'The Jungle' not annoying Apple dongle
-	- Girl Ghostbusters?!! Pedestrian diddly!!!!!!!1
-	- Does anyone else remember back when the Lindbergh Baby used to be good?
-	- Is it just me or is terrible Selfie Stick literally the worst thing ever?
-	- Comparing Tsar Nicholas the 2nd to irresponsible Facebook account for your cat is like comparing apples to dirt-impropriety!
-	- Wish I was born before all this senseless emoticon foolishness balderdash
-	- When I was a pubescent with big bands vs moppets nowadays with their hideous Gangnam Style shenanigans
+- Back when I was a youngen, there was no filthy Myspace Top 8 and I turned out fine
+- Parents these days should give their youngens Upton Sinclair's 'The Jungle' not annoying Apple dongle
+- Girl Ghostbusters?!! Pedestrian diddly!!!!!!!1
+- Does anyone else remember back when the Lindbergh Baby used to be good?
+- Is it just me or is terrible Selfie Stick literally the worst thing ever?
+- Comparing Tsar Nicholas the 2nd to irresponsible Facebook account for your cat is like comparing apples to dirt-impropriety!
+- Wish I was born before all this senseless emoticon foolishness balderdash
+- When I was a pubescent with big bands vs moppets nowadays with their hideous Gangnam Style shenanigans
 	
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Is it just me or is Twitter literally the worst thing ever?</p>&mdash; Fogey Bot (@fogeybot) <a href="https://twitter.com/fogeybot/status/626905164293738496?ref_src=twsrc%5Etfw">July 31, 2015</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
