@@ -1,16 +1,16 @@
 ---
-layout: post
-title: FogeyBot Thinks Twitter is the Worst
-date: 2020-01-26
-categories:
--coding
-tags:
--Twitter
--programming
--coding
--bots
--spam
--jazz
+  layout: post
+  title: FogeyBot Thinks Twitter is the Worst
+  date: 2020-01-26
+  categories:
+  - coding
+  tags:
+  - Twitter
+  - programming
+  - coding
+  - bots
+  - spam
+  - jazz
 
 ---
 
