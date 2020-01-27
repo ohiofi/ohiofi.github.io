@@ -8,9 +8,9 @@
       <br>
       <p>
         <small class="smaller">RECENT POSTS</small>
-        <ul>
+        <ul class="recentPosts">
           {% for p in site.posts limit:50 %}
-            <li>
+            <li class="recentPosts">
               <a class="text-white" href="{{site.baseurl}}{{p.url}}"><small class="smaller">{{p.title}}</small></a>
             </li>
           {% endfor %}
