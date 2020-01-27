@@ -62,8 +62,9 @@ li{
   margin-bottom:10px;
   margin:10px 0px 10px 0px;
   padding:0px;
-  list-style-type: none!important;
+/*   list-style-type: none!important; */
   line-height: 1em;
+  font-weight: 100;
 }
 .PageNavigation {
   font-size: 14px;
@@ -97,6 +98,10 @@ pre{
   max-width: 100%;
   overflow-x: scroll;
 }
+.recentPosts{
+  list-style-type: none!important;
+  padding-inline-start: 0px;
+}
 .roundedimg{
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
@@ -110,7 +115,7 @@ pre{
   color:#bababa;
 }
 ul{
-  padding-inline-start: 0px;
+/*   padding-inline-start: 0px; */
 }
 ul.navtop{
   margin-left:auto!important;
