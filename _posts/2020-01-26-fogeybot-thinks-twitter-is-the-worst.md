@@ -32,7 +32,7 @@ I eventually expanded the oldies that it would recommend, but tried to limit it 
 
 <blockquote class="twitter-tweet"><p lang="fr" dir="ltr">I recommend Mel Tormé <a href="https://t.co/PwxyEfJkCT">https://t.co/PwxyEfJkCT</a></p>&mdash; Fogey Bot (@fogeybot) <a href="https://twitter.com/fogeybot/status/1210817669512908800?ref_src=twsrc%5Etfw">December 28, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-I originally coded the bot to run on a hourly basis. Eventually a few people complained and the bot was in "Twitter jail" for sending spam. I rewrote the bot so that it replied to tweets directed at it. Send a tweet such as "@fogeybot what music do you like?" Or "@fogeybot what should I listen to?" You will get a random reply such as:
+I originally coded the bot to run on a hourly basis. Eventually enough people complained and the bot was in "Twitter jail" for sending spam. I rewrote the bot so that it replied to tweets directed at it. Send a tweet such as "@fogeybot what music do you like?" Or "@fogeybot what should I listen to?" You will get a random reply such as:
 
   * Nothin' beats John Lee Hooker... except maybe Howlin' Wolf
   * Hows about Tony Bennett?
