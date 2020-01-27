@@ -30,10 +30,10 @@ The text is fun and rambling, but it might be easier to read if it were separate
 Google searches turn up long lines of regex that seem to always fail when I test them at [regex101.com](https://regex101.com). After a bit of trial and error, I end up using the following regex:
 
 ```
-var myarray = result.match(/(["’"]?.*?(Mr|Ms|Mrs|Dr|Capt|Col)+\.\s.*?[\.!\?]+["’"]?\s|["’"]?[^\.!\?]+[\.!\?]+["’"]?\s|[^\.!\?]+[\.!\?]+\s)/g);
+var myarray = result.match(/(((Mr|Ms|Mrs|Dr|Capt|Col)\.\s+[A-Z])|["’“A-Z]).*?((Mr|Ms|Mrs|Dr|Capt|Col)\.\s+[A-Z].*?)?[.?!]+["’”]?(\s(?=[A-Z"])|$)/g);
 ```
 
-Here is the final result using that regex...
+A sentance starts with either a title (Mr, Ms, Mrs, Dr, Capt, Col), a quotation mark, or a capital letter. A sentance might contain a title. A sentance ends with punctuation (period, question mark, or exclamation mark), possibly followed by a quotation mark, followed by a space, and then either a capital letter, quotation mark, or the end of the string. I didn't bother including sentances that begin/end with numbers. Here is the final result using that regex...
 
 <blockquote>
   <p style="text-indent:60px">
