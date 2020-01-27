@@ -35,15 +35,17 @@ var myarray = result.match(/(["’"]?.*?(Mr|Ms|Mrs|Dr|Capt|Col)+\.\s.*?[\.!\?]+[
 
 Here is the final result using that regex...
 
-<p style="text-indent:60px">
-Luke returns to Queens to await another visions, and he is saved from Vader's gunfire and doesn't like hats because Snape killed him" (referring to a kiss she gave him in return Strange studies under the influence the next movie. Luke and the Tesseract, an energy source of a Jedi. Later, Obi-Wan explains that Gotham with her own life at stake, Anna rushes in front of them, grieving as Ginny comforts him with his best friends and Asgard's forces.
-</p>
-<p style="text-indent:60px">
-Spending time with Yoda. They fight guards on the night in the Darkhold also comes to Elsa's curse. Anna, however, is captured for the Yellowjacket suit and unlock some advanced technology by using Vibranium comes from 1940. Escaping its collapse.
-</p>
-<p style="text-indent:60px">
-Dried lava and brimstone are everywhere. In a stunning everyone into the minds of every person in the library guarded by a dozen inmates focus their parents and they concoct a plan to eliminate the agency's enemies broken out of Arkham. He even gives Batman throws the bomb was molded from. Fox explains to Han that R2 is carrying the throne of Asgard, Odin, and with the halves of a broken, sharp pool stick and no choice but to run away, so he tracks down through a window.
-</p>
-<p style="text-indent:60px">
-Donkey tells Shrek that Fiona doesn't realise what's been happening in his name. Tony is doing a display of his weapons manufacturing company, Stark Industries.
-</p>
+<blockquote>
+  <p style="text-indent:60px">
+  Luke returns to Queens to await another visions, and he is saved from Vader's gunfire and doesn't like hats because Snape killed him" (referring to a kiss she gave him in return Strange studies under the influence the next movie. Luke and the Tesseract, an energy source of a Jedi. Later, Obi-Wan explains that Gotham with her own life at stake, Anna rushes in front of them, grieving as Ginny comforts him with his best friends and Asgard's forces.
+  </p>
+  <p style="text-indent:60px">
+  Spending time with Yoda. They fight guards on the night in the Darkhold also comes to Elsa's curse. Anna, however, is captured for the Yellowjacket suit and unlock some advanced technology by using Vibranium comes from 1940. Escaping its collapse.
+  </p>
+  <p style="text-indent:60px">
+  Dried lava and brimstone are everywhere. In a stunning everyone into the minds of every person in the library guarded by a dozen inmates focus their parents and they concoct a plan to eliminate the agency's enemies broken out of Arkham. He even gives Batman throws the bomb was molded from. Fox explains to Han that R2 is carrying the throne of Asgard, Odin, and with the halves of a broken, sharp pool stick and no choice but to run away, so he tracks down through a window.
+  </p>
+  <p style="text-indent:60px">
+  Donkey tells Shrek that Fiona doesn't realise what's been happening in his name. Tony is doing a display of his weapons manufacturing company, Stark Industries.
+  </p>
+</blockquote>
