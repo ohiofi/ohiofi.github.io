@@ -33,7 +33,7 @@ Google searches turn up long lines of regex that seem to always fail when I test
 var myarray = result.match(/(((Mr|Ms|Mrs|Dr|Capt|Col)\.\s+[A-Z])|["’“A-Z]).*?((Mr|Ms|Mrs|Dr|Capt|Col)\.\s+[A-Z].*?)?[.?!]+["’”]?(\s(?=[A-Z"])|$)/g);
 ```
 
-A sentance starts with either a title (Mr, Ms, Mrs, Dr, Capt, Col), a quotation mark, or a capital letter. A sentance might contain a title. A sentance ends with punctuation (period, question mark, or exclamation mark), possibly followed by a quotation mark, followed by a space, and then either a capital letter, quotation mark, or the end of the string. I didn't bother including sentances that begin/end with numbers. Here is the final result using that regex...
+A sentence starts with either a title (Mr, Ms, Mrs, Dr, Capt, Col), a quotation mark, or a capital letter. A sentence might contain a title. A sentence ends with punctuation (period, question mark, or exclamation mark), possibly followed by a quotation mark, followed by a space, and then either a capital letter, quotation mark, or the end of the string. I didn't bother including sentences that begin/end with numbers. Here is the final result using that regex...
 
 <blockquote>
   <p style="text-indent:60px">
