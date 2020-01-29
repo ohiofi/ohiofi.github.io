@@ -134,7 +134,7 @@ pre{
 }
 ul{
   padding-inline-start: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem!important;
 }
 ul.navtop{
   margin-left:auto!important;
