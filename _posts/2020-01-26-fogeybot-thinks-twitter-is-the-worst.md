@@ -14,7 +14,7 @@
 
 ---
 
-A few years ago I had the idea of creating a Twitterbot that would make recommendations. If someone tweets "Recommend a movie" it would randomly reply with a classic movie. This idea was interesting, but wasn’t very funny. I eventually decided that a better idea would be to reply to any "Recommend me music" tweets with incredibly old big band leaders (Glenn Miller and Benny Goodman) and jazz crooners (Bing Crosby and Frank Sinatra). In July of 2015, I made FogeyBot:
+A few years ago I had the idea of creating a Twitterbot that could make recommendations. If someone were to tweet "Recommend a movie" it could randomly reply with a classic movie. This idea was interesting, but wasn’t very funny. I eventually decided that a better idea would be to reply to any "Recommend me music" tweets with incredibly old big band leaders (Glenn Miller and Benny Goodman) and jazz crooners (Bing Crosby and Frank Sinatra). In July of 2015, I made FogeyBot:
 
 <blockquote class="twitter-tweet"><p lang="fr" dir="ltr">I recommend Mel Tormé <a href="https://t.co/HiLPFm888T">https://t.co/HiLPFm888T</a></p>&mdash; Fogey Bot (@fogeybot) <a href="https://twitter.com/fogeybot/status/1155357231791001600?ref_src=twsrc%5Etfw">July 28, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -32,7 +32,7 @@ I eventually expanded the oldies that it would recommend, but tried to limit it 
 
 <blockquote class="twitter-tweet"><p lang="fr" dir="ltr">I recommend Mel Tormé <a href="https://t.co/PwxyEfJkCT">https://t.co/PwxyEfJkCT</a></p>&mdash; Fogey Bot (@fogeybot) <a href="https://twitter.com/fogeybot/status/1210817669512908800?ref_src=twsrc%5Etfw">December 28, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-I originally coded the bot to run on a hourly basis. Eventually enough people complained and the bot was in "Twitter jail" for sending spam. I rewrote the bot so that it replied to tweets directed at it. Send a tweet such as "@fogeybot what music do you like?" Or "@fogeybot what should I listen to?" You will get a random reply such as:
+I originally coded the bot to run on an hourly basis. Eventually enough people complained and the bot was in "Twitter jail" for sending spam. I rewrote the bot so that it replied to tweets directed at it. Send a tweet such as "@fogeybot what music do you like?" Or "@fogeybot what should I listen to?" You will get a random reply such as:
 
   * Nothin' beats John Lee Hooker... except maybe Howlin' Wolf
   * Hows about Tony Bennett?
@@ -52,7 +52,7 @@ Next, I added some old fogey ramblings. This was a lot of fun to write. Create a
 - Comparing Tsar Nicholas the 2nd to irresponsible Facebook account for your cat is like comparing apples to dirt-impropriety!
 - Wish I was born before all this senseless emoticon foolishness balderdash
 - When I was a pubescent with big bands vs moppets nowadays with their hideous Gangnam Style shenanigans
-	
+
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Is it just me or is Twitter literally the worst thing ever?</p>&mdash; Fogey Bot (@fogeybot) <a href="https://twitter.com/fogeybot/status/626905164293738496?ref_src=twsrc%5Etfw">July 31, 2015</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Lads these days need less IMDB bull and more swing music</p>&mdash; Fogey Bot (@fogeybot) <a href="https://twitter.com/fogeybot/status/1043520557113851905?ref_src=twsrc%5Etfw">September 22, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
