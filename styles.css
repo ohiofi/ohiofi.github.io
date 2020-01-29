@@ -38,6 +38,9 @@ button.navtop{
   margin-top:5px!important;
   margin-bottom:5px!important;
 }
+.container,.container-fluid{
+  padding:0 2rem;
+}
 .current{
   background-color:blue;
 }
@@ -73,6 +76,11 @@ li{
 /*   list-style-type: none!important; */
   line-height: 1em;
   font-weight: 100;
+}
+p{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-indent: 0;
 }
 .PageNavigation {
   font-size: 14px;
@@ -118,14 +126,15 @@ pre{
 .smaller{
   font-size:50%!important;
 }
-.text-ccc{
-  color:#ccc;
+.text-eee{
+  color:#eee;
 }
 .text-bababa{
   color:#bababa;
 }
 ul{
-/*   padding-inline-start: 0px; */
+  padding-inline-start: 2rem;
+  margin-bottom: 2rem;
 }
 ul.navtop{
   margin-left:auto!important;
