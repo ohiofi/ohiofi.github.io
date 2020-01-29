@@ -39,7 +39,7 @@ button.navtop{
   margin-bottom:5px!important;
 }
 .container,.container-fluid{
-  padding:0 2rem;
+  padding:0 4rem!important;
 }
 .current{
   background-color:blue;
