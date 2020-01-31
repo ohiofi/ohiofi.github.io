@@ -1,8 +1,8 @@
-a,small,p,h1,h2,h3,h4,.btn{
-  font-weight: 100!important;
+small,p,h1,h2,h3,h4,.btn{
+  font-weight: 300!important;
 }
-a{
-  font-weight:100!important;
+a,li,blockquote{
+  font-weight:200!important;
   /* color: #8731b9!important; */
 }
 .darkbg{
@@ -13,7 +13,6 @@ blockquote{
   border-left: 6px solid #424242;
   padding-left: 1.2rem;
   line-height: 1.75rem;
-  font-weight: 200;
   color: #bbb;
 }
 body{
@@ -75,7 +74,6 @@ li{
   padding:0px;
 /*   list-style-type: none!important; */
   line-height: 1em;
-  font-weight: 100;
 }
 p{
   margin-bottom: 2rem!important;
