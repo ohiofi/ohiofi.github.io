@@ -75,3 +75,7 @@ This post consists of notes to myself, so that I can remember the commands to cr
     ```
     
     
+1.  Use app.listen to log tests. Run the tests with the command
+    ```
+    node index.js
+    ```
