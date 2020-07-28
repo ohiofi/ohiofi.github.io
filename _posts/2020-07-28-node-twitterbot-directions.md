@@ -36,7 +36,13 @@ This post consists of notes to myself, so that I can remember the commands to cr
     npm install express
     ```
 
-1.  Create empty .env, .env_sample, and index.js files
+1.  Create empty .env_sample, and index.js files. Add this to env_sample.
+    ```
+    CONSUMER_KEY = ...
+    CONSUMER_SECRET = ...
+    ACCESS_KEY = ...
+    ACCESS_SECRET = ...
+    ```
 
 1.  Create a public branch for Github and publish it
     ```
@@ -78,4 +84,11 @@ This post consists of notes to myself, so that I can remember the commands to cr
 1.  Use app.listen to log tests. Run the tests with the command
     ```
     node index.js
+    ```
+1.  Create .env and add the API keys
+    ```
+    CONSUMER_KEY = ...
+    CONSUMER_SECRET = ...
+    ACCESS_KEY = ...
+    ACCESS_SECRET = ...
     ```
