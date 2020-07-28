@@ -49,7 +49,7 @@ This post consists of notes to myself, so that I can remember the commands to cr
     git checkout -b GithubPublic
     git push -u origin GithubPublic
     ```
-1.  Go to the website for the Github repo, click Settings>Branches, and change GithubPublic to be the default branch
+1.  Go to the website for the Github repo, click Settings > Branches, and change GithubPublic to be the default branch
 
 1.  Add .env and node_modules/ to .gitignore and commit to GithubPublic
     ```
