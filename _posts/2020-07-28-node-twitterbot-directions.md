@@ -29,13 +29,11 @@ This post consists of notes to myself, so that I can remember the commands to cr
     ```
     npm asks questions and builds a package.json file.
 
-1.  Install dotenv package
+1.  Install some packages
     ```
     npm install dotenv
-    ```
-1.  Install the twit package
-    ```
     npm install twit
+    npm install express
     ```
 
 1.  Create empty .env, .env_sample, and index.js files
