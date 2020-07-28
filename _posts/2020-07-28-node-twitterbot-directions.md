@@ -85,10 +85,23 @@ This post consists of notes to myself, so that I can remember the commands to cr
     ```
     node index.js
     ```
-1.  Create .env and add the API keys
+1.  Create .env and add the API keys, then run tests.
     ```
     CONSUMER_KEY = ...
     CONSUMER_SECRET = ...
     ACCESS_KEY = ...
     ACCESS_SECRET = ...
     ```
+1.  Switch to the master/main branch. Add a file named Procfile that contains the following
+    ```
+    worker: node index.js
+    ```
+1.  Go to Heroku. New > Create New App. 
+    ```
+    heroku login
+    heroku git:remote -a goodnitebot
+    git add .
+    git commit -am "make it better"
+    git push heroku master
+    ```
+1.  
