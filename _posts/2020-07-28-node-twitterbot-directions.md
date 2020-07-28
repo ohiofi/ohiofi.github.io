@@ -10,6 +10,10 @@
   - coding
   - bots
   - spam
+  - Node
+  - Heroku
+  - git
+  - GitHub
 
 ---
 
@@ -29,4 +33,16 @@ This post consists of notes to myself, so that I can remember the commands to cr
     ```
     npm install dotenv
     ```
-1.  Create .env and .env_sample files
+1.  Install the twit package
+    ```
+    npm install twit
+    ```
+
+1.  Create .env, .env_sample, and index.js files
+
+1.  Create a public branch for Github
+    ```
+    git checkout -b GithubPublic
+    git push -u origin GitHubPublic
+    ```
+1.  Go to the website for the Github repo, click Settings>Branches, and change GithubPublic to be the default branch
