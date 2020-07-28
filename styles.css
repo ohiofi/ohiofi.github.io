@@ -18,7 +18,7 @@ blockquote{
 body{
   /* padding:10px; */
   background-color:#222222!important;
-  font-size:1.6em!important;
+  /*font-size:1.2em!important;*/
 }
 button.navbottom{
   display:none;
