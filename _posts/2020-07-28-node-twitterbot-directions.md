@@ -38,11 +38,19 @@ This post consists of notes to myself, so that I can remember the commands to cr
     npm install twit
     ```
 
-1.  Create .env, .env_sample, and index.js files
+1.  Create empty .env, .env_sample, and index.js files
 
-1.  Create a public branch for Github
+1.  Create a public branch for Github and publish it
     ```
     git checkout -b GithubPublic
-    git push -u origin GitHubPublic
+    git push -u origin GithubPublic
     ```
 1.  Go to the website for the Github repo, click Settings>Branches, and change GithubPublic to be the default branch
+
+1.  Add .env and node_modules/ to .gitignore and commit to GithubPublic
+    ```
+    .env
+    node_modules/
+    ```
+
+1.  Write code in index.js
