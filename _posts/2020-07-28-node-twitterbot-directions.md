@@ -58,15 +58,15 @@ This post consists of notes to myself, so that I can remember the commands to cr
     const express = require('express');
     const app = express();
     require('dotenv').config();
-    let Twit = require('twit');
-    var T = new Twit({
-      consumer_key:         process.env.CONSUMER_KEY,
-      consumer_secret:      process.env.CONSUMER_SECRET,
-      access_token:         process.env.ACCESS_KEY,
-      access_token_secret:  process.env.ACCESS_SECRET,
-      timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
-      strictSSL:            true,     // optional - requires SSL certificates to be valid.
-    });
+    // let Twit = require('twit');
+    // var T = new Twit({
+    //   consumer_key:         process.env.CONSUMER_KEY,
+    //   consumer_secret:      process.env.CONSUMER_SECRET,
+    //   access_token:         process.env.ACCESS_KEY,
+    //   access_token_secret:  process.env.ACCESS_SECRET,
+    //   timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
+    //   strictSSL:            true,     // optional - requires SSL certificates to be valid.
+    // });
     
     // yr code here
     
