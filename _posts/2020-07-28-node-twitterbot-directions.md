@@ -81,11 +81,11 @@ This post consists of notes to myself, so that I can remember the commands to cr
     ```
     
     
-1.  Use app.listen to log tests. Run the tests with the command
+1.  Use app.listen to log _local_, console-based tests. Run the tests with the command
     ```
     node index.js
     ```
-1.  Create .env and add the API keys, then run tests.
+1.  Commit/push the GithubPublic branch. Create .env and add the API keys, then run _live_ tests that post to Twitter.
     ```
     CONSUMER_KEY = ...
     CONSUMER_SECRET = ...
@@ -96,7 +96,7 @@ This post consists of notes to myself, so that I can remember the commands to cr
     ```
     worker: node index.js
     ```
-1.  Go to Heroku. New > Create New App. 
+1.  Check that .gitignore is empty. Go to Heroku's website. New > Create New App. 
     ```
     heroku login
     heroku git:remote -a goodnitebot
@@ -104,4 +104,4 @@ This post consists of notes to myself, so that I can remember the commands to cr
     git commit -am "make it better"
     git push heroku master
     ```
-1.  
+1.  Back to Heroku's website. Click on your app, then Resources. Edit > disable Web > Confirm. Edit > _enable_ Worker > Confirm. Check Twitter.
