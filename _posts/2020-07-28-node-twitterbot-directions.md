@@ -24,6 +24,7 @@ This post consists of notes to myself, so that I can remember the commands to cr
 1.  Create a .gitignore with .env and node_modules/ 
     ```
     .env
+    .DS_Store
     node_modules/
     ```
 
@@ -79,23 +80,23 @@ This post consists of notes to myself, so that I can remember the commands to cr
     ```
     node index.js
     ```
-    
-
-1.  Commit and push to Github. Create a public branch for Github and publish it
-    ```
-    git checkout -b GithubPublic
-    git push -u origin GithubPublic
-    ```
-1.  Go to the website for the Github repo, click Settings > Branches, and change GithubPublic to be the default branch
-
-    
-1.  Commit/push the GithubPublic branch. Switch to the master/main branch. Create .env and add the API keys, then run _live_ tests that post to Twitter.
+1.  Create .env and add the API keys, then run _live_ tests that post to Twitter.
     ```
     CONSUMER_KEY = ...
     CONSUMER_SECRET = ...
     ACCESS_KEY = ...
     ACCESS_SECRET = ...
     ```
+
+1.  Commit and push to Github. Create a public branch for Github and publish it
+    ```
+    git checkout -b Github_Public
+    git push -u origin Github_Public
+    ```
+1.  Go to the website for the Github repo, click Settings > Branches, and change Github_Public to be the default branch
+
+1.  Commit/push the Github_Public branch. Switch to the master/main branch.
+
 1.  Add a file named Procfile that contains the following
     ```
     worker: node index.js
