@@ -21,7 +21,11 @@ This post consists of notes to myself, so that I can remember the commands to cr
 
 1.  Create a Github repo and clone it locally
 
-1.  Create an empty .gitignore
+1.  Create a .gitignore with .env and node_modules/ 
+    ```
+    .env
+    node_modules/
+    ```
 
 1.  Use npm to generate the initial project.
     ```
@@ -48,8 +52,8 @@ This post consists of notes to myself, so that I can remember the commands to cr
     const express = require('express');
     const app = express();
     require('dotenv').config();
-    // let Twit = require('twit');
-    // var T = new Twit({
+    const Twit = require('twit');
+    // const T = new Twit({
     //   consumer_key:         process.env.CONSUMER_KEY,
     //   consumer_secret:      process.env.CONSUMER_SECRET,
     //   access_token:         process.env.ACCESS_KEY,
@@ -77,18 +81,13 @@ This post consists of notes to myself, so that I can remember the commands to cr
     ```
     
 
-1.  Create a public branch for Github and publish it
+1.  Commit and push to Github. Create a public branch for Github and publish it
     ```
     git checkout -b GithubPublic
     git push -u origin GithubPublic
     ```
 1.  Go to the website for the Github repo, click Settings > Branches, and change GithubPublic to be the default branch
 
-1.  Add .env and node_modules/ to .gitignore and commit to GithubPublic
-    ```
-    .env
-    node_modules/
-    ```
     
 1.  Commit/push the GithubPublic branch. Switch to the master/main branch. Create .env and add the API keys, then run _live_ tests that post to Twitter.
     ```
