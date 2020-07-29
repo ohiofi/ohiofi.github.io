@@ -66,6 +66,17 @@ This post consists of notes to myself, so that I can remember the commands to cr
     );
     ```
 
+
+1.  Write your code in index.js
+    
+    
+    
+1.  Use app.listen to log _local_, console-based tests. Run the tests with the command
+    ```
+    node index.js
+    ```
+    
+
 1.  Create a public branch for Github and publish it
     ```
     git checkout -b GithubPublic
@@ -78,23 +89,15 @@ This post consists of notes to myself, so that I can remember the commands to cr
     .env
     node_modules/
     ```
-
-1.  Write your code in index.js
     
-    
-    
-1.  Use app.listen to log _local_, console-based tests. Run the tests with the command
-    ```
-    node index.js
-    ```
-1.  Commit/push the GithubPublic branch. Create .env and add the API keys, then run _live_ tests that post to Twitter.
+1.  Commit/push the GithubPublic branch. Switch to the master/main branch. Create .env and add the API keys, then run _live_ tests that post to Twitter.
     ```
     CONSUMER_KEY = ...
     CONSUMER_SECRET = ...
     ACCESS_KEY = ...
     ACCESS_SECRET = ...
     ```
-1.  Switch to the master/main branch. Add a file named Procfile that contains the following
+1.  Add a file named Procfile that contains the following
     ```
     worker: node index.js
     ```
