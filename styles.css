@@ -111,6 +111,7 @@ pre{
   /* width:100%; */
   max-width: 100%;
   overflow-x: scroll;
+  margin-top: 0.5rem!important;
 }
 .recentPosts{
   line-height: 0.7rem;
