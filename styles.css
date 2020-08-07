@@ -5,6 +5,10 @@ a,li,blockquote{
   font-weight:200!important;
   /* color: #8731b9!important; */
 }
+a{
+  
+  color: #7A8CA8!important;
+}
 .darkbg{
   background-color:#413677!important;
 }
