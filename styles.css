@@ -1,16 +1,28 @@
-a,small,p,h1,h2,h3,h4,.btn{
-  font-weight: 100!important;
+small,p,h1,h2,h3,h4,.btn{
+  font-weight: 300!important;
+}
+li,blockquote{
+  font-weight:200!important;
+  /* color: #8731b9!important; */
 }
 a{
-  font-weight:100!important;
-  /* color: #8731b9!important; */
+  font-weight:900!important;
+  color: #7A8CA8!important;
 }
 .darkbg{
   background-color:#413677!important;
 }
+blockquote{
+  margin: 2rem 0 1rem 0.2rem!important;
+  border-left: 6px solid #424242;
+  padding-left: 1.2rem;
+  line-height: 1.75rem;
+  color: #bbb;
+}
 body{
   /* padding:10px; */
-  background-color:#111!important;
+  background-color:#222222!important;
+  /*font-size:1.2em!important;*/
 }
 button.navbottom{
   display:none;
@@ -22,12 +34,15 @@ button.navtop{
   border-radius:.4em!important;
 }
 .card-body{
-  background-color:#111!important;
+  background-color:#222222!important;
   overflow:hidden;
 }
 .col-6,.col-lg-4{
   margin-top:5px!important;
   margin-bottom:5px!important;
+}
+.container,.container-fluid{
+  padding:0 4rem!important;
 }
 .current{
   background-color:blue;
@@ -46,7 +61,8 @@ h1{
 img{
   border-radius:.4em;
   margin:5px 15px 10px 0px;
-  float:left;
+  /* float:left; */
+  max-width: 100%;
 }
 img.navbottom{
   display:none;
@@ -60,8 +76,13 @@ li{
   margin-bottom:10px;
   margin:10px 0px 10px 0px;
   padding:0px;
-  list-style-type: none!important;
-  line-height: 1em;
+/*   list-style-type: none!important; */
+  line-height: 1.25em;
+}
+p{
+  margin-bottom: 2rem!important;
+  margin-top: 2rem!important;
+  text-indent: 0;
 }
 .PageNavigation {
   font-size: 14px;
@@ -85,7 +106,7 @@ pre{
   /* background-color:#888;
   background-color:#343a40;
   background-color:#848a90; */
-  background-color:#bababa;
+  background-color:#9a9a9a;
   border:1px solid #000;
   border-radius:.4em;
   margin:10px 10px 10px 0px;
@@ -94,19 +115,34 @@ pre{
   /* width:100%; */
   max-width: 100%;
   overflow-x: scroll;
+  margin-top: 0.5rem!important;
+}
+.recentPosts{
+  line-height: 0.7rem;
+  list-style-type: none!important;
+  padding-bottom: 1rem;
+  padding-inline-start: 0px;
 }
 .roundedimg{
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.smaller{
+  font-size:50%!important;
+}
+.text-eee{
+  color:#eee;
 }
 .text-bababa{
   color:#bababa;
 }
 ul{
-  padding-inline-start: 0px;
+  padding-inline-start: 2rem;
+  margin-bottom: 2rem!important;
 }
 ul.navtop{
   margin-left:auto!important;
   margin-right:0!important;
+  margin-bottom: 0rem!important;
 }
 ul.navbottom{
   margin-left:0!important;

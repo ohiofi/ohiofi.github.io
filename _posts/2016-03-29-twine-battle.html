@@ -37,7 +37,7 @@ author:
   last_name: ''
 permalink: "/blog/twine-battle/"
 ---
-<p><img src="{{ site.baseurl }}/assets/finn-jake-ice-king-pokemon.gif" alt="finn jake ice king pokemon" width="300" height="261" class="alignright size-full wp-image-6072" />In this post, I'm going to cover one way to create a battle with an enemy in Twine. Let's start with the variables. The only variable that is really needed is $health, but to make things more interesting, we will also create a few different ways to attack the enemy and a way to buy more health. We should set up these values at the beginning of the game. Players will start the game with the ability to punch or kick but will not have any other weapons.<br />
+<p><img src="{{ site.baseurl }}/assets/finn-jake-ice-king-pokemon.gif" alt="finn jake ice king pokemon" width="300" height="261" class="float-right size-full wp-image-6072" />In this post, I'm going to cover one way to create a battle with an enemy in Twine. Let's start with the variables. The only variable that is really needed is $health, but to make things more interesting, we will also create a few different ways to attack the enemy and a way to buy more health. We should set up these values at the beginning of the game. Players will start the game with the ability to punch or kick but will not have any other weapons.<br />
 <code style="font-size:14px;">
 <pre>
 Valhalla V: Odin's Revenge
@@ -113,7 +113,7 @@ You now have $coins coins.
 ]
 </pre>
 <p></code></p>
-<p><img src="{{ site.baseurl }}/assets/epic-finn-jake.gif" alt="epic finn jake" width="300" height="162" class="alignright size-full wp-image-6074" />If you get attacked by an enemy, then it jumps to a new passage called <strong>Fight Enemy</strong>. You have to create a new passage called <strong>Fight Enemy</strong> by clicking on the green +Passage button in the bottom right corner. In this passage, we are setting up two things: the health of this enemy and the strength of a punch and a kick against this enemy. We're setting this enemy's health based on a random number between 30-50 and the amount of points the player has earned. Using the amount of points the player has earned will mean that each new enemy will be stronger than the last one. It would be boring if punches were always better than kicks, so let's randomly make either the punch or kick do more damage for this enemy.<br />
+<p><img src="{{ site.baseurl }}/assets/epic-finn-jake.gif" alt="epic finn jake" width="300" height="162" class="float-right size-full wp-image-6074" />If you get attacked by an enemy, then it jumps to a new passage called <strong>Fight Enemy</strong>. You have to create a new passage called <strong>Fight Enemy</strong> by clicking on the green +Passage button in the bottom right corner. In this passage, we are setting up two things: the health of this enemy and the strength of a punch and a kick against this enemy. We're setting this enemy's health based on a random number between 30-50 and the amount of points the player has earned. Using the amount of points the player has earned will mean that each new enemy will be stronger than the last one. It would be boring if punches were always better than kicks, so let's randomly make either the punch or kick do more damage for this enemy.<br />
 <code style="font-size:14px;">
 <pre>
 (set: $enemyName to (either:"Giant Spider","Zombie","Ghost","Pizza Rat"))
@@ -205,6 +205,6 @@ A $enemyName crawls out of the shadows!
 (set: $points to $points + $coins)☠ //Final Score: $points// ☠]
 </pre>
 <p></code></p>
-<p><a href="http://www.ohiofi.com/battlegame.html">CLICK HERE</a> to play this example game.</p>
-<p><img src="{{ site.baseurl }}/assets/Screenshot-2016-03-29-15.13.00-600x428.png" alt="Screenshot 2016-03-29 15.13.00" width="600" height="428" class="alignright size-large wp-image-6064" /></p>
-<p><a href="http://www.ohiofi.com/blog/how-to-use-google-drive-to-store-high-scores-for-twine-games/">CONTINUE TO THE NEXT POST: How to Use Google Drive to Store High Scores for Twine Games</a></p>
+<p><a href="http://ohiofi.github.io/battlegame.html">CLICK HERE</a> to play this example game.</p>
+<p><img src="{{ site.baseurl }}/assets/Screenshot-2016-03-29-15.13.00-600x428.png" alt="Screenshot 2016-03-29 15.13.00" width="600" height="428" class="float-right size-large wp-image-6064" /></p>
+<p><a href="http://ohiofi.github.io/blog/how-to-use-google-drive-to-store-high-scores-for-twine-games/">CONTINUE TO THE NEXT POST: How to Use Google Drive to Store High Scores for Twine Games</a></p>

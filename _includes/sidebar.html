@@ -1,18 +1,18 @@
-<div class="container">
+<div class="">
   <div class="card darkbg">
     <div class="card-header">
     </div>
     <div class="card-body">
-      <p><a class="text-white" href="https://www.twitter.com/20hz20khz"><small>Follow @20hz20khz on Twitter</small></a></p>
-      <br>
-      <p><a class="text-white" href="https://www.youtube.com/20hz20khz"><small>YouTube.com/20hz20khz</small></a></p>
-      <br>
+      <ul class="recentPosts">
+      <li class="recentPosts"><a class="text-white" href="https://www.twitter.com/20hz20khz"><small class="smaller">Follow on Twitter @20hz20khz</small></a></li>
+      <li class="recentPosts"><a class="text-white" href="https://www.youtube.com/20hz20khz"><small class="smaller">Subscribe on YouTube</small></a></li>
+      </ul>
       <p>
-        <small>RECENT POSTS</small>
-        <ul>
+        <small class="smaller">RECENT POSTS</small>
+        <ul class="recentPosts">
           {% for p in site.posts limit:50 %}
-            <li>
-              <a class="text-white" href="{{site.baseurl}}{{p.url}}"><small>{{p.title}}</small></a>
+            <li class="recentPosts">
+              <a class="text-white" href="{{site.baseurl}}{{p.url}}"><small class="smaller">{{p.title}}</small></a>
             </li>
           {% endfor %}
         </ul>

@@ -14,14 +14,14 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </head>
-<body class="text-bababa">
+<body class="text-eee pt-5">
   {% include nav.html navclass="navtop" %}
-  <div class="container">
+  <div class="container-fluid mt-5">
     <div class="row">
-      <div class="col-12 col-lg-9">
+      <div class="col-12 col-lg-10">
         {{content}}
       </div>
-      <div class="col-12 col-lg-3">
+      <div class="col-12 col-lg-2">
         <br>
         <!-- sidebar -->
         {% include sidebar.html %}
@@ -31,6 +31,6 @@
   <br>
   &nbsp;
   <br>
-  {% include nav.html navclass="navbottom" %}
+
 </body>
 </html>

@@ -14,13 +14,19 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </head>
-<body class="text-bababa">
+<body class="text-eee pt-5">
   {% include nav.html navclass="navtop" %}
-  <div class="container">
+  <div class="container mt-5">
     <div class="row">
-      <div class="col-12 col-lg-9">
+      <div class="col-12 col-lg-12">
         <br>
-        <h2>{{page.title}}</h2>
+        <div class="card darkbg">
+          <div class="card-header"></div>
+          <div class="card-body">
+            <h2 class="display-1">{{page.title}}</h2>
+          </div>
+          <div class="card-footer text-muted"><small class="small">{{ page.date | date: "%B %d, %Y" }}</small></div>
+        </div>
         <p>
           {{content}}
         </p>
@@ -28,6 +34,7 @@
         <hr>
         <div class="PageNavigation float-left">
           <div class="card darkbg">
+            <div class="card-header"></div>
             <div class="card-body">
               {% if page.previous.url %}
                 <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
@@ -36,11 +43,12 @@
                 <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
               {% endif %}
             </div>
+            <div class="card-footer"></div>
           </div>
         </div>
         <br>
       </div>
-      <div class="col-12 col-lg-3">
+      <div class="col-12 col-lg-6">
         <br>
         <!-- sidebar -->
         {% include sidebar.html %}
@@ -50,6 +58,6 @@
   <br>
   &nbsp;
   <br>
-  {% include nav.html navclass="navbottom" %}
+
 </body>
 </html>
