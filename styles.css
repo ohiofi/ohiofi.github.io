@@ -1,3 +1,8 @@
+.darkbg{
+  /*background-color:#7417FF!important;*/
+  background-color:#413677!important;
+}
+
 small,p,h1,h2,h3,h4,.btn{
   font-weight: 300!important;
 }
@@ -7,11 +12,10 @@ li,blockquote{
 }
 a{
   font-weight:900!important;
-  color: #7A8CA8!important;
+  /*color: #7A8CA8!important;*/
+  color: #07D0FF!important;
 }
-.darkbg{
-  background-color:#413677!important;
-}
+
 blockquote{
   margin: 2rem 0 1rem 0.2rem!important;
   border-left: 6px solid #424242;
@@ -127,7 +131,7 @@ pre{
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .smaller{
-  font-size:50%!important;
+  font-size:60%!important;
 }
 .text-eee{
   color:#eee;
