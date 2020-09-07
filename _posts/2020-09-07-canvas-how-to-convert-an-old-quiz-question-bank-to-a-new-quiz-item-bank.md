@@ -1,19 +1,17 @@
 ---
   layout: post
   title: Canvas How to convert an old Quiz Question Bank to a new Quiz Item Bank
-  date: 2020-07-28
+  date: 2020-09-07
   categories:
-  - coding
+  - teaching
   tags:
-  - Twitter
   - programming
-  - coding
-  - bots
-  - spam
-  - Node
-  - Heroku
-  - git
-  - GitHub
+  - Canvas
+  - quiz
+  - test
+  - teaching
+  - LMS
+  - question
 
 ---
 
