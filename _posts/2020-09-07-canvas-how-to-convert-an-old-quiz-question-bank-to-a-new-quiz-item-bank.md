@@ -32,7 +32,7 @@ Here is the *TEDIOUS* process to follow to convert an old Quiz Question Bank to 
   1. Click Item Banks
   1. Click +Bank
   1. Name the Item Bank
-  1. Repeat for EVERY QUESTION:
+  1. Repeat for EVERY QUESTION. If you have 20 questions in the bank, repeat these next steps 20 times!
       1. Click the first question
       1. Click Item Banking
       1. Click Add to Bank
