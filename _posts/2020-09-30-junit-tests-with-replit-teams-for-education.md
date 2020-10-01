@@ -17,7 +17,9 @@
 
 Notes to myself about how to setup a Java repl to work with automatic JUnit tests.
 
-First, redirect the "Run" button.
+First, add junit:junit from Packages
+
+Next, redirect the "Run" button:
 
 1.  Create a new .replit file and add `run = "bash run.sh"`
 
@@ -28,8 +30,6 @@ java -classpath .:/run_dir/junit-4.12.jar:/run_dir/hamcrest-core-1.3.jar:/run_di
 # javac *.java
 # java ShoesTester
 ```
-   
-Next, add junit:junit from Packages
 
 Here is a sample ShoesTester file:
 ```
