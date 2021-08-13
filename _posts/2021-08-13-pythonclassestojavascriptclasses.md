@@ -18,8 +18,8 @@ This summer I was working on translating a project with a dozen Python classes i
 
 
 
-|replace all (this --> with that)|
-| ------------- |
+| replace all (this --> with that) |
+| ------------ |
 | `def __init__ --> constructor` |
 | `def --> ` |
 | `(self): --> (){` |
@@ -34,7 +34,7 @@ This summer I was working on translating a project with a dozen Python classes i
 | `True --> true` |
 | `False --> false` |
 | `None --> null` |
-| ` and not --> && !` |
+| `and not --> && !` |
 | `if not --> if (!` |
 | `while true: --> while (true){` |
 
@@ -44,7 +44,7 @@ The following substitutions need to be made manually (one at a time).
 
 
 
-|find and replace manually|
+| find and replace manually |
 | ------------- |
 | `and --> &&` |
 | `result = --> let result = ` |
