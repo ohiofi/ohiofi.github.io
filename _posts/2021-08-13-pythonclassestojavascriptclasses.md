@@ -20,35 +20,20 @@ This summer I was working on translating a project with a dozen Python classes i
 | ----------- | 
 |`def __init__ --> constructor` |
 |`def --> `|
-
 |`(self): --> (){`|
-
 |`(self, --> (`|
-
 | `): --> ){` |
-
 | `self. --> this.` |
-
 | `# --> //#` |
-
 | `else: --> }else{` |
-
 | `print( --> console.log(` |
-
 | `int( --> Math.floor(` |
-
 | `str( --> (""+` |
-
 | `True --> true` |
-
 | `False --> false` |
-
 | `None --> null` |
-
 | ` and not --> && !` |
-
 | `if not --> if (!` |
-
 | `while true: --> while (true){` |
 
 The following substitutions need to be made manually (one at a time)
@@ -63,5 +48,7 @@ The following substitutions need to be made manually (one at a time)
 | `for i in range(` |
 | `for each in --> for (let each of` |
 | `while` |
+| `@staticmethod \n def --> static` |
+| `@classmethod \n def --> static` |
 | `.sort(key=lambda x: x.getGrade(), reverse=False) --> .sort(function(a, b){return a.getGrade() - b.getGrade()})` |
 | `.sort(key=lambda x: x.getGrade(), reverse=True) --> .sort(function(a, b){return b.getGrade() - a.getGrade()})` |
