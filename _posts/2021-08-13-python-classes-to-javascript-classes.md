@@ -54,6 +54,8 @@ The following substitutions need to be made manually (one at a time).
 | `for i in range(` |
 | `for each in --> for (let each of` |
 | `while` |
+| `.insert(0,"foo") --> .splice(0,0,"foo")` |
+| `a in b --> b.includes(a)` |
 | `@staticmethod \n def --> static` |
 | `@classmethod \n def --> static` |
 | `.sort(key=lambda x: x.getGrade(), reverse=False) --> .sort(function(a, b){return a.getGrade() - b.getGrade()})` |
