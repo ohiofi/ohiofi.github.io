@@ -20,11 +20,17 @@ The first thing to notice is that the starter code is MISSING an important line 
 
 ## Challenges
 
-1. Can you set the player to be the owner of the wolf? Check the Spigot API documentation for the [Wolf class](https://helpch.at/docs/1.7.10/org/bukkit/entity/Wolf.html) and look for one of the Tameable methods that lets you change the owner.
+1. Can you set the player to be the owner of the wolf?
 
-2. Can you randomize the collar color? Check the Spigot API for the [DyeColor class](https://helpch.at/docs/1.7.10/org/bukkit/DyeColor.html) for a list of the class constants (for example DyeColor.PINK), create an array of type DyeColor that contains several colors, and randomly select a DyeColor from the list.
+   Check the Spigot API documentation for the [Wolf class](https://helpch.at/docs/1.7.10/org/bukkit/entity/Wolf.html) and look for one of the Tameable methods that lets you change the owner.
 
-3. Can you give the wolf a random name? The [Wolf class](https://helpch.at/docs/1.7.10/org/bukkit/entity/Wolf.html) lists the methods that can change a wolf's custom name (look at the Nameable methods). Create an array of dog names, randomly select a name and use substring to get only the first half, randomly select a name and use substring to get only the second half, then set the wolf's custom name to be the first half concatenated with the second half. This should generate *interesting* names like Coodo (*Coo*per + Fi*do*), Root (*Ro*ver + Sp*ot*), Fiper (*Fi*do + Coo*per*), Coover (*Coo*per + Ro*ver*), Fiot (*Fi*do + Sp*ot*), Fiver (*Fi*do + Ro*ver*) and Rodo (*Ro*ver + Fi*do*).
+2. Can you randomize the collar color?
+
+   Check the Spigot API for the [DyeColor class](https://helpch.at/docs/1.7.10/org/bukkit/DyeColor.html) for a list of the class constants (for example DyeColor.PINK), create an array of type DyeColor that contains several colors, and randomly select a DyeColor from the list.
+
+3. Can you give the wolf a random name?
+
+   The [Wolf class](https://helpch.at/docs/1.7.10/org/bukkit/entity/Wolf.html) lists the methods that can change a wolf's custom name (look at the Nameable methods). Create an array of dog names, randomly select a name and use substring to get only the first half, randomly select a name and use substring to get only the second half, then set the wolf's custom name to be the first half concatenated with the second half. This should generate *interesting* names like Coodo (*Coo*per + Fi*do*), Root (*Ro*ver + Sp*ot*), Fiper (*Fi*do + Coo*per*), Coover (*Coo*per + Ro*ver*), Fiot (*Fi*do + Sp*ot*), Fiver (*Fi*do + Ro*ver*) and Rodo (*Ro*ver + Fi*do*).
 
 ![Demo of the PetWolf Minecraft mod](/assets/PetWolfMod.jpg)
 
