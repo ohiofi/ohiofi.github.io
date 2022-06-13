@@ -20,13 +20,21 @@ This is a very popular mod that I've actually had students mention to me in the 
 
 ## Challenges
 
-1. Instead of spawning 1-30 chickens, spawn 20-30 chickens.
+1. Can you spawn 20-30 chickens instead of 1-30 chickens?
 
-1. Generate a "normal" distribution of chickens.
+   Edit line 39 of the starter code `for (int i = 0; i < Math.random() * NUM_CHICKENS + 1; i++) {` to something like `for (int i = 0; i < randomAmount; i++) {` then add a new line above in which you declare a variable named `randomAmount` and set its value to a random number 20-30. Here is how to generate a random range in Java... `(int) (Math.random() * (maximum - minimum) + minimum)` The key to understanding this is to know that Math.random() will give you a decimal value from 0.0 to 0.9999999999. If we multiply Math.random * 30 then we will get random decimal values from 0.0 to 29.9999999999, but that's not what we want. We should instead multiply by the number of possible values we want and there are 11 possible values from 20 to 30. Finally, add 20 to the random number.
 
-1. Create a "/firestorm" command that generates flaming chickens.
+1. Can you generate a "normal distribution" of chickens?
 
-1. Make the flaming chickens launch fireballs when they are first spawned.
+   A normal distribution (also known as a bell curve) will essentially mean that median values are more likely and extreme values are less likely. Consider rolling two dice. You have about a 44% change of rolling a 6, 7, or 8, but you only have about a 3% chance of rolling a 12. We would simulate this dice roll in Java like this `(int) (Math.random() * 6 + 1) + (int) (Math.random() * 6 + 1)` and we would get a bell curve of values ranging from 2 to 12. How can you change that code to generate a bell curve of values ranging from 20 to 30?
+
+1. Can you create a "/firestorm" command that generates flaming chickens?
+
+   In the onCommand method add an if-else statement for `if (label.equalsIgnoreCase("firestorm"))` then call a new method named executeFirestorm(sender). You can copy/paste the executeCommand method and just change the title to executeFirestorm. Next, remove the code that makes 40% of them babies. Instead we will set them on fire. Check the Spigot API for the [Chicken class](https://helpch.at/docs/1.7.10/org/bukkit/entity/Chicken.html) and look for one of the Entity methods that has "fire" in the method name. You should find 3 methods that have to do with fire, but only one of them is a setter method. Invoke the method on `clucky` and provide a large integer number (such as 999) as an argument.
+
+1. Can you make the flaming chickens launch fireballs when they are first spawned?
+
+   If you completed the last challenge, then you probably created chickens that were on fire for about 4 seconds and then died. This just leaves feathers and roasted chicken all over the place. How can we make a REAL firestorm? First, check the Spigot API for the [Chicken class](https://helpch.at/docs/1.7.10/org/bukkit/entity/Chicken.html) and find how to increase the max health and set the health of `clucky`. You might also notice that the Chicken class implements the ProjectileSource interface. You can use `Fireball flamey = clucky.launchProjectile(Fireball.class);` to generate a Fireball projectile. Finally, check the Spigot API for the [Fireball class](https://helpch.at/docs/1.7.10/org/bukkit/entity/Fireball.html) and find out how to set the direction of `flamey`. You will need to provide a Vector object as an argument, such as `new Vector(0, -1, 0)`
 
 
 ![Demo of the FireStorm Minecraft mod](/assets/firestorm-collage.jpg)
