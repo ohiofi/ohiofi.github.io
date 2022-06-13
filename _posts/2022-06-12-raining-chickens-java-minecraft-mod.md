@@ -39,7 +39,7 @@ This is a very popular mod that I've actually had students mention to me in the 
    If you completed the last challenge, then you probably created chickens that were on fire for about 4 seconds and then died. This just leaves feathers and roasted chicken all over the place. How can we make a REAL firestorm? First, check the Spigot API for the [Chicken class](https://helpch.at/docs/1.7.10/org/bukkit/entity/Chicken.html) and find how to increase the max health and set the health of `clucky`. You might also notice that the Chicken class implements the ProjectileSource interface. You can use `Fireball flamey = clucky.launchProjectile(Fireball.class);` to generate a Fireball projectile. Finally, check the Spigot API for the [Fireball class](https://helpch.at/docs/1.7.10/org/bukkit/entity/Fireball.html) and find out how to set the direction of `flamey`. You will need to provide a Vector object as an argument, such as `new Vector(0, -1, 0)`
 
 
-
+![Another demo of the FireStorm Minecraft mod](/assets/firestorm-collage2.jpg)
 
 ## ChickenStorm Starter Code
 
