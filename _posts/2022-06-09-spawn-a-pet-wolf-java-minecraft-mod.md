@@ -18,7 +18,7 @@ This mod from "Absolute Beginner's Guide To Minecraft Mods Programming, second e
 
 The first thing to notice is that the starter code is MISSING an important line of code. The starter code below will spawn a wolf at the player's location and set the collar color to pink. The starter code does NOT set the player to be the owner of the wolf.
 
-![Demo of the PetWolf Minecraft mod](/assets/PetWolfMod.jpg)
+![Demo of the PetWolf Minecraft mod](/assets/petwolf-collage.jpg)
 
 ## Challenges
 
@@ -34,7 +34,7 @@ The first thing to notice is that the starter code is MISSING an important line 
 
    The [Wolf class](https://helpch.at/docs/1.7.10/org/bukkit/entity/Wolf.html) lists the methods that can change a wolf's custom name (look at the Nameable methods). Create an array of dog names, randomly select a name and use substring to get only the first half, randomly select a name and use substring to get only the second half, then set the wolf's custom name to be the first half concatenated with the second half. This should generate *interesting* names like Coodo (*Coo*per + Fi*do*), Root (*Ro*ver + Sp*ot*), Fiper (*Fi*do + Coo*per*), Coover (*Coo*per + Ro*ver*), Fiot (*Fi*do + Sp*ot*), Fiver (*Fi*do + Ro*ver*) and Rodo (*Ro*ver + Fi*do*).
 
-
+![Another demo of the PetWolf Minecraft mod](/assets/petwolf-collage2.jpg)
 
 ## PetWolf Starter Code
 
