@@ -74,6 +74,10 @@ permalink: "/blog/puzzlescript-rules/"
 <code>
 <pre>[player|enemy] -&gt; [deadPlayer|enemy]</pre>
 <p></code></p>
+<p>If dead player then restart the game (NOTE: This rule should be at the top of the rules section so that the game waits a tick before restarting)<br />
+<code>
+<pre>[deadPlayer] -&gt; restart</pre>
+<p></code></p>
 <p>If player is between two fires then replace player with deadPlayer<br />
 <code>
 <pre>[fire|player|fire] -&gt; [fire|deadPlayer|fire]</pre>
