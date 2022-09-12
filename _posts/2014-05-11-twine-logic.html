@@ -74,8 +74,9 @@ permalink: "/blog/twine-logic/"
 <p><code>
 <pre>(if: $health < 1)[
 &nbsp;&nbsp;You died. GAME OVER! 
-]
+]\
 (else:)
+[
 &nbsp;&nbsp;Ouch! That hurt! Now where do you want to go?
 &nbsp;&nbsp;[[Go outside]]
 &nbsp;&nbsp;[[Go upstairs]]
@@ -148,7 +149,7 @@ permalink: "/blog/twine-logic/"
 <pre>
 (if: $money >= 500)[
 &nbsp;&nbsp;[[Buy a sword for 500]]
-]
+]\
 (else:)[
 &nbsp;&nbsp;Swords cost 500, but you only have $money.
 ]
@@ -160,7 +161,7 @@ permalink: "/blog/twine-logic/"
 <pre>
 (if: (history:) contains "Blue Room")[
 &nbsp;&nbsp;The room is empty.
-]
+]\
 (else:)[
 &nbsp;&nbsp;You found a key. (set: $keys to $keys + 1)
 ]
