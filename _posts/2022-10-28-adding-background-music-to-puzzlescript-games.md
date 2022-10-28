@@ -48,7 +48,8 @@ Step 3: Add the audio component and the Javascript code. Preferably right before
 
 Step 4: THAT'S IT!
 
-## Check it out by playing Return Of The Dead Pixels, my Puzzlescript zombie game: https://ohiofi.itch.io/return-of-the-dead-pixels
+## Check it out by playing Return Of The Dead Pixels, my Puzzlescript zombie game: 
+## [https://ohiofi.itch.io/return-of-the-dead-pixels](https://ohiofi.itch.io/return-of-the-dead-pixels)
 
 <img src="/assets/Screen Shot 2022-10-23 at 5.49.36 PM.png" alt="Screen shot from the video game 'Return of the Dead Pixels' showing player surrounded by zombies">
 
