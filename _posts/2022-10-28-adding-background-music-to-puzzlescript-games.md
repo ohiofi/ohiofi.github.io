@@ -18,7 +18,7 @@
   - music
 ---
 
-<img src="Screen Shot 2022-10-23 at 6.08.01 PM.png" alt="Screen shot from the video game 'Return of the Dead Pixels' showing zombies">
+<img src="/assets/Screen Shot 2022-10-23 at 6.08.01 PM.png" alt="Screen shot from the video game 'Return of the Dead Pixels' showing zombies">
 
 Step 1: Make a Puzzlescript game and export it as HTML.
 
@@ -46,5 +46,5 @@ Step 3: Add the audio component and the Javascript code. Preferably right before
 </script>
 ```
 
-<img src="Screen Shot 2022-10-23 at 5.49.36 PM.png" alt="Screen shot from the video game 'Return of the Dead Pixels' showing player surrounded by zombies">
+<img src="/assets/Screen Shot 2022-10-23 at 5.49.36 PM.png" alt="Screen shot from the video game 'Return of the Dead Pixels' showing player surrounded by zombies">
 
