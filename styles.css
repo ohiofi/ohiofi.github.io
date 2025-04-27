@@ -64,7 +64,8 @@ h1{
 }
 img{
   border-radius:.4em;
-  margin:5px 15px 10px 0px;
+  /* margin:5px 15px 10px 0px; */
+  margin: 10px 10px 10px 0px;
   /* float:left; */
   max-width: 50%;
 }
