@@ -1,0 +1,50 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+.linage {
+  fill: none;
+  stroke: black;
+}
+.marriage {
+  fill: none;
+  stroke: black;
+}
+.node {
+  background-color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+}
+.male {
+  background-color: lightblue;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.female {
+  background-color: pink;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.nodeText {
+  font: 10px sans-serif;
+}
+.marriageNode {
+  background-color: black;
+  border-radius: 80%;
+}
+.subtitle {
+  color: #888888;
+}
