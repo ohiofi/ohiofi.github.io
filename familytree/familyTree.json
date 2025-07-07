@@ -1,132 +1,184 @@
 {
-  "name": "Fred Riley",
-  "class": "male",
-  "textClass": "nodeText",
-  "depthOffset": 1,
-  "marriages": [
-    {
-      "spouse": {
-        "name": "Mary Lu Riley (West)",
-        "class": "female"
-      },
-      "children": [
+    "name": "Fred Riley",
+    "class": "male",
+    "textClass": "nodeText",
+    "depthOffset": 1,
+    "marriages": [
         {
-          "name": "Sondra Brown (Riley)",
-          "class": "female",
-          "marriages": [
-            {
-              "spouse": {
-                "name": "Larry Jay Brown",
-                "class": "male"
-              },
-              "children": [
-                {
-                  "name": "Tina Clark (Brown)",
-                  "class":"female",
-                  "marriages": [
-                    {
-                      "spouse": {
-                        "name": " ",
-                        "class":"male"
-                      },
-                      "children": [
-                        {
-                          "name": "Caitlin Nicole Brown",
-                          "class":"female"
-                        }
-                      ]
-                    },
-                    {
-                      "spouse": {
-                        "name": "Scott Clark",
-                        "class":"male"
-                      },
-                      "children":[]
-                    }
-                    
-                    
-                  ]
-                },
-                {
-                  "name":"Jay Ellis Brown",
-                  "class":"male"
-                },
-                {
-                  "name":"Jayda Ann Baker (Brown)",
-                  "class":"female",
-                  "marriages": [
-                    {
-                      "spouse":{
-                        "name":"Darrell (Buck) Lynn Baker",
-                        "class":"male"
-                      },
-                      "children":[]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Clarence Richard Riley",
-          "class": "male",
-          "extra": {
-            "nickname": "Dick",
-            "years": "1960-"
-          },
-          "marriages": [
-            {
-              "spouse": {
-                "name": "Phyllis Riley",
+            "spouse": {
+                "name": "Mary Lu Riley (West)",
                 "class": "female"
-              },
-              "children": [
+            },
+            "children": [
                 {
-                  "name": "Justin Riley",
-                  "class": "male",
-                  "marriages": [
-                    {
-                      "spouse": {
-                        "name": "Kelly Riley (Schenbeck)",
-                        "class": "female"
-                      },
-                      "children": [
+                    "name": "Sondra Brown (Riley)",
+                    "class": "female",
+                    "marriages": [
                         {
-                          "name": "Cordelia Riley",
-                          "class": "female"
+                            "spouse": {
+                                "name": "Larry Jay Brown",
+                                "class": "male"
+                            },
+                            "children": [
+                                {
+                                    "name": "Tina Clark (Brown)",
+                                    "class": "female",
+                                    "marriages": [
+                                        {
+                                            "spouse": {
+                                                "name": " ",
+                                                "class": "male"
+                                            },
+                                            "children": [
+                                                {
+                                                    "name": "Caitlin Nicole Brown",
+                                                    "class": "female"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "spouse": {
+                                                "name": "Scott Clark",
+                                                "class": "male"
+                                            },
+                                            "children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Terry Brown",
+                                    "class": "male"
+                                },
+                                {
+                                    "name": "Jay Ellis Brown",
+                                    "class": "male"
+                                },
+                                {
+                                    "name": "Jayda Ann Baker (Brown)",
+                                    "class": "female",
+                                    "marriages": [
+                                        {
+                                            "spouse": {
+                                                "name": "Darrell (Buck) Lynn Baker",
+                                                "class": "male"
+                                            },
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
                         }
-                      ]
-                    }
-                  ]
+                    ]
                 },
                 {
-                  "name": "Cyrena Abbott (Riley)",
-                  "class": "female",
-                  "marriages": [
-                    {
-                      "spouse": {
-                        "name": "Clint Abbott",
-                        "class": "male"
-                      },
-                      "children": [
+                    "name": "Fred Riley Jr.",
+                    "class": "male",
+                    "marriages": [
                         {
-                          "name": "Carter Abbott",
-                          "class": "male"
-                        },
-                        {
-                          "name": "Caylee Abbott",
-                          "class": "female"
+                            "spouse": {
+                                "name": "",
+                                "class": "female"
+                            },
+                            "children": [
+                                    {
+                                        "name": "Kendra Riley",
+                                        "class": "female"
+                                    },
+                                    {
+                                        "name": "Daniel Riley",
+                                        "class": "male"
+                                    },
+                                    {
+                                        "name": "Jeremy Riley",
+                                        "class": "male"
+                                    }
+                            ]
+                            
                         }
-                      ]
-                    }
-                  ]
+                    ]
+                },
+                {
+                    "name": "Jack Riley",
+                    "class": "male",
+                    "marriages": [
+                        {
+                            "spouse": {
+                                "name": "",
+                                "class": "female"
+                            },
+                            "children": [
+                                    {
+                                        "name": "Scott Riley",
+                                        "class": "male"
+                                    },
+                                    {
+                                        "name": "Missy Riley",
+                                        "class": "female"
+                                    }
+                            ]
+                            
+                        }
+                    ]
+                },
+                {
+                    "name": "Clarence Richard Riley",
+                    "class": "male",
+                    "extra": {
+                        "nickname": "Dick",
+                        "years": "1960-"
+                    },
+                    "marriages": [
+                        {
+                            "spouse": {
+                                "name": "Phyllis Riley (Stiver)",
+                                "class": "female"
+                            },
+                            "children": [
+                                {
+                                    "name": "Justin Riley",
+                                    "class": "male",
+                                    "marriages": [
+                                        {
+                                            "spouse": {
+                                                "name": "Kelly Riley (Schenbeck)",
+                                                "class": "female"
+                                            },
+                                            "children": [
+                                                {
+                                                    "name": "Cordelia Riley",
+                                                    "class": "female"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Cyrena Abbott (Riley)",
+                                    "class": "female",
+                                    "marriages": [
+                                        {
+                                            "spouse": {
+                                                "name": "Clint Abbott",
+                                                "class": "male"
+                                            },
+                                            "children": [
+                                                {
+                                                    "name": "Carter Abbott",
+                                                    "class": "male"
+                                                },
+                                                {
+                                                    "name": "Caylee Abbott",
+                                                    "class": "female"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
-              ]
-            }
-          ]
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
