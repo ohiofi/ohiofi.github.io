@@ -26,8 +26,15 @@
                                     "marriages": [
                                         {
                                             "spouse": {
+                                                "name": "Scott Clark",
+                                                "class": "male"
+                                            }
+                                        },
+                                        {
+                                            "spouse": {
                                                 "name": " ",
                                                 "class": "male"
+    
                                             },
                                             "children": [
                                                 {
@@ -35,14 +42,8 @@
                                                     "class": "female"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "spouse": {
-                                                "name": "Scott Clark",
-                                                "class": "male"
-                                            },
-                                            "children": []
                                         }
+                                        
                                     ]
                                 },
                                 {
@@ -82,11 +83,51 @@
                             "children": [
                                     {
                                         "name": "Kendra Riley",
-                                        "class": "female"
+                                        "class": "female",
+                                        "marriages": [
+                                            {
+                                                "spouse":{
+                                                    "name": "",
+                                                    "class": "male"
+                                                },
+                                                "children":[
+                                                    {
+                                                        "name": "Baylor Barnett",
+                                                        "class": "male"
+                                                    },
+                                                    {
+                                                        "name": "Brynlee Barnett",
+                                                        "class": "female"
+                                                    },
+                                                    {
+                                                        "name": "Bronson Barnett",
+                                                        "class": "male"
+                                                    }
+                                                ]
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Daniel Riley",
-                                        "class": "male"
+                                        "class": "male",
+                                        "marriages": [
+                                            {
+                                                "spouse":{
+                                                    "name": "Marta",
+                                                    "class": "female"
+                                                },
+                                                "children":[
+                                                    {
+                                                        "name": "Damien Riley",
+                                                        "class": "male"
+                                                    },
+                                                    {
+                                                        "name": "Sofia Riley",
+                                                        "class": "female"
+                                                    }
+                                                ]
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Jeremy Riley",
@@ -103,7 +144,7 @@
                     "marriages": [
                         {
                             "spouse": {
-                                "name": "",
+                                "name": "Teri",
                                 "class": "female"
                             },
                             "children": [
