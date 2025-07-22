@@ -1,225 +1,1154 @@
 {
-    "name": "Fred Riley",
-    "class": "male",
-    "textClass": "nodeText",
-    "depthOffset": 1,
-    "marriages": [
-        {
-            "spouse": {
-                "name": "Mary Lu Riley (West)",
-                "class": "female"
-            },
-            "children": [
-                {
-                    "name": "Sondra Brown (Riley)",
-                    "class": "female",
-                    "marriages": [
-                        {
-                            "spouse": {
-                                "name": "Larry Jay Brown",
-                                "class": "male"
-                            },
-                            "children": [
-                                {
-                                    "name": "Tina Clark (Brown)",
-                                    "class": "female",
-                                    "marriages": [
-                                        {
-                                            "spouse": {
-                                                "name": "Scott Clark",
-                                                "class": "male"
-                                            }
-                                        },
-                                        {
-                                            "spouse": {
-                                                "name": " ",
-                                                "class": "male"
-    
-                                            },
-                                            "children": [
-                                                {
-                                                    "name": "Caitlin Nicole Brown",
-                                                    "class": "female"
-                                                }
-                                            ]
-                                        }
-                                        
-                                    ]
-                                },
-                                {
-                                    "name": "Terry Brown",
-                                    "class": "male"
-                                },
-                                {
-                                    "name": "Jay Ellis Brown",
-                                    "class": "male"
-                                },
-                                {
-                                    "name": "Jayda Ann Baker (Brown)",
-                                    "class": "female",
-                                    "marriages": [
-                                        {
-                                            "spouse": {
-                                                "name": "Darrell (Buck) Lynn Baker",
-                                                "class": "male"
-                                            },
-                                            "children": []
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "Fred Riley Jr.",
-                    "class": "male",
-                    "marriages": [
-                        {
-                            "spouse": {
-                                "name": "",
-                                "class": "female"
-                            },
-                            "children": [
-                                    {
-                                        "name": "Kendra Riley",
-                                        "class": "female",
-                                        "marriages": [
-                                            {
-                                                "spouse":{
-                                                    "name": "",
-                                                    "class": "male"
-                                                },
-                                                "children":[
-                                                    {
-                                                        "name": "Baylor Barnett",
-                                                        "class": "male"
-                                                    },
-                                                    {
-                                                        "name": "Brynlee Barnett",
-                                                        "class": "female"
-                                                    },
-                                                    {
-                                                        "name": "Bronson Barnett",
-                                                        "class": "male"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Daniel Riley",
-                                        "class": "male",
-                                        "marriages": [
-                                            {
-                                                "spouse":{
-                                                    "name": "Marta",
-                                                    "class": "female"
-                                                },
-                                                "children":[
-                                                    {
-                                                        "name": "Damien Riley",
-                                                        "class": "male"
-                                                    },
-                                                    {
-                                                        "name": "Sofia Riley",
-                                                        "class": "female"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Jeremy Riley",
-                                        "class": "male"
-                                    }
-                            ]
-                            
-                        }
-                    ]
-                },
-                {
-                    "name": "Jack Riley",
-                    "class": "male",
-                    "marriages": [
-                        {
-                            "spouse": {
-                                "name": "Teri",
-                                "class": "female"
-                            },
-                            "children": [
-                                    {
-                                        "name": "Scott Riley",
-                                        "class": "male"
-                                    },
-                                    {
-                                        "name": "Missy Riley",
-                                        "class": "female"
-                                    }
-                            ]
-                            
-                        }
-                    ]
-                },
-                {
-                    "name": "Clarence Richard Riley",
-                    "class": "male",
-                    "extra": {
-                        "nickname": "Dick",
-                        "years": "1960-"
-                    },
-                    "marriages": [
-                        {
-                            "spouse": {
-                                "name": "Phyllis Riley (Stiver)",
-                                "class": "female"
-                            },
-                            "children": [
-                                {
-                                    "name": "Justin Riley",
-                                    "class": "male",
-                                    "marriages": [
-                                        {
-                                            "spouse": {
-                                                "name": "Kelly Riley (Schenbeck)",
-                                                "class": "female"
-                                            },
-                                            "children": [
-                                                {
-                                                    "name": "Cordelia Riley",
-                                                    "class": "female"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "Cyrena Abbott (Riley)",
-                                    "class": "female",
-                                    "marriages": [
-                                        {
-                                            "spouse": {
-                                                "name": "Clint Abbott",
-                                                "class": "male"
-                                            },
-                                            "children": [
-                                                {
-                                                    "name": "Carter Abbott",
-                                                    "class": "male"
-                                                },
-                                                {
-                                                    "name": "Caylee Abbott",
-                                                    "class": "female"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
+  "name": "Gen. Richard Riley",
+  "class": "male",
+  "textClass": "nodeText",
+  "depthOffset": 0,
+  "extra": {
+    "about": "",
+    "birth": "1740 in Ireland",
+    "death": "September 25, 1778",
+    "nickname": "",
+    "occupation": "Medical Officer in the British Army with rank of General"
+  },
+  "marriages": [
+    {
+      "spouse": {
+        "name": "Margaret Riley (Shirley)",
+        "class": "female",
+        "extra": {
+          "about": "[Find a grave](https://www.findagrave.com/memorial/147125156/margaret_riley-shirley)",
+          "birth": "1755 in Charles Town, Jefferson County, WV, United States",
+          "death": "January 26, 1829 (73-74) in Pultney Township, Belmont County, OH, United States",
+          "nickname": "",
+          "occupation": ""
         }
-    ]
+      },
+      "children": [
+        {
+          "name": "Stephen Riley",
+          "class": "male",
+          "extra": {
+            "about": "",
+            "birth": "estimated between 1760 and 1810",
+            "death": "",
+            "nickname": "",
+            "occupation": ""
+          },
+          "marriages": [
+            {
+              "spouse": {
+                "name": "",
+                "class": "female"
+              },
+              "children": [
+                {
+                  "name": "Henry Riley",
+                  "class": "male",
+                  "extra": {
+                    "about": "",
+                    "birth": "estimated between 1759 and 1819",
+                    "death": "",
+                    "nickname": "",
+                    "occupation": ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Mary Ellen Shirley (Riley)",
+          "class": "female",
+          "extra": {
+            "about": "",
+            "birth": "March 1777 in Charleston, Williamsburg, VA, United States",
+            "death": "December 1798 (21) (childbirth)",
+            "nickname": "",
+            "occupation": ""
+          },
+          "marriages": [
+            {
+              "spouse": {
+                "name": "Samuel Jarvis Shirley",
+                "class": "male"
+              },
+              "children": [
+                {
+                  "name": "Ephraim Benjamin Shirley, Sr",
+                  "class": "male"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Richard L. Riley",
+          "class": "male",
+          "extra": {
+            "about": "[Find a grave](https://www.findagrave.com/memorial/47977144/richard-riley)",
+            "birth": "September 25, 1778 in Charles Town, Jefferson County, West Virginia, United States",
+            "death": "July 21, 1863 (84) in Wegee, Belmont, OH, United States",
+            "nickname": "",
+            "occupation": ""
+          },
+          "marriages": [
+            {
+              "spouse": {
+                "name": "Elizabeth Riley (Day)",
+                "class": "female",
+                "extra": {
+                  "about": "Obituary in the Belmont Chronicle newspaper, St. Clairsville, Ohio, January 15, 1874: 'Riley. - Dec. 26th, 1873, near Beallsville, Ohio Mrs. Elizabeth Riley, aged 85 years, 6 days; widow of Richard Riley, of Mead Tp., Belmont County, Ohio, who died July, 1863, aged 86 years. She had been a constant member of the M. E. Church for 70 years.' Obituary in the Belmont Chronicle newspaper, St. Clairsville, Ohio, January 15, 1874: 'Riley. - Dec. 26th, 1873, near Beallsville, Ohio Mrs. Elizabeth Riley, aged 85 years, 6 days; widow of Richard Riley, of Mead Tp., Belmont County, Ohio, who died July, 1863, aged 86 years. She had been a constant member of the M. E. Church for 70 years.' Reference: [https://www.findagrave.com/memorial/47977184/elizabeth-riley Find A Grave Memorial] - [https://www.geni.com/projects/SmartCopy/18783 SmartCopy]: 'Dec 19 2020, 3:40:51 UTC'",
+                  "birth": "December 20, 1788 in Morris Twp., Washinghton, PA, United States",
+                  "death": "December 26, 1873 (85) in Beallsville, Monroe County, Ohio, USA, Belmont, OH, United States",
+                  "nickname": "",
+                  "occupation": ""
+                }
+              },
+              "children": [
+                {
+                  "name": "Mary Heath (Riley)",
+                  "class": "female",
+                  "extra": {
+                    "about": "",
+                    "birth": "September 1808",
+                    "death": "",
+                    "nickname": "",
+                    "occupation": ""
+                  },
+                  "marriages": [
+                    {
+                      "spouse": {
+                        "name": "Andrew Heath",
+                        "class": "male"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Samuel Riley",
+                  "class": "male",
+                  "extra": {
+                    "about": "Samuel Riley was born on October 14, 1810, in Meade Township, Belmont County, Ohio. He married Elizabeth Myers in Belmont County on August 18, 1831. A few years later, Samuel's brother Israel Day Riley would marry Elizabeth's younger sister Macy. Samuel and Elizabeth Myers' children were Mary J., Margaret, Elisabeth P., Macy, Richard S., and William. They also helped to raise Elizabeth's sister Rachel's sons, Dixon and John Hays. Samuel and Elizabeth farmed in Belmont and Monroe Counties. Biographical paragraph in the Mead Township section of the book, The History of Belmont and Jefferson Counties, Ohio, published in 1880: 'Samuel Riley was born in Belmont county, Ohio, October 14, 1810. After receiving a limited education, he learned the carpenter trade with his father, and has followed that in connection with farming. In 1830 he went with Samuel Day [his mother's younger brother] on a trading expedition down the river to New Orleans, by which he made $150. With this money he purchased a tract of land in section 7, Mead township, on which he began improvements. August 18, 1831, he married Miss Elizabeth Myers, who was born March 4, 1809. Their union resulted in eight children, three sons and five daughters; five are living. In 1833 he and his wife united with the old Wegee M. E. Church, being among the first members when the class was organized, and have been consistent workers since that time. He has filled the office of township clerk, assessor, trustee and constable. He is still living on the farm where he settled when he was married.'",
+                    "birth": "October 14, 1810 in Belmont County, Belmont County, Ohio, United States",
+                    "death": "August 23, 1898 (87) in Belmont County, Belmont County, Ohio, United States",
+                    "nickname": "",
+                    "occupation": ""
+                  },
+                  "marriages": [
+                    {
+                      "spouse": {
+                        "name": "Elizabeth Myers-Riley (Myers)",
+                        "class": "female"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Israel Day Riley",
+                  "class": "male",
+                  "extra": {
+                    "about": "[Find a grave](https://www.findagrave.com/memorial/46737668/israel_day-riley)",
+                    "birth": "December 1812",
+                    "death": "April 1893 (80) in Beallsville, OH, United States (heart failure)",
+                    "nickname": "",
+                    "occupation": ""
+                  },
+                  "marriages": [
+                    {
+                      "spouse": {
+                        "name": "Massey Riley (Myers)",
+                        "class": "female",
+                        "extra": {
+                          "about": "",
+                          "birth": "October 1811",
+                          "death": "June 1890 (78)",
+                          "nickname": "",
+                          "occupation": ""
+                        }
+                      },
+                      "children": [
+                        {
+                          "name": "Rachel Ann Kimpton (Riley)",
+                          "class": "female",
+                          "extra": {
+                            "about": "",
+                            "birth": "August 1835",
+                            "death": "February 1864 (28)",
+                            "nickname": "",
+                            "occupation": ""
+                          },
+                          "marriages": [
+                            {
+                              "spouse": {
+                                "name": "Daniel Kimpton",
+                                "class": "male"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "name": "William Myers Riley, 1st",
+                          "class": "male",
+                          "extra": {
+                            "about": "[Find a grave](https://www.findagrave.com/memorial/146721301/william_myers-riley)",
+                            "birth": "June 1837",
+                            "death": "March 21 1908 (70)",
+                            "nickname": "",
+                            "occupation": ""
+                          },
+                          "marriages": [
+                            {
+                              "spouse": {
+                                "name": "Prudie Ann Riley (Orn)",
+                                "class": "female"
+                              },
+                              "children": [
+                                {
+                                  "name": "William Myers Riley, 2nd",
+                                  "class": "male",
+                                  "extra": {
+                                    "about": "[Find a grave](https://www.findagrave.com/memorial/204893418/william-riley)",
+                                    "birth": "August 16 1864",
+                                    "death": "December 29 1947 (83)",
+                                    "nickname": "",
+                                    "occupation": "Meat cutter"
+                                  },
+                                  "marriages": [
+                                    {
+                                      "spouse": {
+                                        "name": "Myra Riley (Carpenter)",
+                                        "class": "female"
+                                      },
+                                      "children": [
+                                        {
+                                          "name": "Clara Webb Hays (Riley)",
+                                          "class": "female",
+                                          "extra": {
+                                            "about": "",
+                                            "birth": "October 1891",
+                                            "death": "September 1944 (52)",
+                                            "nickname": "",
+                                            "occupation": ""
+                                          },
+                                          "marriages": [
+                                            {
+                                              "spouse": {
+                                                "name": "Harry Walker Hays",
+                                                "class": "male"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "spouse": {
+                                        "name": "Evaline 'Lina' Riley (Blue Harper)",
+                                        "class": "female"
+                                      },
+                                      "children": [
+                                        {
+                                          "name": "John William Riley",
+                                          "class": "male",
+                                          "extra": {
+                                            "about": "[Find a grave](https://www.findagrave.com/memorial/199135763/john_william-riley)",
+                                            "birth": "September 21 1902",
+                                            "death": "December 2 1928 (26)",
+                                            "nickname": "",
+                                            "occupation": ""
+                                          },
+                                          "marriages": [
+                                            {
+                                              "spouse": {
+                                                "name": "Viola Riley (Mann)",
+                                                "class": "female",
+                                                "extra": {
+                                                  "about": "[Find a grave](https://www.findagrave.com/memorial/199135843/ethel_viola_taylor)",
+                                                  "birth": "10 Jul 1904 Jerusalem, Monroe County, Ohio, USA",
+                                                  "death": "16 Feb 1995 (aged 90) Bedford, Cuyahoga County, Ohio, USA",
+                                                  "nickname": "",
+                                                  "occupation": ""
+                                                }
+                                              },
+                                              "children": [
+                                                {
+                                                  "name": "Robert H Riley",
+                                                  "class": "male",
+                                                  "extra": {
+                                                    "about": "",
+                                                    "birth": "estimated between 1907 and 1927",
+                                                    "death": "",
+                                                    "nickname": "",
+                                                    "occupation": ""
+                                                  },
+                                                  "marriages": [
+                                                    {
+                                                      "spouse": {
+                                                        "name": "Ardyce Riley (Earhart)",
+                                                        "class": "female"
+                                                      },
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "spouse": {
+                                                        "name": "Susiki Riley (Ineco)",
+                                                        "class": "female"
+                                                      },
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "name": "Fredrick Lee 'Fred' Riley",
+                                                  "class": "male",
+                                                  "textClass": "nodeText",
+                                                  "depthOffset": 0,
+                                                  "extra": {
+                                                    "about": "[Find a grave](https://www.findagrave.com/memorial/160312374/fredrick_lee-riley)",
+                                                    "birth": "October 16 1923 Beallsville, Monroe County, Ohio, USA",
+                                                    "death": "May 23 2012 (aged 88) Barnesville, Belmont County, Ohio, USA ",
+                                                    "nickname": "Fred",
+                                                    "occupation": ""
+                                                  },
+                                                  "marriages": [
+                                                    {
+                                                      "spouse": {
+                                                        "name": "Mary Lu Riley (West)",
+                                                        "class": "female",
+                                                        "extra": {
+                                                          "about": "[Find a grave](https://www.findagrave.com/memorial/160312296/mary_lu-riley)",
+                                                          "birth": "May 14, 1930 Wetzel County, West Virginia, USA",
+                                                          "death": "March 21 2016 (aged 86) Morgantown, Monongalia County, West Virginia, USA",
+                                                          "nickname": "",
+                                                          "occupation": ""
+                                                        }
+                                                      },
+                                                      "children": [
+                                                        {
+                                                          "name": "Sondra Lu Brown (Riley)",
+                                                          "class": "female",
+                                                          "extra": {
+                                                            "about": "",
+                                                            "birth": "October 29, 1949",
+                                                            "death": "",
+                                                            "nickname": "",
+                                                            "occupation": ""
+                                                          },
+                                                          "marriages": [
+                                                            {
+                                                              "spouse": {
+                                                                "name": "Larry Jay Brown",
+                                                                "class": "male",
+                                                                "extra": {
+                                                                  "about": "",
+                                                                  "birth": "August 08, 1947",
+                                                                  "death": "March 2011 (63)",
+                                                                  "nickname": "",
+                                                                  "occupation": ""
+                                                                }
+                                                              },
+                                                              "children": [
+                                                                {
+                                                                  "name": "Tina Clark (Brown)",
+                                                                  "class": "female",
+                                                                  "extra": {
+                                                                    "about": "",
+                                                                    "birth": "August 21, 1967",
+                                                                    "death": "",
+                                                                    "nickname": "",
+                                                                    "occupation": ""
+                                                                  },
+                                                                  "marriages": [
+                                                                    {
+                                                                      "spouse": {
+                                                                        "name": "Scott Clark",
+                                                                        "class": "male"
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "spouse": {
+                                                                        "name": " ",
+                                                                        "class": "male"
+                                                                      },
+                                                                      "children": [
+                                                                        {
+                                                                          "name": "Caitlin Nicole Brown",
+                                                                          "class": "female",
+                                                                          "extra": {
+                                                                            "about": "",
+                                                                            "birth": "July 07, 1990 in Cambridge, Guernsey County, OH, United States",
+                                                                            "death": "",
+                                                                            "nickname": "",
+                                                                            "occupation": ""
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "name": "Jay Ellis Brown",
+                                                                  "class": "male",
+                                                                  "extra": {
+                                                                    "about": "",
+                                                                    "birth": "March 21, 1972",
+                                                                    "death": "December 2, 2005",
+                                                                    "nickname": "",
+                                                                    "occupation": ""
+                                                                  }
+                                                                },
+                                                                {
+                                                                  "name": "Jayda Ann Baker (Brown)",
+                                                                  "class": "female",
+                                                                  "extra": {
+                                                                    "about": "",
+                                                                    "birth": "July 30, 1968",
+                                                                    "death": "",
+                                                                    "nickname": "",
+                                                                    "occupation": ""
+                                                                  },
+                                                                  "marriages": [
+                                                                    {
+                                                                      "spouse": {
+                                                                        "name": "Darrell (Buck) Lynn Baker",
+                                                                        "class": "male",
+                                                                        "extra": {
+                                                                          "about": "",
+                                                                          "birth": "September 26, 1968",
+                                                                          "death": "",
+                                                                          "nickname": "",
+                                                                          "occupation": ""
+                                                                        }
+                                                                      },
+                                                                      "children": [
+                                                                        {
+                                                                          "name": "Darren Lynn Baker",
+                                                                          "class": "male",
+                                                                          "extra": {
+                                                                            "about": "",
+                                                                            "birth": "February 13, 1990",
+                                                                            "death": "",
+                                                                            "nickname": "",
+                                                                            "occupation": ""
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "name": "Ryan Baker",
+                                                                          "class": "male",
+                                                                          "extra": {
+                                                                            "about": "",
+                                                                            "birth": "May 22, 1992",
+                                                                            "death": "",
+                                                                            "nickname": "",
+                                                                            "occupation": ""
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "name": "Karlie Jaye Baker",
+                                                                          "class": "male",
+                                                                          "extra": {
+                                                                            "about": "",
+                                                                            "birth": "March 21, 1995 in Wheeling Hospital, Wheeling, WV, United States",
+                                                                            "death": "",
+                                                                            "nickname": "",
+                                                                            "occupation": ""
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "name": "Terry Michael Brown",
+                                                                  "class": "male",
+                                                                  "extra": {
+                                                                    "about": "",
+                                                                    "birth": "December 27, 1972",
+                                                                    "death": "November 11, 2007 (aged 34)",
+                                                                    "nickname": "",
+                                                                    "occupation": ""
+                                                                  },
+                                                                  "marriages": [
+                                                                    {
+                                                                      "spouse": {
+                                                                        "name": "Bonnie Brown",
+                                                                        "class": "female"
+                                                                      }
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "name": "Fredrick Lee Riley, Jr.",
+                                                          "class": "male",
+                                                          "extra": {
+                                                          "about": "",
+                                                          "birth": "October 30, 1953",
+                                                          "death": "",
+                                                          "nickname": "Fred Jr.",
+                                                          "occupation": ""
+                                                        },
+                                                          "marriages": [
+                                                            {
+                                                              "spouse": {
+                                                                "name": "Karen Lynn Riley (Albus)",
+                                                                "class": "female"
+                                                              },
+                                                              "children": [
+                                                                {
+                                                                  "name": "Kendra Riley",
+                                                                  "class": "female",
+                                                                  "marriages": [
+                                                                    {
+                                                                      "spouse": {
+                                                                        "name": "",
+                                                                        "class": "male"
+                                                                      },
+                                                                      "children": [
+                                                                        {
+                                                                          "name": "Baylor Barnett",
+                                                                          "class": "male"
+                                                                        },
+                                                                        {
+                                                                          "name": "Brynlee Barnett",
+                                                                          "class": "female"
+                                                                        },
+                                                                        {
+                                                                          "name": "Bronson Barnett",
+                                                                          "class": "male"
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "name": "Daniel Riley",
+                                                                  "class": "male",
+                                                                  "marriages": [
+                                                                    {
+                                                                      "spouse": {
+                                                                        "name": "Marta",
+                                                                        "class": "female"
+                                                                      },
+                                                                      "children": [
+                                                                        {
+                                                                          "name": "Damien Riley",
+                                                                          "class": "male"
+                                                                        },
+                                                                        {
+                                                                          "name": "Sofia Riley",
+                                                                          "class": "female"
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "name": "Jeremy Riley",
+                                                                  "class": "male"
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "name": "Jack Lynn Riley",
+                                                          "class": "male",
+                                                          "marriages": [
+                                                            {
+                                                              "spouse": {
+                                                                "name": "Teri",
+                                                                "class": "female"
+                                                              },
+                                                              "children": [
+                                                                {
+                                                                  "name": "Scott Riley",
+                                                                  "class": "male"
+                                                                },
+                                                                {
+                                                                  "name": "Missy Riley",
+                                                                  "class": "female"
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "name": "Clarence Richard Riley",
+                                                          "class": "male",
+                                                          "extra": {
+                                                            "about": "",
+                                                            "birth": "",
+                                                            "death": "",
+                                                            "nickname": "Dick",
+                                                            "occupation": ""
+                                                          },
+                                                          "marriages": [
+                                                            {
+                                                              "spouse": {
+                                                                "name": "Phyllis Riley (Stiver)",
+                                                                "class": "female"
+                                                              },
+                                                              "children": [
+                                                                {
+                                                                  "name": "Justin Riley",
+                                                                  "class": "male",
+                                                                  "marriages": [
+                                                                    {
+                                                                      "spouse": {
+                                                                        "name": "Kelly Riley (Schenbeck)",
+                                                                        "class": "female"
+                                                                      },
+                                                                      "children": [
+                                                                        {
+                                                                          "name": "Cordelia Riley",
+                                                                          "class": "female"
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "name": "Cyrena Abbott (Riley)",
+                                                                  "class": "female",
+                                                                  "marriages": [
+                                                                    {
+                                                                      "spouse": {
+                                                                        "name": "Clint Abbott",
+                                                                        "class": "male"
+                                                                      },
+                                                                      "children": [
+                                                                        {
+                                                                          "name": "Carter Abbott",
+                                                                          "class": "male"
+                                                                        },
+                                                                        {
+                                                                          "name": "Caylee Abbott",
+                                                                          "class": "female"
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "name": "George 'Bill' William Riley",
+                                                  "class": "male",
+                                                  "extra": {
+                                                    "about": "",
+                                                    "birth": "January 1926",
+                                                    "death": "",
+                                                    "nickname": "",
+                                                    "occupation": ""
+                                                  },
+                                                  "marriages": [
+                                                    {
+                                                      "spouse": {
+                                                        "name": "Carol Ann Riley (Wells)",
+                                                        "class": "female"
+                                                      },
+                                                      "children": [
+                                                        {
+                                                          "name": "Rebecca Lynn Groves (Riley)",
+                                                          "class": "female",
+                                                          "extra": {
+                                                            "about": "",
+                                                            "birth": "January 1951",
+                                                            "death": "",
+                                                            "nickname": "",
+                                                            "occupation": ""
+                                                          },
+                                                          "marriages": [
+                                                            {
+                                                              "spouse": {
+                                                                "name": "Keith Allen Groves",
+                                                                "class": "male"
+                                                              },
+                                                              "children": [
+                                                                {
+                                                                  "name": "Sara Ann Groves",
+                                                                  "class": "female",
+                                                                  "extra": {
+                                                                    "about": "",
+                                                                    "birth": "May 1979",
+                                                                    "death": "",
+                                                                    "nickname": "",
+                                                                    "occupation": ""
+                                                                  }
+                                                                },
+                                                                {
+                                                                  "name": "Adam Riley Groves",
+                                                                  "class": "male",
+                                                                  "extra": {
+                                                                    "about": "",
+                                                                    "birth": "July 1981",
+                                                                    "death": "",
+                                                                    "nickname": "",
+                                                                    "occupation": ""
+                                                                  }
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "name": "Bruce William Riley",
+                                                          "class": "male",
+                                                          "extra": {
+                                                            "about": "",
+                                                            "birth": "October 1954",
+                                                            "death": "",
+                                                            "nickname": "",
+                                                            "occupation": ""
+                                                          },
+                                                          "marriages": [
+                                                            {
+                                                              "spouse": {
+                                                                "name": "Mary Beth Riley (Pepcavage)",
+                                                                "class": "female",
+                                                                "extra": {
+                                                                  "about": "",
+                                                                  "birth": "",
+                                                                  "death": "",
+                                                                  "nickname": "",
+                                                                  "occupation": ""
+                                                                }
+                                                              },
+                                                              "children": [
+                                                                {
+                                                                  "name": "Donovan William Brian Riley",
+                                                                  "class": "male",
+                                                                  "extra": {
+                                                                    "about": "",
+                                                                    "birth": "December 1988",
+                                                                    "death": "",
+                                                                    "nickname": "",
+                                                                    "occupation": ""
+                                                                  }
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "name": "Brian Clark Riley",
+                                                          "class": "male",
+                                                          "extra": {
+                                                            "about": "",
+                                                            "birth": "May 1958",
+                                                            "death": "",
+                                                            "nickname": "",
+                                                            "occupation": ""
+                                                          }
+                                                        },
+                                                        {
+                                                          "name": "Philip Mann Riley",
+                                                          "class": "male",
+                                                          "extra": {
+                                                            "about": "",
+                                                            "birth": "December 1964",
+                                                            "death": "",
+                                                            "nickname": "",
+                                                            "occupation": ""
+                                                          }
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "name": "Beverly Jan Kress (Riley)",
+                                                  "class": "female",
+                                                  "extra": {
+                                                    "about": "",
+                                                    "birth": "April 1928",
+                                                    "death": "",
+                                                    "nickname": "",
+                                                    "occupation": ""
+                                                  },
+                                                  "marriages": [
+                                                    {
+                                                      "spouse": {
+                                                        "name": "Oscar T Kress",
+                                                        "class": "male"
+                                                      },
+                                                      "children": [
+                                                        {
+                                                          "name": "Diana Elizabeth Kriedman (Kress)",
+                                                          "class": "female",
+                                                          "extra": {
+                                                            "about": "",
+                                                            "birth": "July 1949",
+                                                            "death": "",
+                                                            "nickname": "",
+                                                            "occupation": ""
+                                                          },
+                                                          "marriages": [
+                                                            {
+                                                              "spouse": {
+                                                                "name": "Gerald Kriedman",
+                                                                "class": "male"
+                                                              }
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "name": "Thomas Oscar Kress",
+                                                          "class": "male",
+                                                          "extra": {
+                                                            "about": "",
+                                                            "birth": "August 1950",
+                                                            "death": "",
+                                                            "nickname": "",
+                                                            "occupation": ""
+                                                          },
+                                                          "marriages": [
+                                                            {
+                                                              "spouse": {
+                                                                "name": "Sharon Kress (Slagle)",
+                                                                "class": "female"
+                                                              },
+                                                              "children": [
+                                                                {
+                                                                  "name": "Donald Everett Kress",
+                                                                  "class": "male",
+                                                                  "extra": {
+                                                                    "about": "",
+                                                                    "birth": "February 1978",
+                                                                    "death": "",
+                                                                    "nickname": "",
+                                                                    "occupation": ""
+                                                                  }
+                                                                },
+                                                                {
+                                                                  "name": "Steven Roy Kress",
+                                                                  "class": "male",
+                                                                  "extra": {
+                                                                    "about": "",
+                                                                    "birth": "October 1983",
+                                                                    "death": "",
+                                                                    "nickname": "",
+                                                                    "occupation": ""
+                                                                  }
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "name": "John Charles Kress",
+                                                          "class": "male",
+                                                          "extra": {
+                                                            "about": "",
+                                                            "birth": "October 1959",
+                                                            "death": "",
+                                                            "nickname": "",
+                                                            "occupation": ""
+                                                          },
+                                                          "marriages": [
+                                                            {
+                                                              "spouse": {
+                                                                "name": "Sheila Kress (Blevins)",
+                                                                "class": "female"
+                                                              },
+                                                              "children": [
+                                                                {
+                                                                  "name": "Megean Amanda Rose Kress",
+                                                                  "class": "female",
+                                                                  "extra": {
+                                                                    "about": "",
+                                                                    "birth": "November 1983",
+                                                                    "death": "",
+                                                                    "nickname": "",
+                                                                    "occupation": ""
+                                                                  }
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "name": "Nina Lee Landals (Kress)",
+                                                          "class": "female",
+                                                          "extra": {
+                                                            "about": "",
+                                                            "birth": "May 1963",
+                                                            "death": "",
+                                                            "nickname": "",
+                                                            "occupation": ""
+                                                          },
+                                                          "marriages": [
+                                                            {
+                                                              "spouse": {
+                                                                "name": "Lawrence Landals",
+                                                                "class": "male"
+                                                              },
+                                                              "children": [
+                                                                {
+                                                                  "name": "William James Landals",
+                                                                  "class": "male",
+                                                                  "extra": {
+                                                                    "about": "",
+                                                                    "birth": "January 1983",
+                                                                    "death": "",
+                                                                    "nickname": "",
+                                                                    "occupation": ""
+                                                                  }
+                                                                },
+                                                                {
+                                                                  "name": "Joseph Ray Landals",
+                                                                  "class": "male",
+                                                                  "extra": {
+                                                                    "about": "",
+                                                                    "birth": "September 1986",
+                                                                    "death": "",
+                                                                    "nickname": "",
+                                                                    "occupation": ""
+                                                                  }
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "Pearson Kay do Riley",
+                                  "class": "male",
+                                  "extra": {
+                                    "about": "",
+                                    "birth": "February",
+                                    "death": "January 1940",
+                                    "nickname": "",
+                                    "occupation": ""
+                                  },
+                                  "marriages": [
+                                    {
+                                      "spouse": {
+                                        "name": "Mary B Riley (Seal)",
+                                        "class": "female"
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Samuel Riley",
+                          "class": "male",
+                          "extra": {
+                            "about": "",
+                            "birth": "August 1839",
+                            "death": "June 1890 (50)",
+                            "nickname": "",
+                            "occupation": ""
+                          },
+                          "marriages": [
+                            {
+                              "spouse": {
+                                "name": "Mary Jane Riley (Phillips)",
+                                "class": "female"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Elizabeth Penelope Lemley (Riley)",
+                          "class": "female",
+                          "extra": {
+                            "about": "",
+                            "birth": "September 1841",
+                            "death": "May 1930 (88)",
+                            "nickname": "",
+                            "occupation": ""
+                          },
+                          "marriages": [
+                            {
+                              "spouse": {
+                                "name": "Peter Odney Lemley",
+                                "class": "male"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Massie Isabelle Keysor (Riley)",
+                          "class": "female",
+                          "extra": {
+                            "about": "",
+                            "birth": "November 11, 1843",
+                            "death": "March 8, 1907 (63)",
+                            "nickname": "",
+                            "occupation": ""
+                          },
+                          "marriages": [
+                            {
+                              "spouse": {
+                                "name": "Jesse A Keysor",
+                                "class": "male"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Mary Jane Gates (Riley)",
+                          "class": "female",
+                          "extra": {
+                            "about": "",
+                            "birth": "February 18, 1846",
+                            "death": "May 5, 1922 (76)",
+                            "nickname": "",
+                            "occupation": ""
+                          },
+                          "marriages": [
+                            {
+                              "spouse": {
+                                "name": "Samuel Gates",
+                                "class": "male"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Richard Lock Riley",
+                          "class": "male",
+                          "extra": {
+                            "about": "",
+                            "birth": "May 27, 1848",
+                            "death": "March 16, 1936 (87)",
+                            "nickname": "",
+                            "occupation": ""
+                          },
+                          "marriages": [
+                            {
+                              "spouse": {
+                                "name": "Elizabeth Riley (Gates)",
+                                "class": "female"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Israel Dixon Riley",
+                          "class": "male",
+                          "extra": {
+                            "about": "[Find a grave](https://www.findagrave.com/memorial/150883545/israel_dixon-riley)",
+                            "birth": "November 16, 1850",
+                            "death": "1919 (68-69)",
+                            "nickname": "",
+                            "occupation": "Our first rural mail carrier out of Beallsville about 1900; he rode a horse & carried the mailbag on his back."
+                          },
+                          "marriages": [
+                            {
+                              "spouse": {
+                                "name": "Mary Jane Riley (Orn)",
+                                "class": "female"
+                              },
+                              "children": []
+                            },
+                            {
+                              "spouse": {
+                                "name": "Isabelle 'Belle' Riley (King)",
+                                "class": "female"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Alfred Jackson Riley",
+                          "class": "male",
+                          "extra": {
+                            "about": "",
+                            "birth": "July 17, 1853",
+                            "death": "April 07, 1935 (81)",
+                            "nickname": "",
+                            "occupation": ""
+                          },
+                          "marriages": [
+                            {
+                              "spouse": {
+                                "name": "Rettie Riley (Smith)",
+                                "class": "female"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "name": "George Washington Riley",
+                          "class": "male",
+                          "extra": {
+                            "about": "",
+                            "birth": "October 31, 1855",
+                            "death": "April 28, 1936 (80)",
+                            "nickname": "",
+                            "occupation": "Farmer"
+                          },
+                          "marriages": [
+                            {
+                              "spouse": {
+                                "name": "Hulda Jane Riley (Mellott)",
+                                "class": "female"
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "spouse": {
+                        "name": "Elizabeth Riley (Houser)",
+                        "class": "female",
+                        "extra": {
+                          "about": "",
+                          "birth": "circa 1815",
+                          "death": "",
+                          "nickname": "",
+                          "occupation": ""
+                        }
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
