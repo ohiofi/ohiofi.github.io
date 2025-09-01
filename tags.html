@@ -38,6 +38,12 @@ The following part removes dulpicated tags and invalid tags like blank tag.
 <h1>Tags</h1>
 <ul>
 {% for tag in tags %}
-  <li><a href="{{ site.baseurl }}/tag/{{ tag | slugify }}/">{{ tag }}</a></li>
+  <li>
+    <a href="{{ '/tag/' | append: tag | slugify | append: '/' | relative_url }}">
+      {{ tag }}
+    </a>
+  </li>
 {% endfor %}
 </ul>
+
+
