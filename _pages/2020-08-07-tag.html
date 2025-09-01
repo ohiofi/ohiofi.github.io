@@ -35,3 +35,10 @@ The following part removes dulpicated tags and invalid tags like blank tag.
 		{% endunless %}
 	{% endif %}
 {% endfor %}
+
+<h1>Tags</h1>
+<ul>
+{% for tag in tags %}
+  <li><a href="{{ site.baseurl }}/tag/{{ tag | slugify }}/">{{ tag }}</a></li>
+{% endfor %}
+</ul>
