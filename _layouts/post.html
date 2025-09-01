@@ -30,6 +30,15 @@
         <p>
           {{content}}
         </p>
+        <!-- Tags go here -->
+{% if page.tags and page.tags != empty %}
+  <div class="post-tags mb-3 small">
+    <strong>Tags:</strong>
+    {% for tag in page.tags %}
+      <a href="{{ '/tag/' | append: '?name=' | append: tag | relative_url }}" class="badge badge-primary">{{ tag }}</a>
+    {% endfor %}
+  </div>
+{% endif %}
         <br>
         <hr>
         <div class="PageNavigation float-left">
