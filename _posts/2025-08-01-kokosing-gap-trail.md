@@ -3,13 +3,13 @@
   title: Kokosing Gap Trail
   date: 2025-08-01
   categories:
-  - ohio_bike_trails
   - cycling
-  - travel
-  - trails
   tags:
+  - ohio_bike_trails
   - bicycle
   - ohio 
+  - travel
+  - trails
 ---
 
 
