@@ -4,9 +4,9 @@
   date: 2022-10-28
   categories:
   - programming
+  tags:
   - games
   - how to
-  tags:
   - education
   - programming
   - puzzlescript
