@@ -1,6 +1,6 @@
 ---
   layout: post
-  title: Hockhocking Adena Bikeway North
+  title: Hockhocking Adena Bikeway Northern-half
   date: 2025-08-07
   categories:
   - cycling
