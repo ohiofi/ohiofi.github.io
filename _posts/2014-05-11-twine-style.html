@@ -94,11 +94,21 @@ tw-story {
 &nbsp;&nbsp;text-shadow: 1px 1px lightgreen; <strong>/* Green text shadow */</strong>
 &nbsp;&nbsp;font-size: 20px;
 &nbsp;&nbsp;font-family: "Press Start 2P","Helvetica","Arial",sans-serif;
-	
-&nbsp;&nbsp;<strong>/* The following changes the text box */</strong>
-&nbsp;&nbsp;border: 5px groove gray; <strong>/* Gray border around the box */</strong>
-&nbsp;&nbsp;border-radius: 25px; <strong>/* Rounded corners on the box */</strong>
-&nbsp;&nbsp;background: rgba(255,255,255,0.7); <strong>/* 30% transparent box */</strong>
+
+&nbsp;&nbsp;/* Set background to fade lightblue to blue */
+&nbsp;&nbsp;background: lightblue; /* For old browsers */    
+&nbsp;&nbsp;background: -webkit-linear-gradient(lightblue, blue);
+&nbsp;&nbsp;background: -o-linear-gradient(lightblue, blue);
+&nbsp;&nbsp;background: -moz-linear-gradient(lightblue, blue);
+&nbsp;&nbsp;background: linear-gradient(lightblue, blue);
+
+}
+
+tw-passage {
+&nbsp;&nbsp;/* The following changes the text box */
+&nbsp;&nbsp;border: 5px groove gray; /* Gray border around the box */
+&nbsp;&nbsp;border-radius: 25px; /* Rounded corners on the box */
+&nbsp;&nbsp;background: rgba(255,255,255,0.7); /* 30% transparent box */
 &nbsp;&nbsp;padding: 25px;
 }
 
@@ -111,21 +121,13 @@ tw-link:hover { <strong>/* Mouse over a link & it turns orange */</strong>
 &nbsp;&nbsp;color: orange;
 }
 
-body { <strong>/* Set background to fade lightblue to blue */</strong>
-&nbsp;&nbsp;background: lightblue; <strong>/* For old browsers */ </strong>   
-&nbsp;&nbsp;background: -webkit-linear-gradient(lightblue, blue);
-&nbsp;&nbsp;background: -o-linear-gradient(lightblue, blue);
-&nbsp;&nbsp;background: -moz-linear-gradient(lightblue, blue);
-&nbsp;&nbsp;background: linear-gradient(lightblue, blue);
-}
+
 
 img { <strong>/* Images won't get larger than 600px */</strong>
 &nbsp;&nbsp;max-width: 600px;
 &nbsp;&nbsp;max-height: 600px;
 }
 
-tw-sidebar.redo {
-&nbsp;&nbsp;display:none; <strong>/* Hide the redo button */</strong>
-}</blockquote></pre>
+</blockquote></pre>
 <p></code><br />
 <img class="alignnone size-full wp-image-3899" alt="mario" src="{{ site.baseurl }}/assets/mario.gif" width="300" height="224" /></p>

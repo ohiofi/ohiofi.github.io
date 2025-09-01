@@ -1,0 +1,11 @@
+html, body {
+  overscroll-behavior-y: contain;
+  overscroll-behavior-x: contain;
+  margin: 0;
+  height: 100%;
+  width:100%;
+  overflow: hidden
+}
+h1 {
+  color: fuchsia;
+}

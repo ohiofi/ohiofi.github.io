@@ -53,6 +53,8 @@ author:
   last_name: ''
 permalink: "/blog/how-to-use-google-drive-to-store-high-scores-for-twine-games/"
 ---
+<h1>NOTE: Sometime around 2015 there was an update to Google Forms that broke the ability to quickly/easy store high scores for Twine Games in Google Drive. Sorry!</h1>
+<strike>
 <p><img class="float-right size-full wp-image-4064" src="{{ site.baseurl }}/assets/Screen-Shot-2014-05-31-at-6.18.51-PM.png" alt="Screen Shot 2014-05-31 at 6.18.51 PM" width="340" height="340" />The first thing that you will obviously need is a Twine game that stores the player’s points as a variable. To do this, write a bit of code like this in the Start passage: <strong>&lt;&lt;set $points = 100&gt;&gt;</strong>. Any time that you need to change the player’s points during the game, use some code like this: <strong>&lt;&lt;set $points = $points + 5&gt;&gt;</strong> or this: <strong>&lt;&lt;set $points = $points - 7&gt;&gt;</strong> <em>As a side note, it's possible to use shorthand like this <strong>&lt;&lt;set $points += 5&gt;&gt;</strong> to add or subtract points, but I prefer to teach the former code to my elementary and middle school students because I believe that <strong>&lt;&lt;set $points = $points + 5&gt;&gt;</strong> is easier to comprehend.</em></p>
 <p>Your Twine game will also need to store the player’s name. An easy way to ask the player their name is to use this code:<br />
 <code>
@@ -97,3 +99,4 @@ b.value = eval(Wikifier.parse(params[1]));
 <p>I used this in my newest Twine game, Sundown.<br />
 You can check out Sundown here: <a href="http://ohiofi.github.io/sundown">http://ohiofi.github.io/sundown</a></p>
 <p><img class="size-full wp-image-3899" src="{{ site.baseurl }}/assets/mario.gif" alt="mario" width="300" height="224" /></p>
+  </strike>

@@ -1,0 +1,69 @@
+name: "Fred Riley"
+class: "male"
+textClass: "nodeText"
+depthOffset: 1
+marriages: 
+ - 
+   spouse: 
+   name: "Mary Lu Riley (West)"
+   class: "female"
+  children: 
+   - 
+   name: "Sondra Brown (Riley)"
+    class: "female"
+    marriages: 
+     - 
+   spouse: 
+       name: "Larry Brown"
+       class: male
+      children: 
+       - 
+   name: "Peter Doppler"
+        marriages: 
+         - 
+   spouse: 
+           name: "Charlotte ???"
+          children: 
+           - 
+   name: "Elisabeth Doppler"
+           - 
+   name: "Franziska Doppler"
+   - 
+   name: "Clarence Richard Riley"
+    class: male
+    extra: 
+     nickname: Dick
+     years: "1960-"
+    marriages: 
+     - 
+   spouse: 
+       name: "Phyllis Riley"
+       class: female
+      children: 
+       - 
+   name: "Justin Riley"
+        class: male
+        marriages: 
+         - 
+   spouse: 
+           name: "Kelly Riley (Schenbeck)"
+           class: female
+          children: 
+           - 
+   name: "Cordelia Riley"
+            class: female
+       - 
+   name: "Cyrena Abbott (Riley)"
+        class: female
+        marriages: 
+         - 
+   spouse: 
+           name: "Clint Abbott"
+           class: male
+          children: 
+           - 
+   name: "Carter Abbott"
+            class: male
+           - 
+   name: "Caylee Abbott"
+            class: female

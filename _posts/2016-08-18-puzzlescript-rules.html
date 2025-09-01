@@ -74,6 +74,10 @@ permalink: "/blog/puzzlescript-rules/"
 <code>
 <pre>[player|enemy] -&gt; [deadPlayer|enemy]</pre>
 <p></code></p>
+<p>If dead player then restart the game (NOTE: This rule should be at the top of the rules section so that the game waits a tick before restarting)<br />
+<code>
+<pre>[deadPlayer] -&gt; restart</pre>
+<p></code></p>
 <p>If player is between two fires then replace player with deadPlayer<br />
 <code>
 <pre>[fire|player|fire] -&gt; [fire|deadPlayer|fire]</pre>
@@ -194,8 +198,10 @@ Sfx1 46769308</pre>
 <code>
 <pre>[enemy|player| ] -&gt; [enemy|deadPlayer|blood1] Sfx1</pre>
 <p></code></p>
-<p>In the PRELUDE section, you can loop the music from a YouTube video as the soundtrack for your game. NOTE: This does not work in the Puzzlescript editor or on iOS devices.</p>
+<p>Playing background music from YouTube USED to be supported, but no longer works. Here is the error message that you will get if you try: 
+  <mark>"Unfortunately, YouTube support hasn't been working properly for a long time - it was always a hack and it hasn't gotten less hacky over time, so I can no longer pretend to support it."</mark></p>
+<s><p>In the PRELUDE section, you can loop the music from a YouTube video as the soundtrack for your game. NOTE: This does not work in the Puzzlescript editor or on iOS devices.</p>
 <p>Play the sound from this YouTube video http://www.youtube.com/watch?v=c2K_siojQNI<br />
 <code>
 <pre>youtube c2K_siojQNI</pre>
-<p></code></p>
+  <p></code></p></s>

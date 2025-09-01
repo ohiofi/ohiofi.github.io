@@ -1,0 +1,44 @@
+---
+  layout: post
+  title: Kokosing Gap Trail
+  date: 2025-08-01
+  categories:
+  - bike trails in Central Ohio
+  - cycling
+  - travel
+  - trails
+  tags:
+  - bicycle
+  - ohio 
+---
+
+<img src=“/assets/kokosingGapTrailMap.jpeg” alt=“Map of the Kokosing Gap trail with Mt. Vernon, Howard, and Danville, Ohio labeled”>
+
+This post is the first in a series about bike trails in Central Ohio
+
+In August, 2025 my father-in-law and I biked the [Kokosing Gap Trail](http://kokosinggaptrail.org) from Mount Vernon, Ohio to Danville, Ohio and back. 
+
+The full trip is 26.39 miles with an elevation gain of 182 ft. This is an Out-and-Back trail. Parking is located in Mt. Vernon near the intersection of Mt Vernon Ave Ext and Lower Gambier Road: [https://maps.app.goo.gl/VhzWiJDJiDw4hYf19?g_st=ic](https://maps.app.goo.gl/VhzWiJDJiDw4hYf19?g_st=ic)
+
+Restaurants nearby:
+- Flappers Bar & Grille
+- Southside Diner
+- The Alcove Restaurant & Lounge
+
+### Rating The Ride
+
+#### Smoothness
+
+6 / 10 Nice tree cover, but that also means roots! I remember this as a slightly-rough ride.
+
+#### Scenery 
+
+8 / 10 Some really nice portions in which the trail follows the river. About 70% of the ride was in the shade. Lots of birds singing. 
+
+#### Seclusion 
+
+7 / 10 Not too crowded. Only 4 or 5 road crossings.
+
+Final score 7 / 10
+
+<img src=“/assets/kokosingGapElevation.jpeg” alt=“Graph of elevation changes on the Kokosing Gap trail”>
