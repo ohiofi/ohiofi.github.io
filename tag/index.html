@@ -1,17 +1,46 @@
 ---
 layout: default
+title: "Tag archive"
+permalink: /tag/
 ---
 
-{% assign current_tag = page.url | split: '/' | last | split: '.' | first %}
+<h1 id="tag-title">Posts tagged ""</h1>
+<ul id="tag-posts"></ul>
 
-<h1>Posts tagged "{{ current_tag }}"</h1>
+<script>
+// Get tag from URL hash or query string
+// Example: /tag/?name=bicycle
+function getTagFromURL() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get('name') || '';
+}
 
-<ul>
+const tag = getTagFromURL();
+document.getElementById('tag-title').innerText = 'Posts tagged "' + tag + '"';
+
+// All posts data
+const posts = [
 {% for post in site.posts %}
-  {% if post.tags contains current_tag %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </li>
-  {% endif %}
+  {
+    title: "{{ post.title | escape }}",
+    url: "{{ post.url | relative_url }}",
+    tags: [{% for t in post.tags %}"{{ t }}"{% if forloop.last == false %}, {% endif %}{% endfor %}]
+  }{% if forloop.last == false %}, {% endif %}
 {% endfor %}
-</ul>
+];
+
+// Filter posts by tag
+const filtered = posts.filter(p => p.tags.includes(tag));
+const list = document.getElementById('tag-posts');
+
+if (filtered.length === 0) {
+  list.innerHTML = '<li>No posts found.</li>';
+} else {
+  filtered.forEach(p => {
+    const li = document.createElement('li');
+    li.innerHTML = `<a href="${p.url}">${p.title}</a>`;
+    list.appendChild(li);
+  });
+}
+</script>
+

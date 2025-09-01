@@ -39,11 +39,12 @@ The following part removes dulpicated tags and invalid tags like blank tag.
 <ul>
 {% for tag in tags %}
   <li>
-    <a href="{{ '/tag/' | append: tag | slugify | append: '/' | relative_url }}">
+    <a href="{{ '/tag/' | append: '?name=' | append: tag | relative_url }}">
       {{ tag }}
     </a>
   </li>
 {% endfor %}
 </ul>
+
 
 
