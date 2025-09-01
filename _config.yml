@@ -1,3 +1,9 @@
 exclude: ['README.md']
 permalink: none
 paginate: 3 # posts per page
+include:
+  - _pages
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:categories:output_ext
