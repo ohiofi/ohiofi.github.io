@@ -3,7 +3,7 @@
   title: Kokosing Gap Trail
   date: 2025-08-01
   categories:
-  - bike trails in Central Ohio
+  - ohio_bike_trails
   - cycling
   - travel
   - trails
@@ -14,7 +14,7 @@
 
 
 
-This post is the first in a series about bike trails in Central Ohio
+This post is the first in a series about Ohio bike trails
 
 In August, 2025 my father-in-law and I biked the [Kokosing Gap Trail](http://kokosinggaptrail.org) from Mount Vernon, Ohio to Danville, Ohio and back. 
 
