@@ -14,20 +14,7 @@
 
 Part of a series about [Ohio bike trails](https://ohiofi.com/tag/?name=ohio_bike_trails)
 
-In August, 2025 my father-in-law and I biked the [Kokosing Gap Trail](http://kokosinggaptrail.org) from Mount Vernon, Ohio to Danville, Ohio and back. 
-
-The full trip is 26.39 miles with an elevation gain of 182 ft. This is an Out-and-Back trail. Parking is located in Mount Vernon near the intersection of Mt Vernon Ave Ext and Lower Gambier Road: [https://maps.app.goo.gl/VhzWiJDJiDw4hYf19](https://maps.app.goo.gl/VhzWiJDJiDw4hYf19)
-<p>
-<img src="/assets/kokosingGapTrailMap.jpeg" alt="Map of the Kokosing Gap trail with Mt. Vernon, Howard, and Danville, Ohio labeled">
-<img src="/assets/kokosingGapElevation.jpeg" alt="Graph of elevation changes on the Kokosing Gap trail">
-</p>
-
-Restaurants nearby:
-- Flappers Bar & Grille
-- Southside Diner
-- The Alcove Restaurant & Lounge
-
-### Rating The Ride
+Rating The Ride
 
 #### Smoothness
 
@@ -42,4 +29,21 @@ Restaurants nearby:
 7 / 10 Not too crowded. Only 4 or 5 road crossings.
 
 Final score 7 / 10
+
+<p>
+<img src="/assets/kokosingGapTrailMap.jpeg" alt="Map of the Kokosing Gap trail with Mt. Vernon, Howard, and Danville, Ohio labeled">
+<img src="/assets/kokosingGapElevation.jpeg" alt="Graph of elevation changes on the Kokosing Gap trail">
+</p>
+
+In August, 2025 my father-in-law and I biked the [Kokosing Gap Trail](http://kokosinggaptrail.org) from Mount Vernon, Ohio to Danville, Ohio and back. 
+
+The full trip is 26.39 miles with an elevation gain of 182 ft. This is an Out-and-Back trail. Parking is located in Mount Vernon near the intersection of Mt Vernon Ave Ext and Lower Gambier Road: [https://maps.app.goo.gl/VhzWiJDJiDw4hYf19](https://maps.app.goo.gl/VhzWiJDJiDw4hYf19)
+
+
+Restaurants nearby:
+- Flappers Bar & Grille
+- Southside Diner
+- The Alcove Restaurant & Lounge
+
+
 
