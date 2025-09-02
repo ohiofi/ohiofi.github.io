@@ -5,16 +5,16 @@
   categories:
   - cycling
   tags:
-  - ohio_bike_trails
+  - ohio bike trails
   - bicycle
   - ohio 
   - travel
   - trails
   - athens
-  - hockhocking_adena_bikeway
+  - hockhocking adena bikeway
 ---
 
-Part of a series about [Ohio bike trails](https://ohiofi.com/tag/?name=ohio_bike_trails)
+Part of a series about [Ohio bike trails](https://ohiofi.com/tag/?name=ohio%20bike%20trails)
 
 In August, 2025 my father-in-law and I biked the southern-half of the [Hockhocking Adena Bikeway](https://www.bikeathensohio.com/the-bikeway) from The Plains, Ohio to Canaanville, Ohio and back. The full trail is 22-miles long, so we split it into two out-and-back halves.
 
