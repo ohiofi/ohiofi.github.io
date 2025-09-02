@@ -11,7 +11,7 @@
   - travel
   - trails
   - nelsonville
-  - hockhocking_adena_bikeway
+  - hockhocking adena bikeway
 ---
 
 
