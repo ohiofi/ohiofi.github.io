@@ -5,14 +5,14 @@
   categories:
   - cycling
   tags:
-  - ohio_bike_trails
+  - ohio bike trails
   - bicycle
   - ohio 
   - travel
   - trails
 ---
 
-Part of a series about [Ohio bike trails](https://ohiofi.com/tag/?name=ohio_bike_trails)
+Part of a series about [Ohio bike trails](https://ohiofi.com/tag/?name=ohio%20bike%20trails)
 
 Rating The Ride
 
