@@ -35,8 +35,7 @@ Rating The Ride
 Final score 8.7 / 10
 
 <p>
-<img src="/assets/hockhockingAdenaNorthMap.jpg" alt="Map of the Hockhocking Adena Bikeway northern-half with Nelsonville, Chauncey, and The Plains, Ohio labeled">
-<img src="/assets/hockhockingAdenaNorthElevation.jpg" alt="Graph of elevation changes on the Hockhocking Adena Bikeway northern-half">
+<img src="/assets/hockhockingAdenaNorth02.png" alt="Map of the Hockhocking Adena Bikeway northern-half with Nelsonville, Chauncey, and The Plains, Ohio labeled and a graph of elevation changes on the trail">
 </p>
 
 In August, 2025 my father-in-law and I biked the northern-half of the [Hockhocking Adena Bikeway](https://www.bikeathensohio.com/the-bikeway) from The Plains, Ohio to Nelsonville, Ohio and back. The full trail is 22-miles long, so we split it into two out-and-back halves.

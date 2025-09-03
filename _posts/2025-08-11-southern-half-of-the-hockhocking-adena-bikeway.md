@@ -33,8 +33,7 @@ Rating The Ride
 Final score 6 / 10
 
 <p>
-<img src="/assets/hockhockingAdenaSouthMap.jpg" alt="Map of the Hockhocking Adena Bikeway southern-half with Chauncey, The Plains, Athens, and Canaanville, Ohio labeled">
-<img src="/assets/hockhockingAdenaSouthElevation.jpg" alt="Graph of elevation changes on the Hockhocking Adena Bikeway southern-half">
+<img src="/assets/hockhockingAdenaSouth02.png" alt="Map of the Hockhocking Adena Bikeway southern-half with Chauncey, The Plains, Athens, and Canaanville, Ohio labeled and a graph of elevation changeson the trail">
 </p>
 
 In August, 2025 my father-in-law and I biked the southern-half of the [Hockhocking Adena Bikeway](https://www.bikeathensohio.com/the-bikeway) from The Plains, Ohio to Canaanville, Ohio and back. The full trail is 22-miles long, so we split it into two out-and-back halves.
