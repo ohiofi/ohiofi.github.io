@@ -31,8 +31,7 @@ Rating The Ride
 Final score 7 / 10
 
 <p>
-<img src="/assets/kokosingGapTrailMap.jpeg" alt="Map of the Kokosing Gap trail with Mt. Vernon, Howard, and Danville, Ohio labeled">
-<img src="/assets/kokosingGapElevation.jpeg" alt="Graph of elevation changes on the Kokosing Gap trail">
+<img src="/assets/kokosingGap02.png" alt="Map of the Kokosing Gap trail with Mt. Vernon, Howard, and Danville, Ohio labeled and a graph of elevation changes">
 </p>
 
 In August, 2025 my father-in-law and I biked the [Kokosing Gap Trail](http://kokosinggaptrail.org) from Mount Vernon, Ohio to Danville, Ohio and back. 
