@@ -10,10 +10,12 @@ li,blockquote{
   font-weight:200!important;
   /* color: #8731b9!important; */
 }
-a{
+p a{
   font-weight:900!important;
   /*color: #7A8CA8!important;*/
   /*color: #07D0FF!important;*/
+  color: #07D0FF;
+  text-decoration: underline;
 }
 
 blockquote{
