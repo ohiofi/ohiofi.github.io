@@ -43,9 +43,9 @@ Our trip was 23.85 miles out-and-back with an elevation gain of 284 ft. We parke
 
 
 Restaurants nearby:
-- Grove City Brewery
-- BrewDog DogTap Columbus
-- The Paddock Pub
+- Grove City Brewing Company
+- Brothers Diner
+- Zaytoon Mediterranean Grill
 
 
 
