@@ -20,6 +20,11 @@ p a{
   text-decoration: underline;
 }
 
+.badge-primary {
+  color: #000;
+  background-color: #07D0FF;
+}
+
 blockquote{
   margin: 2rem 0 1rem 0.2rem!important;
   border-left: 6px solid #424242;
