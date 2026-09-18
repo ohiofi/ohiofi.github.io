@@ -40,10 +40,14 @@ permalink: "/blog/twine-pictures-gifs-and-background-images/"
 <p><img src="{{ site.baseurl }}/assets/nyan.gif" alt="nyan" width="250" height="188" class="alignleft size-full wp-image-4013" />
 <p dir="ltr">First of all I want to give you a warning... If you simply copy and paste the URL from a stranger's site, they could delete or change the image at any time. You can use <strong>&lt;img src= &gt;</strong> to add pictures and animated GIF files to your project. When adding this code, make sure that you only use one angle bracket on each side, not two. The web address of the file needs to go after the equals sign, like this:</p>
 <p><code>
-<pre>&lt;img src=https://ohiofi.com/assets/nyan.gif&gt;</pre>
-<p></code></p>
+<pre>&lt;img src=&quot;https://ohiofi.com/assets/nyan.gif&quot;&gt;</pre>
+</code>
+There are two simple ways to add images to a Twine game. <br>
+1. Copy the full image link (for example, &quot;https://ohiofi.com/assets/nyan.gif&quot;) and use it as the src of the image. <br>
+2. Use base-64 encoding to convert the image to a long sequence of code. There are many free web apps that will convert your image to base64 code for you. <a href="https://www.base64-image.de/" target="_blank">https://www.base64-image.de</a>
+</p>
 <h2>BACKGROUND IMAGES</h2>
-<p><em>Updated 8-31-2017</em></p>
+
 <h3>How to change the background <em>for the entire game</em></h3>
 <p><img src="{{ site.baseurl }}/assets/purplesky.gif" alt="purplesky" width="300" height="169" class="float-right size-full wp-image-5918" />Here is how to change the background image when using Twine 2's default Harlowe format. Click the menu in the bottom-left and then Edit Story Stylesheet. Copy and paste this CSS code to change the Background <strong>for your entire game</strong>. Replace the URL with the image/GIF that you would like to use.</p>
 <p><code>
