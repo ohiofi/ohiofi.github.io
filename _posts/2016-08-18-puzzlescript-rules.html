@@ -86,7 +86,7 @@ permalink: "/blog/puzzlescript-rules/"
 <code>
 <pre>[man bluePortal|...|orangePortal] -&gt; [bluePortal|...|man orangePortal]</pre>
 <p></code></p>
-<p><img src="{{ site.baseurl }}/assets/portal.gif" alt="portal" width="300" height="225" class="alignnone size-full wp-image-6118" /></p>
+<p><img src="{{ site.baseurl }}/assets/portal.gif" alt="portal" width="300" class="alignnone size-full wp-image-6118" /></p>
 <h3>Pushing, Pulling, and Kicking</h3>
 <p>If player is next to chair and moves toward chair, then both move in that direction<br />
 <code>
@@ -114,6 +114,22 @@ permalink: "/blog/puzzlescript-rules/"
 <pre>[player|...|badGuy] -&gt; [player|...| < badGuy]</pre>
 <p></code></p>
 <h3>The Action Button</h3>
+<p>Bullet time! Spawn bullet when user presses action button
+  <code>
+    <pre>(bulletR always moves right)
+[ bulletR ] -> [ right bulletR ]
+
+(if bulletR on target, target dies)
+[ bulletR  target ] -> [ targetDead ]
+
+(if bulletR is on top of an obstacle, remove it)
+[ bulletR obstacle ] -> [ obstacle ]
+
+(NOTE: spawn bullet below all other bullet rules)
+(spawn bullet when user presses action button)
+[ action player ] -> [ player bulletR ]</pre>
+  </code>
+</p>
 <p>If the action button (x) is pressed, then player is on top of seeds<br />
 <code>
 <pre>[action player] -&gt; [action player seeds]</pre>
