@@ -130,17 +130,18 @@ permalink: "/blog/puzzlescript-rules/"
 <h2 id="the_action_button">The Action Button</h2>
 <p>Bullet time! Spawn bullet when user presses action button
   <code>
-    <pre>(spawn bullet when user presses action button)
-late [ action player ]  -> [ player BulletR ]
-
-( speed stays constant whether player moves or not )
+    <pre>( speed stays constant whether player moves or not )
 [ stationary Player ] [ BulletR ] -> [ Player ] [ right BulletR ]
 
 (if bulletR on target, target dies)
 [ BulletR  target ] -> [ targetDead ]
 
 (if bulletR is on top of an obstacle, remove it)
-[ BulletR BulletObstacle ] -> [ BulletObstacle ]</pre>
+[ BulletR BulletObstacle ] -> [ BulletObstacle ]
+
+(NOTE: spawn bullet below all other bullet rules as movement cannot be late)
+(spawn bullet when user presses action button)
+late [ action player ]  -> [ player BulletR ]</pre>
   </code>
 </p>
 <p><img src="{{ site.baseurl }}/assets/bulletExampleOptimized.gif" alt="bullet example" width="300" class="alignnone size-full" /></p>
