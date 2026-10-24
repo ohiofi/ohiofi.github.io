@@ -58,8 +58,8 @@ permalink: "/blog/puzzlescript-rules/"
 <li><a href="#make_some_noise">Make Some Noise</a></li>
 <li><a href="#background_music">Background Music</a></li>
 </ul>
-<hr>
-<h2 id="replacing_and_removing" class="mt-5 pt-5">Replacing and Removing</h2>
+<hr id="replacing_and_removing" >
+<h2 class="mt-5 pt-5">Replacing and Removing</h2>
 <p><img src="{{ site.baseurl }}/assets/rdp2.gif" alt="rdp2" width="300" height="225" class="float-right size-full wp-image-6110" /></p>
 <p>Water1 always becomes water2<br />
 <code>
@@ -98,8 +98,8 @@ permalink: "/blog/puzzlescript-rules/"
 <pre>[man bluePortal|...|orangePortal] -&gt; [bluePortal|...|man orangePortal]</pre>
 <p></code></p>
 <p><img src="{{ site.baseurl }}/assets/portal.gif" alt="portal" width="300" class="alignnone size-full wp-image-6118" /></p>
-<hr>
-<h2 id="pushing_pulling_and_kicking">Pushing, Pulling, and Kicking</h2>
+<hr id="pushing_pulling_and_kicking" >
+<h2 class="mt-5 pt-5">Pushing, Pulling, and Kicking</h2>
 <p>If player is next to chair and moves toward chair, then both move in that direction<br />
 <code>
 <pre>[ &gt; player|chair] -&gt; [ &gt; player| &gt; chair]</pre>
@@ -112,8 +112,8 @@ permalink: "/blog/puzzlescript-rules/"
 <code>
 <pre>[ &gt; player|kickBall] -&gt; [ player| &gt; kickBall]</pre>
 <p></code></p>
-<hr>
-<h2 id="bad_guy_movement">Bad Guy Movement</h2>
+<hr id="bad_guy_movement" >
+<h2 class="mt-5 pt-5">Bad Guy Movement</h2>
 <p>Zombie always moves in a random direction<br />
 <code>
 <pre>[stationary zombie] -&gt; [randomDir zombie]</pre>
@@ -126,8 +126,8 @@ permalink: "/blog/puzzlescript-rules/"
 <code>
 <pre>[player|...|badGuy] -&gt; [player|...| < badGuy]</pre>
 <p></code></p>
-<hr>
-<h2 id="the_action_button">The Action Button</h2>
+<hr id="the_action_button" >
+<h2 class="mt-5 pt-5">The Action Button</h2>
 <p>Bullet time! Spawn bullet when user presses action button
   <code>
     <pre>( speed stays constant whether player moves or not )
@@ -165,8 +165,8 @@ late [ action player ]  -> [ player BulletR ]</pre>
 <code>
 <pre>[action player|...|enemy] -&gt; [action player|...| ]</pre>
 <p></code></p>
-<hr>
-<h2 id="the_shape_shifting_player">The Shape-Shifting Player</h2>
+<hr id="the_shape_shifting_player">
+<h2 class="mt-5 pt-5">The Shape-Shifting Player</h2>
 <p><img src="{{ site.baseurl }}/assets/wallbuilder1.gif" alt="wallbuilder1" width="300" height="225" class="alignleft size-full wp-image-6112" /></p>
 <p>If you put "player = man or boat" in the LEGEND section, you can have two or more sprites that represent the player. You can switch them like this:</p>
 <p>If man is standing on top of dock next to water and moves toward the water, then man disappears and boat appears on water<br />
@@ -177,8 +177,8 @@ late [ action player ]  -> [ player BulletR ]</pre>
 <code>
 <pre>[&gt; boat|dock] -&gt; [ |man dock]</pre>
 <p></code></p>
-<hr>
-<h2 id="other_fun_stuff">Other Fun Stuff</h2>
+<hr id="other_fun_stuff" >
+<h2 class="mt-5 pt-5">Other Fun Stuff</h2>
 <p>If boat is next to NOT water and moves toward it, then cancel the turn<br />
 <code>
 <pre>[&gt; boat|no water] -&gt; cancel</pre>
@@ -204,8 +204,8 @@ late [ action player ]  -> [ player BulletR ]</pre>
 [stationary spinningMan2] -&gt; [randomDir spinningMan3] again
 [stationary spinningMan3] -&gt; [randomDir man]</pre>
 <p></code></p>
-<hr>
-<h2  id="make_some_noise">Make Some Noise</h2>
+<hr id="make_some_noise" >
+<h2 class="mt-5 pt-5">Make Some Noise</h2>
 <p><img src="{{ site.baseurl }}/assets/rotdp300w.gif" alt="rotdp300w" width="300" height="225" class="float-right size-full wp-image-6111" /></p>
 <p>In the SOUNDS sections, use these:<br />
 <code>
@@ -232,8 +232,8 @@ Sfx1 46769308</pre>
 <code>
 <pre>[enemy|player| ] -&gt; [enemy|deadPlayer|blood1] Sfx1</pre>
 <p></code></p>
-<hr>
-<h2 id="background_music">Background Music</h2>
+<hr id="background_music">
+<h2 class="mt-5 pt-5">Background Music</h2>
 <p class="text-secondary">Playing background music from YouTube USED to be supported, but no longer works. Here is the error message that you will get if you try: 
   <mark>"Unfortunately, YouTube support hasn't been working properly for a long time - it was always a hack and it hasn't gotten less hacky over time, so I can no longer pretend to support it."</mark></p>
 <s><p class="text-secondary">In the PRELUDE section, you can loop the music from a YouTube video as the soundtrack for your game. NOTE: This does not work in the Puzzlescript editor or on iOS devices.</p>
