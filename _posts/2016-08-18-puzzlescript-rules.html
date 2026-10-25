@@ -3,134 +3,225 @@ layout: post
 title: Puzzlescript Rules
 date: 2016-08-18 12:00:27.000000000 -04:00
 type: post
-parent_id: '0'
+parent_id: "0"
 published: true
-password: ''
+password: ""
 status: publish
 categories:
-- education
-- games
-- how to
-- interactive art
+    - education
+    - games
+    - how to
+    - interactive art
 tags:
-- Bad
-- button
-- code
-- direction
-- effect
-- game dev
-- last
-- Legend
-- level
-- player
-- programming
-- puzzlescript
-- RULES
-- section
-- Sounds
-- space
-- standing
-- Stuff
-- syntax
-- turn
-- video game
-- water
+    - Bad
+    - button
+    - code
+    - direction
+    - effect
+    - game dev
+    - last
+    - Legend
+    - level
+    - player
+    - programming
+    - puzzlescript
+    - RULES
+    - section
+    - Sounds
+    - space
+    - standing
+    - Stuff
+    - syntax
+    - turn
+    - video game
+    - water
 meta:
-  _edit_last: '1'
-  _thumbnail_id: '6112'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1559634472;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:6047;}i:1;a:1:{s:2:"id";i:3908;}i:2;a:1:{s:2:"id";i:230;}}}}
-  _wpas_done_all: '1'
+    _edit_last: "1"
+    _thumbnail_id: "6112"
+    _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1559634472;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:6047;}i:1;a:1:{s:2:"id";i:3908;}i:2;a:1:{s:2:"id";i:230;}}}}
+    _wpas_done_all: "1"
 author:
-  login: OhioFi
-  email: 20hz20khz@gmail.com
-  display_name: OhioFi
-  first_name: ''
-  last_name: ''
+    login: OhioFi
+    email: 20hz20khz@gmail.com
+    display_name: OhioFi
+    first_name: ""
+    last_name: ""
 permalink: "/blog/puzzlescript-rules/"
 ---
+
 <ul>
-<li><a href="#replacing_and_removing">Replacing and Removing</a></li>
-<li><a href="#pushing_pulling_and_kicking">Pushing, Pulling, and Kicking</a></li>
-<li><a href="#bad_guy_movement">Bad Guy Movement</a></li>
-<li><a href="#the_action_button">The Action Button</a></li>
-<li><a href="#the_shape_shifting_player">The Shape-Shifting Player</a></li>
-<li><a href="#other_fun_stuff">Other Fun Stuff</a></li>
-<li><a href="#make_some_noise">Make Some Noise</a></li>
-<li><a href="#background_music">Background Music</a></li>
+    <li><a href="#replacing_and_removing">Replacing and Removing</a></li>
+    <li>
+        <a href="#pushing_pulling_and_kicking">Pushing, Pulling, and Kicking</a>
+    </li>
+    <li><a href="#bad_guy_movement">Bad Guy Movement</a></li>
+    <li><a href="#the_action_button">The Action Button</a></li>
+    <li><a href="#the_shape_shifting_player">The Shape-Shifting Player</a></li>
+    <li><a href="#other_fun_stuff">Other Fun Stuff</a></li>
+    <li><a href="#make_some_noise">Make Some Noise</a></li>
+    <li><a href="#background_music">Background Music</a></li>
 </ul>
-<hr id="replacing_and_removing" >
+<hr id="replacing_and_removing" />
 <h2 class="mt-5 pt-5">Replacing and Removing</h2>
-<p><img src="{{ site.baseurl }}/assets/rdp2.gif" alt="rdp2" width="300" height="225" class="float-right size-full wp-image-6110" /></p>
-<p>Water1 always becomes water2<br />
-<code>
-<pre>[water1] -&gt; [water2]</pre>
-<p></code></p>
-<p>Sometimes fire1 becomes fire2<br />
-<code>
-<pre>random [fire1] -&gt; [fire2]</pre>
-<p></code></p>
-<p>If player is on top of firstAidKit then firstAidKit disappears<br />
-<code>
-<pre>[player firstAidKit] -&gt; [player]</pre>
-<p></code></p>
-<p>If player is next to firstAidKit then firstAidKit disappears<br />
-<code>
-<pre>[player|firstAidKit] -&gt; [player| ]</pre>
-<p></code></p>
-<p>If fire is next to car then replace car with burntCar<br />
-<code>
-<pre>[fire|car] -&gt; [fire|burntCar]</pre>
-<p></code></p>
-<p>If player is next to enemy then replace player with deadPlayer<br />
-<code>
-<pre>[player|enemy] -&gt; [deadPlayer|enemy]</pre>
-<p></code></p>
-<p>If dead player then restart the game (NOTE: This rule should be at the top of the rules section so that the game waits a tick before restarting)<br />
-<code>
-<pre>[deadPlayer] -&gt; restart</pre>
-<p></code></p>
-<p>If player is between two fires then replace player with deadPlayer<br />
-<code>
-<pre>[fire|player|fire] -&gt; [fire|deadPlayer|fire]</pre>
-<p></code></p>
-<p>If man is on top of bluePortal and aligned with orangePortal, then man teleports to orangePortal<br />
-<code>
-<pre>[man bluePortal|...|orangePortal] -&gt; [bluePortal|...|man orangePortal]</pre>
-<p></code></p>
-<p><img src="{{ site.baseurl }}/assets/portal.gif" alt="portal" width="300" class="alignnone size-full wp-image-6118" /></p>
-<hr id="pushing_pulling_and_kicking" >
+<p>
+    <img
+        src="{{ site.baseurl }}/assets/rdp2.gif"
+        alt="rdp2"
+        width="300"
+        height="225"
+        class="float-right size-full wp-image-6110"
+    />
+</p>
+<p>
+    Water1 always becomes water2<br />
+    <code>
+        <pre>[water1] -&gt; [water2]</pre>
+    </code>
+</p>
+<p>
+    Sometimes fire1 becomes fire2<br />
+    <code>
+        <pre>random [fire1] -&gt; [fire2]</pre>
+    </code>
+</p>
+<p>
+    If player is on top of firstAidKit then firstAidKit disappears<br />
+    <code>
+        <pre>[player firstAidKit] -&gt; [player]</pre>
+    </code>
+</p>
+<p>
+    If player is next to firstAidKit then firstAidKit disappears<br />
+    <code>
+        <pre>[player|firstAidKit] -&gt; [player| ]</pre>
+    </code>
+</p>
+<p>
+    If fire is next to car then replace car with burntCar<br />
+    <code>
+        <pre>[fire|car] -&gt; [fire|burntCar]</pre>
+    </code>
+</p>
+<p>
+    If player is next to enemy then replace player with deadPlayer<br />
+    <code>
+        <pre>[player|enemy] -&gt; [deadPlayer|enemy]</pre>
+    </code>
+</p>
+<p>
+    If dead player then restart the game (NOTE: This rule should be at the top
+    of the rules section so that the game waits a tick before restarting)<br />
+    <code>
+        <pre>[deadPlayer] -&gt; restart</pre>
+    </code>
+</p>
+<p>
+    If player is between two fires then replace player with deadPlayer<br />
+    <code>
+        <pre>[fire|player|fire] -&gt; [fire|deadPlayer|fire]</pre>
+    </code>
+</p>
+<p>
+    If man is on top of bluePortal and aligned with orangePortal, then man
+    teleports to orangePortal<br />
+    <code>
+        <pre>
+[man bluePortal|...|orangePortal] -&gt; [bluePortal|...|man orangePortal]</pre
+        >
+    </code>
+</p>
+<p>
+    <img
+        src="{{ site.baseurl }}/assets/portal.gif"
+        alt="portal"
+        width="300"
+        class="alignnone size-full wp-image-6118"
+    />
+</p>
+<hr id="pushing_pulling_and_kicking" />
 <h2 class="mt-5 pt-5">Pushing, Pulling, and Kicking</h2>
-<p>If player is next to chair and moves toward chair, then both move in that direction<br />
-<code>
-<pre>[ &gt; player|chair] -&gt; [ &gt; player| &gt; chair]</pre>
-<p></code></p>
-<p>If towTruck is next to car and moves away from car, then both move in that direction<br />
-<code>
-<pre>[ &lt; towTruck|car] -&gt; [ &lt; towTruck| < car]</pre>
-<p></code></p>
-<p>If player is next to kickBall and moves toward kickBall, then only kickBall moves in that direction<br />
-<code>
-<pre>[ &gt; player|kickBall] -&gt; [ player| &gt; kickBall]</pre>
-<p></code></p>
-<hr id="bad_guy_movement" >
+<p>
+    If player is next to chair and moves toward chair, then both move in that
+    direction<br />
+    <code>
+        <pre>[ &gt; player|chair] -&gt; [ &gt; player| &gt; chair]</pre>
+    </code>
+</p>
+<p>
+    If towTruck is next to car and moves away from car, then both move in that
+    direction<br />
+    <code>
+        <pre>[ &lt; towTruck|car] -&gt; [ &lt; towTruck| < car]</pre>
+    </code>
+</p>
+<p>
+    If player is next to kickBall and moves toward kickBall, then only kickBall
+    moves in that direction<br />
+    <code>
+        <pre>[ &gt; player|kickBall] -&gt; [ player| &gt; kickBall]</pre>
+    </code>
+</p>
+<hr id="bad_guy_movement" />
 <h2 class="mt-5 pt-5">Bad Guy Movement</h2>
-<p>Zombie always moves in a random direction<br />
-<code>
-<pre>[stationary zombie] -&gt; [randomDir zombie]</pre>
-<p></code></p>
-<p>If enemy is next to target, then it moves away from target<br />
-<code>
-<pre>[enemy|target] -&gt; [< enemy|target]</pre>
-<p></code></p>
-<p>If player is aligned with badGuy, then badGuy moves toward player<br />
-<code>
-<pre>[player|...|badGuy] -&gt; [player|...| < badGuy]</pre>
-<p></code></p>
-<hr id="the_action_button" >
+<p>
+    Zombie always moves in a random direction<br />
+    <code>
+        <pre>[stationary zombie] -&gt; [randomDir zombie]</pre>
+    </code>
+</p>
+<p>
+    If enemy is next to target, then it moves away from target<br />
+    <code>
+        <pre>[enemy|target] -&gt; [< enemy|target]</pre>
+    </code>
+</p>
+<p>
+    If player is aligned with badGuy, then badGuy moves toward player<br />
+    <code>
+        <pre>[player|...|badGuy] -&gt; [player|...| < badGuy]</pre>
+    </code>
+</p>
+<h4>Tracking if Enemy_HasMoved</h4>
+<p>
+    Enemy movement can be planned in a sort of if-else structure using a
+    transparent marker. This is a three-step process.
+</p>
+<p>
+    1.) In the OBJECTS section add Slime_HasMoved like this...
+    <code>
+        <pre>
+( marker to prevent multiple movements per clock tick )
+Slime_hasMoved
+transparent</pre
+        >
+    </code>
+</p>
+<p>
+    2.) In the COLLISIONLAYERS section add... Slime_hasMoved ( should be its own
+    separate layer )
+</p>
+<p>
+    3.) In the RULES section add the possible moves. By adding [ moving Player ]
+    you can ensure that the Slime only moves when the player moves
+    <code>
+        <pre>
+( If slime is aligned with Player, then move towards them )
+[ moving Player ] [ Player |...| Slime no Slime_hasMoved ] -> [ moving Player ] [ Player |...| < Slime Slime_hasMoved ] 
+( Else move a random direction )
+[ moving Player ] [Slime no Slime_hasMoved ] -> [ moving Player ] [randomDir Slime Slime_hasMoved ]
+late [ Slime_hasMoved ] -> []
+</pre
+        >
+    </code>
+</p>
+
+<hr id="the_action_button" />
 <h2 class="mt-5 pt-5">The Action Button</h2>
-<p>Bullet time! Spawn bullet when user presses action button
-  <code>
-    <pre>( speed stays constant whether player moves or not )
+<p>
+    Bullet time! Spawn bullet when user presses action button
+    <code>
+        <pre>
+( speed stays constant whether player moves or not )
 [ stationary Player ] [ BulletR ] -> [ Player ] [ right BulletR ]
 
 (if bulletR on target, target dies)
@@ -141,75 +232,151 @@ permalink: "/blog/puzzlescript-rules/"
 
 (NOTE: spawn bullet below all other bullet rules as movement cannot be late)
 (spawn bullet when user presses action button)
-late [ action player ]  -> [ player BulletR ]</pre>
-  </code>
+late [ action player ]  -> [ player BulletR ]</pre
+        >
+    </code>
 </p>
-<p><img src="{{ site.baseurl }}/assets/bulletExampleOptimized.gif" alt="bullet example" width="300" class="alignnone size-full" /></p>
-<p>If the action button (x) is pressed, then player is on top of seeds<br />
-<code>
-<pre>[action player] -&gt; [action player seeds]</pre>
-<p></code></p>
-<p>If the action button (x) is pressed, then player is surrounded by seeds<br />
-<code>
-<pre>[action player| ] -&gt; [action player|seeds]</pre>
-<p></code></p>
-<p>If the action button (x) is pressed and player is next to apple, then apple disappears<br />
-<code>
-<pre>[action player|apple] -&gt; [action player| ]</pre>
-<p></code></p>
-<p>If the action button (x) is pressed and player one space away from one or more enemy, then they disappear<br />
-<code>
-<pre>[action player| |enemy] -&gt; [action player| | ]</pre>
-<p></code></p>
-<p>If the action button (x) is pressed and player is aligned with (one or more) enemy, then they disappear<br />
-<code>
-<pre>[action player|...|enemy] -&gt; [action player|...| ]</pre>
-<p></code></p>
-<hr id="the_shape_shifting_player">
+<p>
+    <img
+        src="{{ site.baseurl }}/assets/bulletExampleOptimized.gif"
+        alt="bullet example"
+        width="300"
+        class="alignnone size-full"
+    />
+</p>
+<p>
+    If the action button (x) is pressed, then player is on top of seeds<br />
+    <code>
+        <pre>[action player] -&gt; [action player seeds]</pre>
+    </code>
+</p>
+<p>
+    If the action button (x) is pressed, then player is surrounded by seeds<br />
+    <code>
+        <pre>[action player| ] -&gt; [action player|seeds]</pre>
+    </code>
+</p>
+<p>
+    If the action button (x) is pressed and player is next to apple, then apple
+    disappears<br />
+    <code>
+        <pre>[action player|apple] -&gt; [action player| ]</pre>
+    </code>
+</p>
+<p>
+    If the action button (x) is pressed and player one space away from one or
+    more enemy, then they disappear<br />
+    <code>
+        <pre>[action player| |enemy] -&gt; [action player| | ]</pre>
+    </code>
+</p>
+<p>
+    If the action button (x) is pressed and player is aligned with (one or more)
+    enemy, then they disappear<br />
+    <code>
+        <pre>[action player|...|enemy] -&gt; [action player|...| ]</pre>
+    </code>
+</p>
+<hr id="the_shape_shifting_player" />
 <h2 class="mt-5 pt-5">The Shape-Shifting Player</h2>
-<p><img src="{{ site.baseurl }}/assets/wallbuilder1.gif" alt="wallbuilder1" width="300" height="225" class="alignleft size-full wp-image-6112" /></p>
-<p>If you put "player = man or boat" in the LEGEND section, you can have two or more sprites that represent the player. You can switch them like this:</p>
-<p>If man is standing on top of dock next to water and moves toward the water, then man disappears and boat appears on water<br />
-<code>
-<pre>[&gt; man dock|water] -&gt; [dock|boat water]</pre>
-<p></code></p>
-<p>If boat is next to dock and moves toward it, then boat disappears and man appears on dock<br />
-<code>
-<pre>[&gt; boat|dock] -&gt; [ |man dock]</pre>
-<p></code></p>
-<hr id="other_fun_stuff" >
+<p>
+    <img
+        src="{{ site.baseurl }}/assets/wallbuilder1.gif"
+        alt="wallbuilder1"
+        width="300"
+        height="225"
+        class="alignleft size-full wp-image-6112"
+    />
+</p>
+<p>
+    If you put "player = man or boat" in the LEGEND section, you can have two or
+    more sprites that represent the player. You can switch them like this:
+</p>
+<p>
+    If man is standing on top of dock next to water and moves toward the water,
+    then man disappears and boat appears on water<br />
+    <code>
+        <pre>[&gt; man dock|water] -&gt; [dock|boat water]</pre>
+    </code>
+</p>
+<p>
+    If boat is next to dock and moves toward it, then boat disappears and man
+    appears on dock<br />
+    <code>
+        <pre>[&gt; boat|dock] -&gt; [ |man dock]</pre>
+    </code>
+</p>
+<hr id="other_fun_stuff" />
 <h2 class="mt-5 pt-5">Other Fun Stuff</h2>
-<p>If boat is next to NOT water and moves toward it, then cancel the turn<br />
-<code>
-<pre>[&gt; boat|no water] -&gt; cancel</pre>
-<p></code></p>
-<p>If deadPlayer exists then restart the level from beginning or from last checkpoint<br />
-<code>
-<pre>[deadPlayer] -&gt; restart</pre>
-<p></code></p>
-<p>If player is on top of firstAidKit then firstAidKit disappears and a new checkpoint (restart location) is set<br />
-<code>
-<pre>[player firstAidKit] -&gt; [player] checkpoint</pre>
-<p></code></p>
-<p>Use "late" if the order of rules is important to you. In this example case, the player would sometimes step on the firstAidKit and then the game would wait until the next turn to remove it and set the checkpoint. Using "late" ensures that the player moves and then it checks this rule.</p>
-<p>After all other rules have been checked... if player is on top of firstAidKit then firstAidKit disappears and a new checkpoint is set<br />
-<code>
-<pre>late [player firstAidKit] -&gt; [player] checkpoint</pre>
-<p></code></p>
-<p>Use "again" in order to make certain animations work. You will need to add an again_interval in the PRELUDE section (for example, again_interval 0.01).</p>
-<p>After all other rules have been checked... if man is next to tornado then replace man with spinningMan1. Wait 0.01 seconds. spinningMan1 always becomes spinningMan2 and moves in a random direction. Wait 0.01 seconds. spinningMan2 always becomes spinningMan3 and moves in a random direction. Wait 0.01 seconds. spinningMan3 always becomes man and moves in a random direction.<br />
-<code>
-<pre>late [man|tornado] -&gt; [spinningMan1|tornado] again
+<p>
+    If boat is next to NOT water and moves toward it, then cancel the turn<br />
+    <code>
+        <pre>[&gt; boat|no water] -&gt; cancel</pre>
+    </code>
+</p>
+<p>
+    If deadPlayer exists then restart the level from beginning or from last
+    checkpoint<br />
+    <code>
+        <pre>[deadPlayer] -&gt; restart</pre>
+    </code>
+</p>
+<p>
+    If player is on top of firstAidKit then firstAidKit disappears and a new
+    checkpoint (restart location) is set<br />
+    <code>
+        <pre>[player firstAidKit] -&gt; [player] checkpoint</pre>
+    </code>
+</p>
+<p>
+    Use "late" if the order of rules is important to you. In this example case,
+    the player would sometimes step on the firstAidKit and then the game would
+    wait until the next turn to remove it and set the checkpoint. Using "late"
+    ensures that the player moves and then it checks this rule.
+</p>
+<p>
+    After all other rules have been checked... if player is on top of
+    firstAidKit then firstAidKit disappears and a new checkpoint is set<br />
+    <code>
+        <pre>late [player firstAidKit] -&gt; [player] checkpoint</pre>
+    </code>
+</p>
+<p>
+    Use "again" in order to make certain animations work. You will need to add
+    an again_interval in the PRELUDE section (for example, again_interval 0.01).
+</p>
+<p>
+    After all other rules have been checked... if man is next to tornado then
+    replace man with spinningMan1. Wait 0.01 seconds. spinningMan1 always
+    becomes spinningMan2 and moves in a random direction. Wait 0.01 seconds.
+    spinningMan2 always becomes spinningMan3 and moves in a random direction.
+    Wait 0.01 seconds. spinningMan3 always becomes man and moves in a random
+    direction.<br />
+    <code>
+        <pre>
+late [man|tornado] -&gt; [spinningMan1|tornado] again
 [stationary spinningMan1] -&gt; [randomDir spinningMan2] again
 [stationary spinningMan2] -&gt; [randomDir spinningMan3] again
-[stationary spinningMan3] -&gt; [randomDir man]</pre>
-<p></code></p>
-<hr id="make_some_noise" >
+[stationary spinningMan3] -&gt; [randomDir man]</pre
+        >
+    </code>
+</p>
+<hr id="make_some_noise" />
 <h2 class="mt-5 pt-5">Make Some Noise</h2>
-<p><img src="{{ site.baseurl }}/assets/rotdp300w.gif" alt="rotdp300w" width="300" height="225" class="float-right size-full wp-image-6111" /></p>
-<p>In the SOUNDS sections, use these:<br />
-<code>
-<pre>TitleScreen 5337906
+<p>
+    <img
+        src="{{ site.baseurl }}/assets/rotdp300w.gif"
+        alt="rotdp300w"
+        width="300"
+        height="225"
+        class="float-right size-full wp-image-6111"
+    />
+</p>
+<p>
+    In the SOUNDS sections, use these:<br />
+    <code>
+        <pre>
+TitleScreen 5337906
 ShowMessage 61224106
 CloseMessage 1241234
 Startlevel 22711100
@@ -221,23 +388,50 @@ player CantMove 69279104
 chair Move 41460507
 badGuy Move 55946508
 Sfx0 47352508
-Sfx1 46769308</pre>
-<p></code></p>
+Sfx1 46769308</pre
+        >
+    </code>
+</p>
 <p>In the RULES section, you can use Sfx0 through Sfx9 like this:</p>
-<p>If player steps on flower then flower disappears and play sound effect 0<br />
-<code>
-<pre>[ player flower ] -&gt; [player] Sfx0</pre>
-<p></code></p>
-<p>If enemy is next to player then replace player with deadPlayer, put blood1 next to them, and play sound effect 1<br />
-<code>
-<pre>[enemy|player| ] -&gt; [enemy|deadPlayer|blood1] Sfx1</pre>
-<p></code></p>
-<hr id="background_music">
+<p>
+    If player steps on flower then flower disappears and play sound effect 0<br />
+    <code>
+        <pre>[ player flower ] -&gt; [player] Sfx0</pre>
+    </code>
+</p>
+<p>
+    If enemy is next to player then replace player with deadPlayer, put blood1
+    next to them, and play sound effect 1<br />
+    <code>
+        <pre>[enemy|player| ] -&gt; [enemy|deadPlayer|blood1] Sfx1</pre>
+    </code>
+</p>
+<hr id="background_music" />
 <h2 class="mt-5 pt-5">Background Music</h2>
-<p class="text-secondary">Playing background music from YouTube USED to be supported, but no longer works. Here is the error message that you will get if you try: 
-  <mark>"Unfortunately, YouTube support hasn't been working properly for a long time - it was always a hack and it hasn't gotten less hacky over time, so I can no longer pretend to support it."</mark></p>
-<s><p class="text-secondary">In the PRELUDE section, you can loop the music from a YouTube video as the soundtrack for your game. NOTE: This does not work in the Puzzlescript editor or on iOS devices.</p>
-<p  class="text-secondary">Play the sound from this YouTube video http://www.youtube.com/watch?v=c2K_siojQNI<br />
-<code>
-<pre>youtube c2K_siojQNI</pre>
-  <p></code></p></s>
+<p class="text-secondary">
+    Playing background music from YouTube USED to be supported, but no longer
+    works. Here is the error message that you will get if you try:
+    <mark
+        >"Unfortunately, YouTube support hasn't been working properly for a long
+        time - it was always a hack and it hasn't gotten less hacky over time,
+        so I can no longer pretend to support it."</mark
+    >
+</p>
+
+<p class="text-secondary">
+    <del>
+        In the PRELUDE section, you can loop the music from a YouTube video as
+        the soundtrack for your game. NOTE: This does not work in the
+        Puzzlescript editor or on iOS devices.</del
+    >
+</p>
+<p class="text-secondary">
+    <del
+        >Play the sound from this YouTube video
+        http://www.youtube.com/watch?v=c2K_siojQNI</del
+    >
+    <br />
+    <code>
+        <pre>youtube c2K_siojQNI</pre>
+    </code>
+</p>
